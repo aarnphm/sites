@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Aaron&#039;s notes</title>
+      <link>https://aarnphm.xyz</link>
+      <description>Les dernières 40 notes on Aaron&#039;s notes</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Alignment</title>
+    <link>https://aarnphm.xyz/thoughts/Alignment</link>
+    <guid>https://aarnphm.xyz/thoughts/Alignment</guid>
+    <description>See also: Overton Window and this blog on alignment research The act of aligning oneself with a particular group or ideology.This can be done for a variety of reasons, including: To gain social acceptance To gain power To gain resources Often known as a solution to solve “hallucination” in large models token-generation.</description>
+    <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Overton Window</title>
+    <link>https://aarnphm.xyz/thoughts/Overton-Window</link>
+    <guid>https://aarnphm.xyz/thoughts/Overton-Window</guid>
+    <description>also known as window of discourse A window into the ideas that frames ideas that people are prepared to entertain.All ideas outside the window are not seriously considered.</description>
+    <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>ethics</title>
+    <link>https://aarnphm.xyz/thoughts/ethics</link>
+    <guid>https://aarnphm.xyz/thoughts/ethics</guid>
+    <description>Closely connected to value theory, or moral philosophy.Kantian ethics presupposes that there is a universal moral law that applies to all rational beings, or his deontological ethics framework that based on “categorical imperative”.</description>
+    <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Root mean square</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/prelab</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/prelab</guid>
+    <description>...</description>
+    <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>PJRT</title>
+    <link>https://aarnphm.xyz/thoughts/PJRT</link>
+    <guid>https://aarnphm.xyz/thoughts/PJRT</guid>
+    <description>Blog post and source Lower stack layer for framework and hardware communication.As abstraction to transpile to different hardware targets: TPU, GPU.</description>
+    <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>TPU 🚧</title>
+    <link>https://aarnphm.xyz/thoughts/TPU</link>
+    <guid>https://aarnphm.xyz/thoughts/TPU</guid>
+    <description> Avertissement En construction.</description>
+    <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>logic 🚧</title>
+    <link>https://aarnphm.xyz/thoughts/logic</link>
+    <guid>https://aarnphm.xyz/thoughts/logic</guid>
+    <description> Avertissement En construction.</description>
+    <pubDate>Sat, 02 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Second-order systems</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/a2/content</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/a2/content</guid>
+    <description>problem 1.Consider the following system: Question Using the properties of second-order systems, determine Kp​ and Kd​ such that the overshoot is 10 percent and the settling time is 1 second.</description>
+    <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Existentialism</title>
+    <link>https://aarnphm.xyz/thoughts/Existentialism</link>
+    <guid>https://aarnphm.xyz/thoughts/Existentialism</guid>
+    <description></description>
+    <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Die Verwandlung, Frank Kafka</title>
+    <link>https://aarnphm.xyz/thoughts/metamorphosis</link>
+    <guid>https://aarnphm.xyz/thoughts/metamorphosis</guid>
+    <description></description>
+    <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Camus</title>
+    <link>https://aarnphm.xyz/thoughts/Camus</link>
+    <guid>https://aarnphm.xyz/thoughts/Camus</guid>
+    <description>Of the absurd reasoning and existentialism.The Myth of Sisyphus Absurd and suicide Suicide is the solution for the absurd: People never died because of ontological arguments Suicide is often the result of people who didn’t find worth in the living Life is not worth living therefore I took the easy way out as a paradox: Suicide is the justification of meaning of life ← the most important question for philosophers From Nietzchean prose, those who say “no” acts as if they said “yes”: Schopenhauer Fantasise the act of eluding: Hope of another life one must “deserve” or trickery those who lives not for life itself but for some great idea that will transcend it, refine it, give it meaning, and betray it.</description>
+    <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Designing Pay Levels and Employee Benefits</title>
+    <link>https://aarnphm.xyz/thoughts/university/commerce-4be3/Designing-Pay-Levels--and-Employee-Benefits</link>
+    <guid>https://aarnphm.xyz/thoughts/university/commerce-4be3/Designing-Pay-Levels--and-Employee-Benefits</guid>
+    <description>See also Designing Pay Levels, Pay Mix and Pay Structure and Pay Employment Benefits decision for externally competitive pay levels and structure.employer’s competitive pay policy purpose of survey construct market line.</description>
+    <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Root locus control</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/Root-locus-control</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/Root-locus-control</guid>
+    <description>See also slides and Root locus closed-loop properties of the function of K1​G(s) @font-face { font-family: &quot;Virgil&quot;; src: url(&quot;excalidraw.com/Virgil.woff2&quot;);...</description>
+    <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Root locus</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/Root-locus</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/Root-locus</guid>
+    <description>See also slides.</description>
+    <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Voltage-controlled electromechanical systems</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/content</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/content</guid>
+    <description>See lab notes and prelab.Question Do you notice a pattern in the DC gain values you calculated? If so, what is that pattern? All DC gain are constant around A≈98.76, and Input voltage wrt DC gain is linear.</description>
+    <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>group theory</title>
+    <link>https://aarnphm.xyz/thoughts/Group-theory</link>
+    <guid>https://aarnphm.xyz/thoughts/Group-theory</guid>
+    <description>Graph isomorphism.</description>
+    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>reason</title>
+    <link>https://aarnphm.xyz/thoughts/reason</link>
+    <guid>https://aarnphm.xyz/thoughts/reason</guid>
+    <description>inductive.deductive.</description>
+    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Heating, Cooling, and the Greenhouse Effect</title>
+    <link>https://aarnphm.xyz/thoughts/university/astron-2e03/Heating-Cooling-GH-effect</link>
+    <guid>https://aarnphm.xyz/thoughts/university/astron-2e03/Heating-Cooling-GH-effect</guid>
+    <description>Ref: slides toy modal.eq: Tsurf​ 1.32×Tatm, 2​ General form of Tsurf​ with n atmospheric layers Tsurf​=[ω(n+1)S​]41​=(n+1)41​×Tatm, n​ .</description>
+    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Graphs</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Graphs</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Graphs</guid>
+    <description>See also slides Node as information and edges as relationship between data Directed acyclic graph (DAG) Application: Merkle DAG undirected.(N,E) N: set of vertices E: set of undirected edges: E⊆N×N path is a sequence of nodes and edges connect two nodes.</description>
+    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Hash tables</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Hash-tables</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Hash-tables</guid>
+    <description>See also slides.</description>
+    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Min heap and binary search tree</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a5/A5</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a5/A5</guid>
+    <description> Problème 1.Consider the following sequence of values S=[3,42,39,86,49,89,99,20,88,51,64] Note We can represent tree textually via the following representation 13 ( 11 ( 8 ( 2 4 ) 12 ( * 1 ) ) 7 ( 5 6 ( 99 * ) ) ) Where we use ∗ as a placeholder for a missing child for those nodes that only have a single child.</description>
+    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Embedding</title>
+    <link>https://aarnphm.xyz/thoughts/Embedding</link>
+    <guid>https://aarnphm.xyz/thoughts/Embedding</guid>
+    <description>See also Transformers.</description>
+    <pubDate>Sun, 25 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Lyapunov time</title>
+    <link>https://aarnphm.xyz/thoughts/Lyapunov-time</link>
+    <guid>https://aarnphm.xyz/thoughts/Lyapunov-time</guid>
+    <description></description>
+    <pubDate>Sun, 25 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>personal computing</title>
+    <link>https://aarnphm.xyz/thoughts/personal-computing</link>
+    <guid>https://aarnphm.xyz/thoughts/personal-computing</guid>
+    <description>See this tweet.</description>
+    <pubDate>Sun, 25 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>representations.</title>
+    <link>https://aarnphm.xyz/thoughts/representations</link>
+    <guid>https://aarnphm.xyz/thoughts/representations</guid>
+    <description></description>
+    <pubDate>Sun, 25 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Giles Deleuze</title>
+    <link>https://aarnphm.xyz/thoughts/Giles-Deleuze</link>
+    <guid>https://aarnphm.xyz/thoughts/Giles-Deleuze</guid>
+    <description>French philosopher, known for his work on the concept of multiplicity, being and affirmation.Also work on critical philosophy and the study of sense and value.</description>
+    <pubDate>Sat, 24 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Will to Power</title>
+    <link>https://aarnphm.xyz/thoughts/Will-to-Power</link>
+    <guid>https://aarnphm.xyz/thoughts/Will-to-Power</guid>
+    <description></description>
+    <pubDate>Sat, 24 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>action theory</title>
+    <link>https://aarnphm.xyz/thoughts/action-theory</link>
+    <guid>https://aarnphm.xyz/thoughts/action-theory</guid>
+    <description>There is a huge difference between activity and passivity.</description>
+    <pubDate>Thu, 22 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>fashion.</title>
+    <link>https://aarnphm.xyz/thoughts/fashion</link>
+    <guid>https://aarnphm.xyz/thoughts/fashion</guid>
+    <description>Fashion, rather a hobby than a need (prob.why expsense are high, but worth it).It is an art, a form of self-expression and self-care, for one to exert themselves to the world.</description>
+    <pubDate>Mon, 19 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>identity</title>
+    <link>https://aarnphm.xyz/thoughts/identity</link>
+    <guid>https://aarnphm.xyz/thoughts/identity</guid>
+    <description>Freud.</description>
+    <pubDate>Mon, 19 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>taste</title>
+    <link>https://aarnphm.xyz/thoughts/taste</link>
+    <guid>https://aarnphm.xyz/thoughts/taste</guid>
+    <description>as guide.Jacky’s post We have built up an instinctive habit of looking things up and seeing how other people have done it before trying it for ourselves.</description>
+    <pubDate>Mon, 19 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Chaos is the driven force within life, intuitive yet disheveled.</title>
+    <link>https://aarnphm.xyz/posts/Chaos</link>
+    <guid>https://aarnphm.xyz/posts/Chaos</guid>
+    <description>Chaos has, and always be a driven force within life, intuitive yet disheveled.And a few things I learned growing up in a foreign land.</description>
+    <pubDate>Sun, 18 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>relationships 🚧</title>
+    <link>https://aarnphm.xyz/thoughts/relationships</link>
+    <guid>https://aarnphm.xyz/thoughts/relationships</guid>
+    <description> Avertissement En construction.</description>
+    <pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Al la carte Système de contrôle 🚧</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/nous</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/nous</guid>
+    <description> Avertissement En construction.</description>
+    <pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>DFAs, NFAs, and regular languages</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/A1</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/A1</guid>
+    <description>Q1.For each statement below, state if it is true or false, and explain why.The explanation does not need to be a formal proof, but the argument should be sound.</description>
+    <pubDate>Fri, 16 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Empirical Estimation of Transfer Functions for First Order Systems</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab2/content</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab2/content</guid>
+    <description>See lab notes prelab.The transfer function of a DC electric motor with respect to angular velocity is: Gω​(s)=V(s)Ω(s)​=τs+1A​ Where A and τ are positive, real-valued constants V(s) and Ω(s) are voltage and angular velocity as function of s in the Laplace domain.</description>
+    <pubDate>Wed, 14 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>un ancien amour.</title>
+    <link>https://aarnphm.xyz/posts/to-the-past-lovers</link>
+    <guid>https://aarnphm.xyz/posts/to-the-past-lovers</guid>
+    <description>Beneath the quiet of night, under the vast sky, where stars whisper stories of ancient light, I find you again in the sigh of the wind, in the gentle...</description>
+    <pubDate>Mon, 12 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Dysregulation</title>
+    <link>https://aarnphm.xyz/thoughts/Dysregulation</link>
+    <guid>https://aarnphm.xyz/thoughts/Dysregulation</guid>
+    <description>...</description>
+    <pubDate>Mon, 12 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>linguistic 🚧</title>
+    <link>https://aarnphm.xyz/thoughts/linguistic</link>
+    <guid>https://aarnphm.xyz/thoughts/linguistic</guid>
+    <description> Avertissement En construction.</description>
+    <pubDate>Mon, 12 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Prompt engineering</title>
+    <link>https://aarnphm.xyz/thoughts/prompt-engineering</link>
+    <guid>https://aarnphm.xyz/thoughts/prompt-engineering</guid>
+    <description>A constructive way to form communications with LLMs.As we improve the quality of prompts, we can expect better results from the models.Similar to linguistic, a good prompt is a good form of communication with the system.</description>
+    <pubDate>Mon, 12 Feb 2024 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
