@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <title>Introuvable</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:site_name" content="Aaron's notes" />
+    <meta property="og:locale" content="fr-FR" />
+    <meta property="og:title" content="Introuvable" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:site" content="@aarnphm_" />
+    <meta name="twitter:creator" content="@aarnphm_" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Introuvable" />
+    <meta name="twitter:description" content="Introuvable" />
+    <meta property="og:description" content="Introuvable" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:alt" content="Introuvable" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:width" content="1200" />
+    <meta property="og:height" content="630" />
+    <meta property="og:image" content="https://aarnphm.xyz/static/social-images/404.webp" />
+    <meta property="og:url" content="https://aarnphm.xyz/" />
+    <meta property="og:image" content="https://aarnphm.xyz/static/social-images/404.webp" />
+    <meta name="twitter:image" content="https://aarnphm.xyz/static/social-images/404.webp" />
+    <meta property="twitter:domain" content="https://aarnphm.xyz/" />
+    <meta property="twitter:url" content="https://aarnphm.xyz/" />
+    <link rel="icon" href="/static/icon.webp" />
+    <link rel="canonical" href="https://aarnphm.xyz/" />
+    <meta name="description" content="Introuvable" />
+    <meta name="generator" content="Quartz" />
+    <link href="/index.css" rel="stylesheet" type="text/css" spa-preserve />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css"
+      rel="stylesheet"
+      type="text/css"
+      spa-preserve
+    />
+    <script src="/prescript.js" type="application/javascript" spa-preserve></script>
+    <script type="application/javascript" spa-preserve>
+      const fetchData = fetch("/static/contentIndex.json").then((data) => data.json())
+    </script>
+  </head>
+  <body data-slug="404" data-enable-preview="true" data-menu="false">
+    <div id="quartz-root" class="page">
+      <div id="quartz-body">
+        <div class="center">
+          <div class="page-header"><div class="popover-hint"></div></div>
+          <article class="popover-hint">
+            <h1>404</h1>
+            <p>Cette page est soit privée, soit elle n'existe pas.</p>
+          </article>
+          <hr />
+          <div class="page-footer"></div>
+        </div>
+        <div class="right sidebar"></div>
+      </div>
+      <div class="spacer"></div>
+    </div>
+  </body>
+  <script type="application/javascript">
+    function c() {
+      let t = this.parentElement
+      t.classList.toggle("is-collapsed")
+      let l = t.classList.contains("is-collapsed") ? this.scrollHeight : t.scrollHeight
+      t.style.maxHeight = l + "px"
+      let o = t,
+        e = t.parentElement
+      for (; e; ) {
+        if (!e.classList.contains("callout")) return
+        let n = e.classList.contains("is-collapsed")
+          ? e.scrollHeight
+          : e.scrollHeight + o.scrollHeight
+        ;(e.style.maxHeight = n + "px"), (o = e), (e = e.parentElement)
+      }
+    }
+    function i() {
+      let t = document.getElementsByClassName("callout is-collapsible")
+      for (let s of t) {
+        let l = s.firstElementChild
+        if (l) {
+          l.addEventListener("click", c), window.addCleanup(() => l.removeEventListener("click", c))
+          let e = s.classList.contains("is-collapsed") ? l.scrollHeight : s.scrollHeight
+          s.style.maxHeight = e + "px"
+        }
+      }
+    }
+    document.addEventListener("nav", i)
+    window.addEventListener("resize", i)
+  </script>
+  <script type="module">
+    let mermaidImport = undefined
+    document.addEventListener("nav", async () => {
+      if (document.querySelector("code.mermaid")) {
+        mermaidImport ||= await import(
+          "https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs"
+        )
+        const mermaid = mermaidImport.default
+        const darkMode = document.documentElement.getAttribute("saved-theme") === "dark"
+        mermaid.initialize({
+          startOnLoad: false,
+          securityLevel: "loose",
+          theme: darkMode ? "dark" : "default",
+        })
+
+        await mermaid.run({
+          querySelector: ".mermaid",
+        })
+      }
+    })
+  </script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js"
+    type="application/javascript"
+  ></script>
+  <script src="/postscript.js" type="module"></script>
+</html>

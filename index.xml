@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Aaron&#039;s notes</title>
+      <link>https://aarnphm.xyz</link>
+      <description>Les dernières 40 notes on Aaron&#039;s notes</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Orwellian</title>
+    <link>https://aarnphm.xyz/thoughts/Orwellian</link>
+    <guid>https://aarnphm.xyz/thoughts/Orwellian</guid>
+    <description>Described a situation, idea, or societal condition that George Orwell identified as being destructive to the welfare of a free and open society.</description>
+    <pubDate>Wed, 02 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>I saw a disstrack dropped at a hackathon.</title>
+    <link>https://aarnphm.xyz/posts/new</link>
+    <guid>https://aarnphm.xyz/posts/new</guid>
+    <description>I saw a disstrack dropped at a hackathon demo for the first time. And on perplexity of hackathon.</description>
+    <pubDate>Mon, 30 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>q3</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4aa4/q3</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4aa4/q3</guid>
+    <description> Answer: B Answer: 8 Answer: 70 Answer: D Answer: B Answer: B Answer: C Answer: B.</description>
+    <pubDate>Fri, 27 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>E/R models and keys</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/a1/content</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/a1/content</guid>
+    <description>Problem 1: Consider the relations PLAYERS and PLAYS given by the schemas below. PLAYERS (playerID, firstName, lastName, gender, DOB, height, weight, drafted) PLAYS (playerID, teamID, teamName, number, position, startYear) PLAYERS provides information on all basketball players in the league, giving the playerID, first name and last name of the player, the gender, the date of birth (DOB), the player’s height and weight, and the year they were drafted into the league.</description>
+    <pubDate>Thu, 26 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Pavlovian scale</title>
+    <link>https://aarnphm.xyz/thoughts/Pavlovian-scale</link>
+    <guid>https://aarnphm.xyz/thoughts/Pavlovian-scale</guid>
+    <description>Also known as classical conditioning.</description>
+    <pubDate>Wed, 25 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>w2</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/engineer-4a03/w2</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/engineer-4a03/w2</guid>
+    <description></description>
+    <pubDate>Thu, 19 Sep 2024 23:12:29 GMT</pubDate>
+  </item><item>
+    <title>Bias and intercept</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/Bias-and-intercept</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/Bias-and-intercept</guid>
+    <description>See also: slides 3, slides 4, slides 5 X^{&#039;}_{n \times (d+1)} = \begin{pmatrix} x_1^{1} &amp; \cdots &amp; x_1^{d} &amp; 1 \\ \vdots &amp; \ddots &amp; \vdots &amp; \vdots \\ ...</description>
+    <pubDate>Mon, 16 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>/squeel/</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/t1</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/t1</guid>
+    <description>TA: Jongjun Park db2 connect to se3db3 scp /path/to/.ddl macid@se3db3.cas.mcmaster.ca:/home/macid/workspace/.dll # on server db2 -tnf .ddl.</description>
+    <pubDate>Fri, 13 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Stakeholders</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3ra3/Stakeholders</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3ra3/Stakeholders</guid>
+    <description>stakeholders help to identify the problem Eliciting SSON to validate first hypothesis personas are V.A.R.I.E.D Vivid Actionable Real Identifiable Exact Detailed ex: Personal ...</description>
+    <pubDate>Fri, 13 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Fork and threads</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4aa4/w2</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4aa4/w2</guid>
+    <description>Q1: T Q2: T Q3: F Q4: User Q5: Save memory space Q6: Yes, but the modification can be only seen in child process, and value in parents process cannot be changed. ...</description>
+    <pubDate>Fri, 13 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>acme visits</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3ra3/acme-visits</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3ra3/acme-visits</guid>
+    <description>See also description.</description>
+    <pubDate>Thu, 12 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>requirements templates</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3ra3/acme/README</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3ra3/acme/README</guid>
+    <description>...</description>
+    <pubDate>Thu, 12 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>ENT chatbot surgery</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4g06ab/ENT-chatbot-surgery</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4g06ab/ENT-chatbot-surgery</guid>
+    <description>Train LoRA or even just fine-tuning Phi 3-5 Provide OpenAI-compatible endpoint for streaming.</description>
+    <pubDate>Thu, 12 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Entity-Relationship Models</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/Entity-Relationship-Models</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/Entity-Relationship-Models</guid>
+    <description>E/R model sketch databse schemas including constraints. Entity set = rectangle Attribute = oval, with a line to the rectangle (representing its entity set) relationship connects two or more entity sets.</description>
+    <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>linalg review</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/tut1</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/tut1</guid>
+    <description>\begin{aligned} x_1 + x_2 + x_3 &amp;= 5 \\ x_1 - 2x_2 - 3x_3 &amp;= -1 \\ 2x_1 + x_2 - x_3 &amp;= 3 \end{aligned} Equivalent matrix representation of A \times x = b \begin{aligned} A &amp;= ...</description>
+    <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Linear regression</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/Linear-regression</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/Linear-regression</guid>
+    <description>See also slides for curve fitting, regression, colab link Transclude of thoughts/university/twenty-four-twenty-five/sfwr-4ml3/ols_and_kls.py curve fitting ...</description>
+    <pubDate>Tue, 10 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Introduction to Machine Learning</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/</guid>
+    <description>See also machine learning and slides For annotated slides check out slides IMPORTANT Midterm: Mon Oct 28th Books: Pattern Recognition and Machine Learning” by Christopher M ...</description>
+    <pubDate>Tue, 10 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Foreign Keys and Relational Models</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/Keys-and-Foreign-Keys</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/Keys-and-Foreign-Keys</guid>
+    <description>See also slides A relation is a table Relations are unordered ⇒ relations are sets tuple and domain constraints tuple: expresses conditions on the values of each tuple domain constraint: ...</description>
+    <pubDate>Mon, 09 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Identifying Stakeholders</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3ra3/t2</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3ra3/t2</guid>
+    <description>See also instruction case study As people go green, there is an increased need for information on the facilities for cycling and pedestrian traffic in cities ...</description>
+    <pubDate>Mon, 09 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>vLLM</title>
+    <link>https://aarnphm.xyz/thoughts/vllm</link>
+    <guid>https://aarnphm.xyz/thoughts/vllm</guid>
+    <description>See also Paged Attention speculative decoding See slides Speculative execution for LLMs is an excellent inference-time optimization.It hinges on the following unintuitive observation: ...</description>
+    <pubDate>Mon, 09 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Real-time system a la carte</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4aa4/</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4aa4/</guid>
+    <description> Soft RT system are those which do not : False A good scheduling algorithm for hard real time: False (continuous graph): B .</description>
+    <pubDate>Fri, 06 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>PageRank</title>
+    <link>https://aarnphm.xyz/thoughts/PageRank</link>
+    <guid>https://aarnphm.xyz/thoughts/PageRank</guid>
+    <description></description>
+    <pubDate>Wed, 04 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>DBMS</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/DBMS</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/DBMS</guid>
+    <description>Book: Database Management System ISBN-13:978-0072465631 Midterm Thurs Oct.24 2024 (during lecture time) Due at 2200, late penalty of 20% per 24h, max 5 days ...</description>
+    <pubDate>Wed, 04 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Software Requirements and Security Considerations</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3ra3/</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3ra3/</guid>
+    <description>prof: Dr. Sébastien Mosser See also github.com/ace-lectures/cas-handbook-req-template requirements. functional vs. non-functional: IEEE 29148.</description>
+    <pubDate>Wed, 04 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Software Enginering Capstone a la carte.</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4g06ab/</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4g06ab/</guid>
+    <description>statement and goals. Administrative Details natural-language driven terminal Possible prof: Emil Sekerinski or Richard Paige warp as an example, but closed source So you can think it like Alacritty but with async command-runner voice-driven assistant: real-time transcribe ⇒ generate commands from language to shell commands voice → natural language natural language → commands Configuration, maybe in Lua stretch goal: new shell based on rust syntax and borrowing concept of variables.</description>
+    <pubDate>Wed, 04 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Progressive disclosure</title>
+    <link>https://aarnphm.xyz/thoughts/Progressive-disclosure</link>
+    <guid>https://aarnphm.xyz/thoughts/Progressive-disclosure</guid>
+    <description> make complexity easier to learn, but still enables power users to discover all workflows.</description>
+    <pubDate>Mon, 02 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>interact cohort 2024</title>
+    <link>https://aarnphm.xyz/thoughts/joininteract</link>
+    <guid>https://aarnphm.xyz/thoughts/joininteract</guid>
+    <description> Someone gives you 50,000 dollars for a project that explicitly can’t be a business. What’s the project you work on and why? I want to host dinner centered around intimacy and cultural curation in different cities.</description>
+    <pubDate>Fri, 23 Aug 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>friendship</title>
+    <link>https://aarnphm.xyz/thoughts/friendship</link>
+    <guid>https://aarnphm.xyz/thoughts/friendship</guid>
+    <description>of pleasure. or utility? the issue with a majority of San Francisco&#039;s culture of authentic relating, circling, cuddle parties, &quot;deep convo&quot; events, is that it’s intimacy without relationship.</description>
+    <pubDate>Sat, 22 Jun 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>being.</title>
+    <link>https://aarnphm.xyz/thoughts/being</link>
+    <guid>https://aarnphm.xyz/thoughts/being</guid>
+    <description>What is being as a part of epistemology? why do we practice art? Practice anything, no matter how well or how bad, we practice art as a act of becoming, for our soul to grow. ...</description>
+    <pubDate>Wed, 12 Jun 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Algebraic geometry</title>
+    <link>https://aarnphm.xyz/thoughts/algebraic-geometry</link>
+    <guid>https://aarnphm.xyz/thoughts/algebraic-geometry</guid>
+    <description>See also git source and web view.</description>
+    <pubDate>Wed, 22 May 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Crib.</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/Finals</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/Finals</guid>
+    <description>\begin{align*} \neg (\exists x \mid R:P(x)) &amp;\equiv \forall x \mid R:\neg P(x) \\\ \neg (\forall x \mid R:P(x)) &amp;\equiv \exists x \mid R:\neg P(x) \end{align*} regular ...</description>
+    <pubDate>Mon, 15 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Monte-Carlo methods</title>
+    <link>https://aarnphm.xyz/thoughts/Monte-Carlo</link>
+    <guid>https://aarnphm.xyz/thoughts/Monte-Carlo</guid>
+    <description>tree search. a search algorithm based on random sampling of the search space. Selection: root R and select successive child nodes until leaf L is reached.</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>The Prisoner&#039;s Dilemma</title>
+    <link>https://aarnphm.xyz/thoughts/The-Prisoner's-Dilemma</link>
+    <guid>https://aarnphm.xyz/thoughts/The-Prisoner's-Dilemma</guid>
+    <description>a game theory thought experiment involves two rational agents, each of whom can cooperate for mutual benefit or “defect” for individual reward.</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>game theory</title>
+    <link>https://aarnphm.xyz/thoughts/game-theory</link>
+    <guid>https://aarnphm.xyz/thoughts/game-theory</guid>
+    <description>emerged John von Neumann published the paper On the Theory of Games of Strategy, when Neumann’s original proff used Brower’s fixed-point theorem on continuous mappings into compact ...</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Economics for engineer, a guide.</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Finals</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Finals</guid>
+    <description>Economics for engineer, a guide.</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Non-linear Optimization</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Non-linear-optimization</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Non-linear-optimization</guid>
+    <description>See also slides.</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Context-free grammar and push-down Turing machine</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/a3/A3</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/a3/A3</guid>
+    <description>Problème 1. Give a context free grammar for the following language: L = \{a^nb^mc^k \mid k \neq n + m\} Solution The following CFG generates the language L: \begin{aligned} S &amp;\rightarrow S_1 \mid S_2 \mid S_3 \\ S_1 &amp;\rightarrow aS_1c \mid aS_1 \mid A \\ S_2 &amp;\rightarrow bS_2c \mid bS_2 \mid B \\ S_3 &amp;\rightarrow aS_3b \mid cS_3 \mid C \\ A &amp;\rightarrow aAc \mid aA \mid a \mid \varepsilon \\ B &amp;\rightarrow bBc \mid bB \mid b \mid \varepsilon \\ C &amp;\rightarrow aCb \mid cC \mid c \mid \varepsilon \end{aligned} Problème 2.</description>
+    <pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Observer and state-space model</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/a5/A5</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/a5/A5</guid>
+    <description>Problemè 1 Consider the following state-space model: \begin{aligned} \dot{x} &amp;= \begin{bmatrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ -5 &amp; -6 &amp; 0 \\ \end{bmatrix} x ...</description>
+    <pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>latent space</title>
+    <link>https://aarnphm.xyz/thoughts/latent-space</link>
+    <guid>https://aarnphm.xyz/thoughts/latent-space</guid>
+    <description></description>
+    <pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Steady state error and PID controller</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/lab5/prelab</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/lab5/prelab</guid>
+    <description>See also problem Problemè 1 In Lab 4, We used a PD compensator to control our ball and beam apparatus. The transfer function of our PD compensator was as follows: G_C(s) = K_Ds + K_P However, we did not use the compensator in this form.</description>
+    <pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
