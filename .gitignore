@@ -1,0 +1,9 @@
+thoughts/university
+contentIndex.json
+*.woff
+*.woff2
+*.ttf
+*.png
+*.jpeg
+node_modules
+static

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Aaron&#039;s notes</title>
+      <link>https://aarnphm.xyz</link>
+      <description>Les dernières 40 notes on Aaron&#039;s notes</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>love</title>
+    <link>https://aarnphm.xyz/tags/love</link>
+    <guid>https://aarnphm.xyz/tags/love</guid>
+    <description></description>
+    <pubDate>Fri, 02 Aug 2024 21:46:59 GMT</pubDate>
+  </item><item>
+    <title>Discrete Mathematics</title>
+    <link>https://aarnphm.xyz/tags/sfwr2fa3</link>
+    <guid>https://aarnphm.xyz/tags/sfwr2fa3</guid>
+    <description>See books Prof. Vincent Maccio.</description>
+    <pubDate>Fri, 02 Aug 2024 21:46:59 GMT</pubDate>
+  </item><item>
+    <title>friendship</title>
+    <link>https://aarnphm.xyz/thoughts/friendship</link>
+    <guid>https://aarnphm.xyz/thoughts/friendship</guid>
+    <description>of pleasure. or utility? Friendship is cultivated over many interactions light and deep. Intimacy is earned through trust. Patricia’s on intimacy throughout friendship How does one weave that delicate fabric of trust, when so many are ensnared in their own lives, their hearts shuttered against vulnerability? To cultivate trust, we must first turn inward, nurturing the quiet confidence of self-trust before extending our hands to others.</description>
+    <pubDate>Sat, 22 Jun 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Algebraic geometry</title>
+    <link>https://aarnphm.xyz/thoughts/algebraic-geometry</link>
+    <guid>https://aarnphm.xyz/thoughts/algebraic-geometry</guid>
+    <description>See also git source and web view.</description>
+    <pubDate>Wed, 22 May 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Crib.</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/Finals</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/Finals</guid>
+    <description>¬(∃x∣R:P(x)) ¬(∀x∣R:P(x))​≡∀x∣R:¬P(x)≡∃x∣R:¬P(x)​ regular language δ^(q,ϵ) δ^(q,xa)​=q=δ(δ^(q,x),a)​ All finite languages are regular, but not all regular languages are ...</description>
+    <pubDate>Mon, 15 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Monte-Carlo methods</title>
+    <link>https://aarnphm.xyz/thoughts/Monte-Carlo</link>
+    <guid>https://aarnphm.xyz/thoughts/Monte-Carlo</guid>
+    <description>tree search. a Search algorithm based on random sampling of the search space. Selection: root R and select successive child nodes until leaf L is reached.</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>The Prisoner&#039;s Dilemma</title>
+    <link>https://aarnphm.xyz/thoughts/The-Prisoner's-Dilemma</link>
+    <guid>https://aarnphm.xyz/thoughts/The-Prisoner's-Dilemma</guid>
+    <description>a game theory thought experiment involves two rational agents, each of whom can cooperate for mutual benefit or “defect” for individual reward.</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>being.</title>
+    <link>https://aarnphm.xyz/thoughts/being</link>
+    <guid>https://aarnphm.xyz/thoughts/being</guid>
+    <description>What is being as a part of epistemology? why do we practice art? Practice anything, no matter how well or how bad, we practice art as a act of becoming, for our soul to grow. ...</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>game theory</title>
+    <link>https://aarnphm.xyz/thoughts/game-theory</link>
+    <guid>https://aarnphm.xyz/thoughts/game-theory</guid>
+    <description>emerged John von Neumann published the paper On the Theory of Games of Strategy, when Neumann’s original proff used Brower’s fixed-point theorem on continuous mappings into compact ...</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Economics for engineer, a guide.</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Finals</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Finals</guid>
+    <description>Economics for engineer, a guide.</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Non-linear Optimization</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Non-linear-optimization</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Non-linear-optimization</guid>
+    <description>See also slides.</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Context-free grammar and push-down Turing machine</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/a3/A3</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/a3/A3</guid>
+    <description>Problème 1. Give a context free grammar for the following language: L={anbmck∣k=n+m} Solution The following CFG generates the language L: SS1​S2​S3​ABC​→S1​∣S2​∣S3​→aS1​c∣aS1​∣A→bS2​c∣bS2​∣B→aS3​b∣cS3​∣C→aAc∣aA∣a∣ε→bBc∣bB∣b∣ε→aCb∣cC∣c∣ε​ Problème 2.</description>
+    <pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Observer and state-space model</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/a5/A5</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/a5/A5</guid>
+    <description>Problemè 1 Consider the following state-space model: x˙y​=​00−5​10−6​010​​x+​001​​u=[1​0​0​]x​ Design an observer to place the observer poles at -10, -10, -15 Solution The ...</description>
+    <pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>latent space</title>
+    <link>https://aarnphm.xyz/thoughts/latent-space</link>
+    <guid>https://aarnphm.xyz/thoughts/latent-space</guid>
+    <description></description>
+    <pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Steady state error and PID controller</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/lab5/prelab</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/lab5/prelab</guid>
+    <description>See also problem Problemè 1 In Lab 4, We used a PD compensator to control our ball and beam apparatus. The transfer function of our PD compensator was as follows: GC​(s)=KD​s+KP​ However, we did not use the compensator in this form.</description>
+    <pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>MST with shortest path optimisation</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2c03/a10/A10</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2c03/a10/A10</guid>
+    <description> Problème 1. Consider we want to build McMaster Maps, the best online route planning tool in existence. The developers of McMaster maps have decided to represent road information in terms of a a massive graph in which nodes are crossing and the edges are the roads between crossings.</description>
+    <pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Joint-control open-loop system</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/a4/A4</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/a4/A4</guid>
+    <description>See also problem Problemè 1 A robot arm has a joint-control open-loop transfer function G(s)=s(s+10)(s+40)300(s+100)​ 1.a Plot the asymptotic approximation of the Bode plot The ...</description>
+    <pubDate>Thu, 28 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Attractor</title>
+    <link>https://aarnphm.xyz/thoughts/attractor</link>
+    <guid>https://aarnphm.xyz/thoughts/attractor</guid>
+    <description>A set of points described by a dynamical system. Some exhibits chaotic behaviour, see also Paul Bourke’s work Often create visually appealing patterns, but its applications range from physics to biology: how we understand weather patterns, bird migration patterns, quantum phenomena.</description>
+    <pubDate>Mon, 25 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Shortest path and series-parallel graph</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2c03/a9/A9</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2c03/a9/A9</guid>
+    <description> Problème 1. A regional government wants to improve their existing infrastructure between a collection of towns T. In specific, the government want to build a minimum number of roads such that there is a route from each town to each other town.</description>
+    <pubDate>Mon, 25 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>dundurn.</title>
+    <link>https://aarnphm.xyz/thoughts/atelier-with-friends/dundurn</link>
+    <guid>https://aarnphm.xyz/thoughts/atelier-with-friends/dundurn</guid>
+    <description>atelier with friends deux - orangeville.</description>
+    <pubDate>Sat, 23 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Trees path</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2c03/a8/A8</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2c03/a8/A8</guid>
+    <description> Problème 1. Let G=(N,E) be an undirected tree (graph G is undirected, connected, and has ∣N∣=∣E∣+1 if we count edges (v,w) and (w,v) as the same edge).</description>
+    <pubDate>Fri, 22 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Uber compensation analysis</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/commerce-4be3/Final-report</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/commerce-4be3/Final-report</guid>
+    <description>a Uber compensation policies case study.</description>
+    <pubDate>Wed, 20 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Root locus and graphical analysis</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/lab4/prelab</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/lab4/prelab</guid>
+    <description>See also problem Problemè 1 1.a What does a root locus plot depict? A root locus plot depicts locations of the closed-loop poles of a system in the complex s-plane as a function of a gain ...</description>
+    <pubDate>Wed, 20 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>distraction</title>
+    <link>https://aarnphm.xyz/thoughts/distraction</link>
+    <guid>https://aarnphm.xyz/thoughts/distraction</guid>
+    <description>See this tweet.</description>
+    <pubDate>Mon, 18 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Regex, pumping lemma</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/a2/A2</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/a2/A2</guid>
+    <description>Problème 1. Give regular expression for the languages bellow 1.a L={anbm∣(n+m)%2=0} L=(aa)∗(bb)∗+a(aa)∗b(bb)∗ 1.b L={w∣w does not contain the substring: aba} L=b∗+b∗a+b∗+b∗(ab+)∗ab∗ 1.c L={w∣w has an even number of b′s} L=a∗+a∗ba∗ba∗ Problème 2.</description>
+    <pubDate>Mon, 18 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Open-loop system</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/a3/A3</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/a3/A3</guid>
+    <description>See also problem Problemè 1 A unity feedback system has transfer function G(s)=s(s2+4s+13)K​ 1.a Plot the root locus for this problem We need to find the poles and zeros of the open-loop ...</description>
+    <pubDate>Mon, 18 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Graph search and A-star</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2c03/a7/A7</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2c03/a7/A7</guid>
+    <description> Problème 1. Consider a m×n game board in which each cell has a numeric value, e.g: GHIJK​A13123​B24433​C24112​D34341​E44114​F21422​​ A player starts the game with a token in the top-left cell (the cell GA in this example) and the player finishes the game by moving to the bottom-right cell (the cell KF in this example).</description>
+    <pubDate>Sun, 17 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Color</title>
+    <link>https://aarnphm.xyz/thoughts/Color</link>
+    <guid>https://aarnphm.xyz/thoughts/Color</guid>
+    <description>theory. Complementary Analogous Triadic See also coolors.co contrast, combination, thickness background Color surface area .</description>
+    <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Gestalt Principles</title>
+    <link>https://aarnphm.xyz/thoughts/Gestalt-Principles</link>
+    <guid>https://aarnphm.xyz/thoughts/Gestalt-Principles</guid>
+    <description>Relates to how we perceive composition Proximity Common Region.</description>
+    <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>composition</title>
+    <link>https://aarnphm.xyz/thoughts/composition</link>
+    <guid>https://aarnphm.xyz/thoughts/composition</guid>
+    <description>How we combine elements to make a comprehensive model. Uses Color.</description>
+    <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>design</title>
+    <link>https://aarnphm.xyz/thoughts/design</link>
+    <guid>https://aarnphm.xyz/thoughts/design</guid>
+    <description>what?.</description>
+    <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>orangeville.</title>
+    <link>https://aarnphm.xyz/thoughts/atelier-with-friends/orangeville</link>
+    <guid>https://aarnphm.xyz/thoughts/atelier-with-friends/orangeville</guid>
+    <description>atelier with friends uno - orangeville.</description>
+    <pubDate>Fri, 08 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Automata</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/Nous</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/Nous</guid>
+    <description>Q1: T/F, if F explain why. Q4: regular expression, 5 separate q Q2/Q3: DFAs and NFAs Product construction: ∩ ∪ of DFAs Subset construction: NFA to DFA Quotient construction: State minimization Set theory Complement in Σ∗: L=Σ∗−L associative: (A∪B)∪C(A∩B)∩C(AB)C​=A∪(B∪C),=A∩(B∩C),=A(BC).​ commutative: A∪BA∩B​=B∪A=B∩A​ null set null set ∅ is the identity for ∪ and annihilator for set concatenation A∪∅=A and A∅=∅A=∅ set {ϵ} is an identity for set concatenation {ϵ}A=A{ϵ}=A Set union and intersection are distributive over set concatenation A∪(B∩C) A∩(B∪C)​=(A∪B)∩(A∪C)=(A∩B)∪(A∩C)​ Set concatenation distributes over union A(B∪C) (A∪B)C​=AB∪AC=AC∪BC​ DFA DFA#definition Let δ:Q×Σ→Q, thus δ^:Q×Σ∗→Q δ(q,c)→p therefore δ^(q,w)→p regularity Important δ^(q,ϵ) δ^(q,xa)​=q=δ(δ^(q,x),a)​ Important a subset A⊂Σ∗ is regular if and only if there exists a DFA M such that L(M)=L Important All finite languages are regular, but not all regular languages are finite examples Show L is regular where L={x∣x%3=0∪x=ϵ}, with Σ={0,1} Three states, q0​,q1​,q2​, where q0​ denotes the string mod 3 is 0, q1​ denotes the string mod 3 is 1, and q2​ denotes the string mod 3 is 2.</description>
+    <pubDate>Fri, 08 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>atelier with friends.</title>
+    <link>https://aarnphm.xyz/thoughts/atelier-with-friends/</link>
+    <guid>https://aarnphm.xyz/thoughts/atelier-with-friends/</guid>
+    <description>Somewhat impromptu supper club hosted by yours truly. See also dishes for a comprehensive repertoire.</description>
+    <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Atmospheric properties for exoplanets</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/astron-2e03/Atmosphere</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/astron-2e03/Atmosphere</guid>
+    <description>Ref: slides features. H=ωmH​gkB​T​ solid or dash solid q larger mean molecular weights? B: shallow features ⇒ higher mean molecular weights mass-metallicity trend Question Can we detect clouds in exoplanets? Clouds suppress atmospheric chemical signatures Important Introduced a degeneracy between cloud-top pressure and mean molecular weight clouds/winds on giant planets.</description>
+    <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>philosophy</title>
+    <link>https://aarnphm.xyz/tags/philosophy</link>
+    <guid>https://aarnphm.xyz/tags/philosophy</guid>
+    <description>Toute idée fausse finit dans le sang, mais il s'agit toujours du sang des autres. C'est ce qui explique que certains de nos philosophes se sentent à l'aise pour dire n'importe quoi.</description>
+    <pubDate>Wed, 06 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>steady-state error</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/steady-state-error</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/steady-state-error</guid>
+    <description>See also slides Important System type is the number of integrators in the forward path, thus value of n .</description>
+    <pubDate>Wed, 06 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Alignment</title>
+    <link>https://aarnphm.xyz/thoughts/Alignment</link>
+    <guid>https://aarnphm.xyz/thoughts/Alignment</guid>
+    <description>See also: Overton Window and this blog on alignment research The act of aligning oneself with a particular group or ideology. This can be done for a variety of reasons, including: To gain social acceptance To gain power To gain resources Often known as a solution to solve “hallucination” in large models token-generation.</description>
+    <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Overton Window</title>
+    <link>https://aarnphm.xyz/thoughts/Overton-Window</link>
+    <guid>https://aarnphm.xyz/thoughts/Overton-Window</guid>
+    <description>also known as window of discourse A window into the ideas that frames ideas that people are prepared to entertain. All ideas outside the window are not seriously considered.</description>
+    <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>ethics</title>
+    <link>https://aarnphm.xyz/thoughts/ethics</link>
+    <guid>https://aarnphm.xyz/thoughts/ethics</guid>
+    <description>Closely connected to value theory, or moral philosophy. Kantian ethics presupposes that there is a universal moral law that applies to all rational beings, or his deontological ethics framework that based on “categorical imperative”.</description>
+    <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
