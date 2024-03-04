@@ -1,0 +1,25 @@
+---
+slug: index
+tags:
+  - evergreen
+  - fruit
+description: "Aaron's digital garden"
+title: "Aaron's notes"
+date: 2022-04-22
+permalink: https://aarnphm.xyz/llms.txt
+---
+Beige and rosé are my two favourite colours.
+
+I try to be present, but you will find me either [writing](https://aarnphm.xyz/thoughts/writing#motivation) or [reading](https://aarnphm.xyz/books).
+
+I like to take long walks, host [functions](https://aarnphm.xyz/thoughts/atelier-with-friends), and people watching. Cooking is my love language, which is how my mom expresses her love for me. How one cooks their eggs tells a lot about how they treat others.
+
+[open-source projects](https://aarnphm.xyz/thoughts/work) are overall net positive for everyone, so contribute.
+
+I believe in [tools](https://aarnphm.xyz/thoughts/papers/Tools-for-Conviviality-by-Ivan-Illich.pdf) that give back [agency](https://aarnphm.xyz/thoughts/Agency) to users and help them fulfil their [desire](https://aarnphm.xyz/thoughts/desire) in life.
+
+Understanding the [inner working](https://aarnphm.xyz/thoughts/mechanistic-interpretability) of large language models would help us to do better science.
+
+Currently, I’m building [serving infrastructure](https://bentoml.com) for [ml](https://aarnphm.xyz/thoughts/Machine-learning) systems and explore our interaction through [large language models](https://aarnphm.xyz/thoughts/LLMs).
+
+I’m best reached [here](https://twitter.com/aarnphm_) or <contact@aarnphm.xyz>

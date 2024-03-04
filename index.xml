@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Aaron&#039;s notes</title>
+      <link>https://aarnphm.xyz</link>
+      <description>Les dernières 40 notes on Aaron&#039;s notes</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>On occupational licensure</title>
+    <link>https://aarnphm.xyz/posts/occupational-licensure</link>
+    <guid>https://aarnphm.xyz/posts/occupational-licensure</guid>
+    <description>and what it meant to be an engineer.</description>
+    <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Capitalism and Freedom</title>
+    <link>https://aarnphm.xyz/thoughts/Capitalism-and-Freedom</link>
+    <guid>https://aarnphm.xyz/thoughts/Capitalism-and-Freedom</guid>
+    <description>by Milton Friedman.</description>
+    <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Cauchy momentum equation</title>
+    <link>https://aarnphm.xyz/thoughts/Cauchy-momentum-equation</link>
+    <guid>https://aarnphm.xyz/thoughts/Cauchy-momentum-equation</guid>
+    <description>and fluid dynamics.</description>
+    <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Helmholtz decomposition</title>
+    <link>https://aarnphm.xyz/thoughts/Helmholtz-decomposition</link>
+    <guid>https://aarnphm.xyz/thoughts/Helmholtz-decomposition</guid>
+    <description>...</description>
+    <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Navier-Stokes equations</title>
+    <link>https://aarnphm.xyz/thoughts/Navier-Stokes-equations</link>
+    <guid>https://aarnphm.xyz/thoughts/Navier-Stokes-equations</guid>
+    <description>partial differential equations describing the motion of fluid substances. One of seven $1M problems in mathematics.</description>
+    <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Reynolds transport theorem</title>
+    <link>https://aarnphm.xyz/thoughts/Reynolds-transport-theorem</link>
+    <guid>https://aarnphm.xyz/thoughts/Reynolds-transport-theorem</guid>
+    <description>Also known as Leibniz-Reynolds transport therem A three-dimensional generalization of Leibniz integral rule theorem Consider integrating \mathbf{f} = \mathbf{f}(x, t) over ...</description>
+    <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Tensor field</title>
+    <link>https://aarnphm.xyz/thoughts/Tensor-field</link>
+    <guid>https://aarnphm.xyz/thoughts/Tensor-field</guid>
+    <description>a gentle introduction into tensor analysis.</description>
+    <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Vector calculus</title>
+    <link>https://aarnphm.xyz/thoughts/Vector-calculus</link>
+    <guid>https://aarnphm.xyz/thoughts/Vector-calculus</guid>
+    <description>just enough vector calculus to be dangerous.</description>
+    <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>homeomorphism</title>
+    <link>https://aarnphm.xyz/thoughts/homeomorphism</link>
+    <guid>https://aarnphm.xyz/thoughts/homeomorphism</guid>
+    <description>or topological isomorphism.</description>
+    <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>manifold</title>
+    <link>https://aarnphm.xyz/thoughts/manifold</link>
+    <guid>https://aarnphm.xyz/thoughts/manifold</guid>
+    <description>a topological space that locally resembles Euclidean space near each point. an n-dimensional manifold is a topological space with the property that each point has a neighbourhood that is homeomorphic to an open subset of n-dimensional Euclidean space.</description>
+    <pubDate>Wed, 27 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>manim.</title>
+    <link>https://aarnphm.xyz/thoughts/scripts/manim/</link>
+    <guid>https://aarnphm.xyz/thoughts/scripts/manim/</guid>
+    <description>manim-related scripts for some visualisation.</description>
+    <pubDate>Sun, 24 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>DB design, concurrency and transaction</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/a3/content</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/a3/content</guid>
+    <description></description>
+    <pubDate>Sun, 24 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Of Corporations, Courts, Personhood, and Morality</title>
+    <link>https://aarnphm.xyz/posts/corporate-personhood</link>
+    <guid>https://aarnphm.xyz/posts/corporate-personhood</guid>
+    <description>and moral responsibilities of corporation.</description>
+    <pubDate>Tue, 19 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Radix tree</title>
+    <link>https://aarnphm.xyz/thoughts/Radix-tree</link>
+    <guid>https://aarnphm.xyz/thoughts/Radix-tree</guid>
+    <description>A prefix trie in which each node that is the only child is merged with its parent. By Claudio Rocchini - Own work, CC BY 2.5, wikimedia result: number of all internal nodes is at most the radix r of the tree, where r=2^{x} \forall x \in \mathbb{R}^d \cap x \ge 1 Edge can be labelled with sequences of elements as well as single elements.</description>
+    <pubDate>Mon, 18 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Vietnamese poem</title>
+    <link>https://aarnphm.xyz/thoughts/Vietnamese-poem</link>
+    <guid>https://aarnphm.xyz/thoughts/Vietnamese-poem</guid>
+    <description>dedicated to my roots, Vietnamese born.</description>
+    <pubDate>Mon, 18 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>constrained decoding</title>
+    <link>https://aarnphm.xyz/thoughts/constrained-decoding</link>
+    <guid>https://aarnphm.xyz/thoughts/constrained-decoding</guid>
+    <description>structured generations in vLLM a la carte.</description>
+    <pubDate>Mon, 18 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>PID Controller from input signals</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4aa4/lab9/content</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4aa4/lab9/content</guid>
+    <description>...</description>
+    <pubDate>Fri, 15 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Nesterov momentum</title>
+    <link>https://aarnphm.xyz/thoughts/Nesterov-momentum</link>
+    <guid>https://aarnphm.xyz/thoughts/Nesterov-momentum</guid>
+    <description>See also paper, momentum idea: first take a step in the direction of accumulated momentum computes gradient at “lookahead” position, make the update using this gradient ...</description>
+    <pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>PyTorch</title>
+    <link>https://aarnphm.xyz/thoughts/PyTorch</link>
+    <guid>https://aarnphm.xyz/thoughts/PyTorch</guid>
+    <description>tidbits from PyTorch.</description>
+    <pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>SQL and Relational Algebra</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/a2/content</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/a2/content</guid>
+    <description>1. SQL Q1 Find all passengers, between the ages of 20 and 30 (inclusive), who have a “Vegan” or “Vegetarian” dietary preference. Return their ID, name, and age.</description>
+    <pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Stochastic gradient descent</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/Stochastic-gradient-descent</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/Stochastic-gradient-descent</guid>
+    <description>See also SGD and ODEs Nesterov momentum is based on On the importance of initialization and momentum in deep learning &quot;\\begin{algorithm}\n\\caption{SGD}\n\\begin{algorithmic}\n\\State ...</description>
+    <pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Support Vector Machine</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/Support-Vector-Machine</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/Support-Vector-Machine</guid>
+    <description>idea: maximizes margin and more robust to “perturbations” Euclidean distance between two points x and the hyperplane parametrized by W is: \frac{\mid W^T x + b \mid }{\|W\|_2} Assuming ...</description>
+    <pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>SVM and Logistic Regression</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/a3/content</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/a3/content</guid>
+    <description>implementation in pure PyTorch.</description>
+    <pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Convolutional Neural Network</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/a4/content</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/a4/content</guid>
+    <description>and image processing.</description>
+    <pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Cambridge Analytica, a case study</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/engineer-4a03/case-study</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/engineer-4a03/case-study</guid>
+    <description>a case study into how surveillance capitalism drives one of the most influential controversy in data privacy of the 21st century.</description>
+    <pubDate>Fri, 08 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>PWM and Shared Memory</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4aa4/lab8/lab8</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4aa4/lab8/lab8</guid>
+    <description>f_\text{PWM} = \frac{f_\text{clk}}{N(X+1)} See thoughts/university/twenty-four-twenty-five/sfwr-4aa4/lab8/pwm/part1.c See thoughts/university/twenty-four-twenty-five/sfwr-4aa4/lab8/pwm/part2.c ...</description>
+    <pubDate>Fri, 08 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Cauchy-Schwarz</title>
+    <link>https://aarnphm.xyz/thoughts/Cauchy-Schwarz</link>
+    <guid>https://aarnphm.xyz/thoughts/Cauchy-Schwarz</guid>
+    <description>useful for derive upper bounds, e.g when analysing the error or convergence rate of an algorithm format for all vectors v and v of an inner product space, we have \mid \langle u, v \rangle ...</description>
+    <pubDate>Tue, 05 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Euler&#039;s identity</title>
+    <link>https://aarnphm.xyz/thoughts/Euler's-identity</link>
+    <guid>https://aarnphm.xyz/thoughts/Euler's-identity</guid>
+    <description>Probably the most beautiful equation in mathematics: \begin{aligned} e^{i \pi} &amp;+ 1 = 0 \\ \\ \because e &amp;: \text{Euler&#039;s number} \\ i &amp;: \text{imaginary unit ...</description>
+    <pubDate>Tue, 05 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>SVCCA</title>
+    <link>https://aarnphm.xyz/thoughts/SVCCA</link>
+    <guid>https://aarnphm.xyz/thoughts/SVCCA</guid>
+    <description>(Raghu et al., 2017) proposed a way to compare two representations that is both invariant to affine transform and fast to compute 1 based on canonical correlation analysis which was ...</description>
+    <pubDate>Mon, 04 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>model stiching</title>
+    <link>https://aarnphm.xyz/thoughts/model-stiching</link>
+    <guid>https://aarnphm.xyz/thoughts/model-stiching</guid>
+    <description>(Lenc &amp; Vedaldi, 2015)ReferencesLenc, K., &amp; Vedaldi, A. (2015). Understanding image representations by measuring their equivariance and equivalence.</description>
+    <pubDate>Mon, 04 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>sparse autoencoder</title>
+    <link>https://aarnphm.xyz/thoughts/sparse-autoencoder</link>
+    <guid>https://aarnphm.xyz/thoughts/sparse-autoencoder</guid>
+    <description>abbrev: SAE see also: landspace Often contains one layers of MLP with few linear ReLU that is trained on a subset of datasets the main LLMs is trained on ...</description>
+    <pubDate>Mon, 04 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>sparse crosscoders</title>
+    <link>https://aarnphm.xyz/thoughts/sparse-crosscoders</link>
+    <guid>https://aarnphm.xyz/thoughts/sparse-crosscoders</guid>
+    <description>and how we observe multiple activation layers. SAE is a special case of sparse crosscoders.</description>
+    <pubDate>Sun, 03 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>annotated slides.</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/lec/</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/lec/</guid>
+    <description>Slides for all lectures with annotations.</description>
+    <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>ml optimization</title>
+    <link>https://aarnphm.xyz/thoughts/optimization</link>
+    <guid>https://aarnphm.xyz/thoughts/optimization</guid>
+    <description>A list of optimization functions that can be used in ML training to reduce loss, and more.</description>
+    <pubDate>Thu, 31 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>mechanistic interpretability</title>
+    <link>https://aarnphm.xyz/thoughts/mechanistic-interpretability</link>
+    <guid>https://aarnphm.xyz/thoughts/mechanistic-interpretability</guid>
+    <description>and reverse engineering neural networks.</description>
+    <pubDate>Wed, 30 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>scripts.</title>
+    <link>https://aarnphm.xyz/thoughts/scripts/</link>
+    <guid>https://aarnphm.xyz/thoughts/scripts/</guid>
+    <description>A list of tools to be used for this vault.</description>
+    <pubDate>Wed, 30 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>pdfs.</title>
+    <link>https://aarnphm.xyz/thoughts/pdfs/</link>
+    <guid>https://aarnphm.xyz/thoughts/pdfs/</guid>
+    <description>The following include a list of PDFs that are pretty cool.</description>
+    <pubDate>Tue, 29 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Engineering Ethics</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/engineer-4a03/</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/engineer-4a03/</guid>
+    <description>See also ethics, literature review, case study.</description>
+    <pubDate>Tue, 29 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Databases</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-3db3/</guid>
+    <description>See also databases.</description>
+    <pubDate>Tue, 29 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Compensation</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/commerce-4be3/</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/commerce-4be3/</guid>
+    <description></description>
+    <pubDate>Tue, 29 Oct 2024 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
