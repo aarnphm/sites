@@ -27,7 +27,7 @@
     <title>Root mean square</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/prelab</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/prelab</guid>
-    <description>...</description>
+    <description>See also: pdf problème 1.The Root Mean Square (RMS) value of a signal f(t) that is periodic with period T is given by the equation T1​∫0T​(f(t))2dt​ It can be shown that the RMS value of u(t)=Bsinωt is 2​B​ 1.a Square wave The square wave function is defined as: f(t)={10​if 0≤t&lt;2T​if 2T​≤t&lt;T​ import sympy as sp t = sp.symbols(&#039;t&#039;) T = 2 RMS = sp.sqrt(1/T * sp.integrate(1, (t, 0, T/2))) RMS = 2​1​ 1.b Sawtooth wave A sawtooth wave function is defined as: f(t)=T2A​(t−2T​) import sympy as sp t = sp.symbols(&#039;t&#039;) T = 1 A = 0.5 f_t = 2 * A / T * (t - T/2) RMS = sp.sqrt(1/T * sp.integrate(f_t**2, (t, 0, T))) RMS = 63​​ 1.c sine wave A general form of the sine wave can be written as f(t)=Asin(ωt+ϕ) Amplitude is 2.3, no phase shift RMS = 2​2.3​ problème 2.</description>
     <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>PJRT</title>
@@ -111,13 +111,13 @@
     <title>Heating, Cooling, and the Greenhouse Effect</title>
     <link>https://aarnphm.xyz/thoughts/university/astron-2e03/Heating-Cooling-GH-effect</link>
     <guid>https://aarnphm.xyz/thoughts/university/astron-2e03/Heating-Cooling-GH-effect</guid>
-    <description>Ref: slides toy modal.eq: Tsurf​ 1.32×Tatm, 2​ General form of Tsurf​ with n atmospheric layers Tsurf​=[ω(n+1)S​]41​=(n+1)41​×Tatm, n​ .</description>
+    <description>Ref: slides toy modal.eq: Tsurf​ 1.32×Tatm, 2​ General form of T_{\text{surf}} with n atmospheric layers Tsurf​=[ω(n+1)S​]41​=(n+1)41​×Tatm, n​ .</description>
     <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Graphs</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Graphs</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Graphs</guid>
-    <description>See also slides Node as information and edges as relationship between data Directed acyclic graph (DAG) Application: Merkle DAG undirected.(N,E) N: set of vertices E: set of undirected edges: E⊆N×N path is a sequence of nodes and edges connect two nodes.</description>
+    <description>See also slides Node as information and edges as relationship between data Directed acyclic graph (DAG) Application: Merkle DAG undirected.(\mathcal{N}, \mathcal{E}) N: set of vertices E: set of undirected edges: E⊆N×N path is a sequence of nodes and edges connect two nodes.</description>
     <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Hash tables</title>
@@ -204,10 +204,10 @@
     <description> Avertissement En construction.</description>
     <pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Al la carte Système de contrôle 🚧</title>
+    <title>Al la carte Système de contrôle</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/nous</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/nous</guid>
-    <description> Avertissement En construction.</description>
+    <description>...</description>
     <pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>DFAs, NFAs, and regular languages</title>
