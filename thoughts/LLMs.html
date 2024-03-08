@@ -16,16 +16,16 @@
     <meta name="twitter:title" content="LLMs" />
     <meta
       name="twitter:description"
-      content="autoregressive foundational machine learning models.Have “capabilities” to understand natural language.Exhibits emergent behaviour of intelligence, but probably not AGI due to observer-expectancy effect."
+      content="autoregressive foundational machine learning models. autoregressive foundational machine learning models. autoregressive foundational machine learning models."
     />
     <meta
       property="og:description"
-      content="autoregressive foundational machine learning models.Have “capabilities” to understand natural language.Exhibits emergent behaviour of intelligence, but probably not AGI due to observer-expectancy effect."
+      content="autoregressive foundational machine learning models. autoregressive foundational machine learning models. autoregressive foundational machine learning models."
     />
     <meta property="og:image:type" content="image/webp" />
     <meta
       property="og:image:alt"
-      content="autoregressive foundational machine learning models.Have “capabilities” to understand natural language.Exhibits emergent behaviour of intelligence, but probably not AGI due to observer-expectancy effect."
+      content="autoregressive foundational machine learning models. autoregressive foundational machine learning models. autoregressive foundational machine learning models."
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -50,7 +50,7 @@
     <link rel="canonical" href="https:/aarnphm.xyz/thoughts/LLMs" />
     <meta
       name="description"
-      content="autoregressive foundational machine learning models.Have “capabilities” to understand natural language.Exhibits emergent behaviour of intelligence, but probably not AGI due to observer-expectancy effect."
+      content="autoregressive foundational machine learning models. autoregressive foundational machine learning models. autoregressive foundational machine learning models."
     />
     <meta name="generator" content="Quartz" />
     <link href="../index.css" rel="stylesheet" type="text/css" spa-preserve />
@@ -77,28 +77,130 @@
       const fetchData = fetch("../static/contentIndex.json").then((data) => data.json())
     </script>
   </head>
-  <body data-slug="thoughts/LLMs" data-enable-preview="true">
+  <body data-slug="thoughts/LLMs" data-enable-preview="true" data-menu="false">
     <div id="quartz-root" class="page">
       <div id="quartz-body">
         <div class="center">
           <div class="page-header">
             <div class="popover-hint">
               <h1 class="article-title">LLMs</h1>
-              <p class="content-meta">
-                <span class="date-range"
-                  ><span class="page-creation" title="Date de création du contenu de la page"
+              <ul class="content-meta">
+                <li>
+                  <span class="page-creation" title="Date de création du contenu de la page"
                     ><em>06 févr. 2024</em></span
-                  >–<span class="page-source"
-                    ><a class="ref-source"
-                      ><span
-                        class="page-modification"
-                        title="Date de modification du contenu de la page"
-                        ><em>03 mars 2024</em></span
-                      ></a
-                    ></span
-                  ></span
-                ><span class="reading-time" title="Temps de lecture estimé">3 min read</span>
-              </p>
+                  >
+                </li>
+                <li>
+                  <a class="ref-source internal"
+                    ><span
+                      class="page-modification"
+                      title="Date de modification du contenu de la page"
+                      ><em>07 mars 2024</em></span
+                    >
+                    <div class="popover" id="content-popover">
+                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
+                        <pre data-language="markdown">
+---
+id: LLMs
+tags:
+  - sapling
+  - ml
+  - llm
+date: &quot;2024-02-07&quot;
+title: LLMs
+---
+
+[[thoughts/Autoregressive models|autoregressive]] foundational [[thoughts/Machine learning|machine learning]] models.
+
+Have &quot;capabilities&quot; to understand [[thoughts/NLP|natural language]].
+
+Exhibits [[thoughts/emergent behaviour]] of [[thoughts/intelligence|intelligence]], but probably not [[thoughts/AGI|AGI]] due to [[thoughts/observer-expectancy effect]].
+
+One way or another is a form of [[thoughts/Behavirourism|behaviourism]], through [[thoughts/Machine learning|reinforcement learning]]. It is being &quot;told&quot; what is good or bad, and thus act accordingly towards the users. However, this induces [[thoughts/confirmation bias]] where one aligns and contains his/her prejudices towards the problem.
+
+### Scalability
+
+Incredibly hard to scale, mainly due to their [[thoughts/large models|large]] memory footprint and tokens memory allocation.
+
+### Optimization
+
+See also: [[thoughts/images/htn-openllm.pdf|this talk]]
+
+- [[thoughts/quantization|Quantization]]: reduce computational and memory costs of running inference with representing the weight and activations with low-precision data type
+- [[thoughts/Continuous batching]]: Implementing [[thoughts/Attention#paged-attention|Paged Attention]] with custom scheduler to manage swapping kv-cache for better resource utilisation
+
+### on how we are being [[thoughts/education#teaching|taught]].
+
+How would we assess thinking?
+
+Similar to calculator, it _simplifies_ and increase accessibility to the masses, but in doing so _lost_ the value in the _action of doing_ math.
+
+We do math to internalize the concept, and practice to thinking coherently. Similarly, we [[thoughts/writing|write]] to help crystalised our ideas, and in the process improve through the act of putting it down.
+
+The process of rephrasing and arranging sentences poses a challenges for the writer, and in doing so, teach you how to think coherently. Writing essays is an exercise for students to articulate their thoughts, rather than testing the understanding of the materials.
+
+### on [[thoughts/ethics|ethics]]
+
+See also [[thoughts/Alignment|Alignment]].
+
+There are ethical concerns with the act of &quot;hallucinating&quot; content, therefore alignment research is crucial to ensure that the model is not producing harmful content.
+
+### as philosophical tool.
+
+To create a better [[thoughts/representations|representations]] of the world for both humans and machines to understand, we can truly have assistive tools to enhance our understanding of the world surround us
+
+Imagine [[thoughts/Philosophy and Nietzsche|Nietzsche]], [[thoughts/Philosophy and Kant|Kant]], [[thoughts/Camus|Camus]] coexists in the same room.
+
+### AI generated content
+
+Don't shit where you eat, **[[thoughts/Garbage in Garbage out|Garbage in, garbage out]]**. The quality of the content is highly dependent on the quality of the data it was trained on, or model are incredibly sensitive to [[thoughts/data|data]] variances and biases.
+
+Bland doublespeak
+
+See also: [All the better to see you with](https://www.kernelmag.io/2/all-the-better-to-see-you) and [this tweet](https://twitter.com/paulg/status/1761801995302662175)
+
+### Good-enough
+
+See [this](https://twitter.com/jachiam0/status/1598448668537155586) and [this](https://twitter.com/gordonbrander/status/1600469469419036675)
+This only occurs if you only need a &quot;good-enough&quot; item where value outweighs the process.
+
+However, one should always consider to put in the work, rather than being &quot;ok&quot; with good enough. In the process of working through a problem, one will learn about bottleneck and problems to be solved, which in turn gain invaluable experience otherwise would not achieved if one fully relies on the interaction with the models alone.
+
+### as [[thoughts/Search|search]]
+
+These models are incredibly useful for summarization and information gathering. With the [[thoughts/taxonomy]] of [[thoughts/RAG]] or any other CoT tooling, you can pretty much augment and produce and improve search-efficiency bu quite a lot.
+
+notable mentions:
+
+- [perplexity.ai](https://perplexity.ai/): [[thoughts/RAG|RAG]]-first search engine
+- [explorer.globe.engineer](https://explorer.globe.engineer/): tree-based [[thoughts/information retrieval]]
+- [Exa labs](https://twitter.com/ExaAiLabs)
+- [You.com](https://you.com/?chatMode=default)
+
+### Programming
+
+Overall should be a net positive, but it's a double-edged sword.
+
+#### as end-users
+
+[Source](https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming.html)
+
+> I think it’s likely that soon all computer users will have the ability to develop small software tools from scratch, and to describe modifications they’d like made to software they’re already using
+
+#### as developers
+
+Tool that lower of barrier of entry is always a good thing, but it often will lead to probably even higher discrepancies in quality of software
+
+Increased in productivity, but also increased in technical debt, as these generated code are mostly &quot;bad&quot; code, and often we have to nudge and do a lot of **[[thoughts/prompt engineering|prompt engineering]]**.</pre
+                        >
+                      </div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <span class="reading-time" title="Temps de lecture estimé">3 min read</span>
+                </li>
+              </ul>
               <ul class="tags">
                 <li><a href="../tags/sapling" class="internal tag-link">sapling</a></li>
                 <li><a href="../tags/ml" class="internal tag-link">ml</a></li>
@@ -318,6 +420,98 @@
               and in doing so, teach you how to think coherently. Writing essays is an exercise for
               students to articulate their thoughts, rather than testing the understanding of the
               materials.
+            </p>
+            <h3 id="on-ethics">
+              on
+              <a href="../thoughts/ethics" class="internal alias" data-slug="thoughts/ethics"
+                >ethics</a
+              ><a
+                role="anchor"
+                aria-hidden="true"
+                tabindex="-1"
+                data-no-popover="true"
+                href="#on-ethics"
+                class="internal"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path
+                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                  ></path></svg
+              ></a>
+            </h3>
+            <p>
+              See also
+              <a href="../thoughts/Alignment" class="internal alias" data-slug="thoughts/Alignment"
+                >Alignment</a
+              >.
+            </p>
+            <p>
+              There are ethical concerns with the act of “hallucinating” content, therefore
+              alignment research is crucial to ensure that the model is not producing harmful
+              content.
+            </p>
+            <h3 id="as-philosophical-tool">
+              as philosophical tool.<a
+                role="anchor"
+                aria-hidden="true"
+                tabindex="-1"
+                data-no-popover="true"
+                href="#as-philosophical-tool"
+                class="internal"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path
+                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                  ></path></svg
+              ></a>
+            </h3>
+            <p>
+              To create a better
+              <a
+                href="../thoughts/representations"
+                class="internal alias"
+                data-slug="thoughts/representations"
+                >representations</a
+              >
+              of the world for both humans and machines to understand, we can truly have assistive
+              tools to enhance our understanding of the world surround us
+            </p>
+            <p>
+              Imagine
+              <a
+                href="../thoughts/Philosophy-and-Nietzsche"
+                class="internal alias"
+                data-slug="thoughts/Philosophy-and-Nietzsche"
+                >Nietzsche</a
+              >,
+              <a
+                href="../thoughts/Philosophy-and-Kant"
+                class="internal alias"
+                data-slug="thoughts/Philosophy-and-Kant"
+                >Kant</a
+              >,
+              <a href="../thoughts/Camus" class="internal alias" data-slug="thoughts/Camus"
+                >Camus</a
+              >
+              coexists in the same room.
             </p>
             <h3 id="ai-generated-content">
               AI generated content<a
@@ -655,38 +849,34 @@
                 <ul>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd></div>
-                      <span>recherche</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd><span>recherche</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd></div>
-                      <span>graphique</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd><span>graphique</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd></div>
-                      <span>page d'accueil</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd
+                      ><span>page d'accueil</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd></div>
-                      <span>curseur de chat</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd
+                      ><span>curseur de chat</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd></div>
-                      <span>projets</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd><span>projets</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd></div>
-                      <span>curius</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd><span>curius</span>
                     </div>
                   </li>
                 </ul>
@@ -729,7 +919,7 @@
             <div id="global-graph-outer">
               <div
                 id="global-graph-container"
-                data-cfg='{"drag":false,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
+                data-cfg='{"drag":true,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
               ></div>
             </div>
           </div>
@@ -762,6 +952,12 @@
                 <li class="depth-0">
                   <a href="#on-how-we-are-being-taught" data-for="on-how-we-are-being-taught"
                     >on how we are being taught.</a
+                  >
+                </li>
+                <li class="depth-0"><a href="#on-ethics" data-for="on-ethics">on ethics</a></li>
+                <li class="depth-0">
+                  <a href="#as-philosophical-tool" data-for="as-philosophical-tool"
+                    >as philosophical tool.</a
                   >
                 </li>
                 <li class="depth-0">

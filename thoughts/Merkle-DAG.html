@@ -16,16 +16,16 @@
     <meta name="twitter:title" content="Merkle DAG" />
     <meta
       name="twitter:description"
-      content="It is a directed acyclic graph where each node is a version of the content and edges represents the change (diffs) Each node has an identifier which is..."
+      content="It is a directed acyclic graph where each node is a version of the content and edges represents the change (diffs) Each node has an identifier which is the results of hashing the content ..."
     />
     <meta
       property="og:description"
-      content="It is a directed acyclic graph where each node is a version of the content and edges represents the change (diffs) Each node has an identifier which is..."
+      content="It is a directed acyclic graph where each node is a version of the content and edges represents the change (diffs) Each node has an identifier which is the results of hashing the content ..."
     />
     <meta property="og:image:type" content="image/webp" />
     <meta
       property="og:image:alt"
-      content="It is a directed acyclic graph where each node is a version of the content and edges represents the change (diffs) Each node has an identifier which is..."
+      content="It is a directed acyclic graph where each node is a version of the content and edges represents the change (diffs) Each node has an identifier which is the results of hashing the content ..."
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -50,7 +50,7 @@
     <link rel="canonical" href="https:/aarnphm.xyz/thoughts/Merkle-DAG" />
     <meta
       name="description"
-      content="It is a directed acyclic graph where each node is a version of the content and edges represents the change (diffs) Each node has an identifier which is..."
+      content="It is a directed acyclic graph where each node is a version of the content and edges represents the change (diffs) Each node has an identifier which is the results of hashing the content ..."
     />
     <meta name="generator" content="Quartz" />
     <link href="../index.css" rel="stylesheet" type="text/css" spa-preserve />
@@ -77,28 +77,57 @@
       const fetchData = fetch("../static/contentIndex.json").then((data) => data.json())
     </script>
   </head>
-  <body data-slug="thoughts/Merkle-DAG" data-enable-preview="true">
+  <body data-slug="thoughts/Merkle-DAG" data-enable-preview="true" data-menu="false">
     <div id="quartz-root" class="page">
       <div id="quartz-body">
         <div class="center">
           <div class="page-header">
             <div class="popover-hint">
               <h1 class="article-title">Merkle DAG</h1>
-              <p class="content-meta">
-                <span class="date-range"
-                  ><span class="page-creation" title="Date de création du contenu de la page"
+              <ul class="content-meta">
+                <li>
+                  <span class="page-creation" title="Date de création du contenu de la page"
                     ><em>07 févr. 2024</em></span
-                  >–<span class="page-source"
-                    ><a class="ref-source"
-                      ><span
-                        class="page-modification"
-                        title="Date de modification du contenu de la page"
-                        ><em>28 févr. 2024</em></span
-                      ></a
-                    ></span
-                  ></span
-                ><span class="reading-time" title="Temps de lecture estimé">1 min read</span>
-              </p>
+                  >
+                </li>
+                <li>
+                  <a class="ref-source internal"
+                    ><span
+                      class="page-modification"
+                      title="Date de modification du contenu de la page"
+                      ><em>28 févr. 2024</em></span
+                    >
+                    <div class="popover" id="content-popover">
+                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
+                        <pre data-language="markdown">
+---
+id: Merkle DAG
+tags:
+  - seed
+  - technical
+date: &quot;2024-02-08&quot;
+title: Merkle DAG
+---
+
+It is a directed acyclic [[thoughts/university/sfwr-2c03/Graphs|graph]] where each node is a version of the content and edges represents the change (diffs)
+
+Each node has an identifier which is the results of hashing the content.
+
+Merkle DAG nodes are _immutable_ and _[[thoughts/Content-addressable storage|content-addressable]]_. Any changes in the node would alter its identifier thus affect all ascendants, which create a different DAG.
+
+Examples of the DAG in action:
+- [[thoughts/IPFS]]
+- [[thoughts/Containers]]
+- [[thoughts/git]]</pre
+                        >
+                      </div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <span class="reading-time" title="Temps de lecture estimé">1 min read</span>
+                </li>
+              </ul>
               <ul class="tags">
                 <li><a href="../tags/seed" class="internal tag-link">seed</a></li>
                 <li><a href="../tags/technical" class="internal tag-link">technical</a></li>
@@ -185,38 +214,34 @@
                 <ul>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd></div>
-                      <span>recherche</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd><span>recherche</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd></div>
-                      <span>graphique</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd><span>graphique</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd></div>
-                      <span>page d'accueil</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd
+                      ><span>page d'accueil</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd></div>
-                      <span>curseur de chat</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd
+                      ><span>curseur de chat</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd></div>
-                      <span>projets</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd><span>projets</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd></div>
-                      <span>curius</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd><span>curius</span>
                     </div>
                   </li>
                 </ul>
@@ -259,7 +284,7 @@
             <div id="global-graph-outer">
               <div
                 id="global-graph-container"
-                data-cfg='{"drag":false,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
+                data-cfg='{"drag":true,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
               ></div>
             </div>
           </div>

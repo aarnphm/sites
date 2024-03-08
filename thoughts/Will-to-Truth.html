@@ -65,28 +65,59 @@
       const fetchData = fetch("../static/contentIndex.json").then((data) => data.json())
     </script>
   </head>
-  <body data-slug="thoughts/Will-to-Truth" data-enable-preview="true">
+  <body data-slug="thoughts/Will-to-Truth" data-enable-preview="true" data-menu="false">
     <div id="quartz-root" class="page">
       <div id="quartz-body">
         <div class="center">
           <div class="page-header">
             <div class="popover-hint">
               <h1 class="article-title">Will to Truth</h1>
-              <p class="content-meta">
-                <span class="date-range"
-                  ><span class="page-creation" title="Date de création du contenu de la page"
+              <ul class="content-meta">
+                <li>
+                  <span class="page-creation" title="Date de création du contenu de la page"
                     ><em>23 oct. 2023</em></span
-                  >–<span class="page-source"
-                    ><a class="ref-source"
-                      ><span
-                        class="page-modification"
-                        title="Date de modification du contenu de la page"
-                        ><em>07 févr. 2024</em></span
-                      ></a
-                    ></span
-                  ></span
-                ><span class="reading-time" title="Temps de lecture estimé">2 min read</span>
-              </p>
+                  >
+                </li>
+                <li>
+                  <a class="ref-source internal"
+                    ><span
+                      class="page-modification"
+                      title="Date de modification du contenu de la page"
+                      ><em>07 févr. 2024</em></span
+                    >
+                    <div class="popover" id="content-popover">
+                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
+                        <pre data-language="markdown">
+---
+id: Will to Truth
+tags:
+  - seed
+  - philosophy
+date: &quot;2023-10-24&quot;
+title: Will to Truth
+---
+
+- [ ] Recommended reading before: [[thoughts/Philosophy and Nietzsche|Nietzsche]]'s _Twilight of the Idols_
+- [ ] Check out the [[thoughts/Philosophy and Nietzsche|Philosophy and Nietzche]] for more information
+
+---
+
+Excerpt from [[thoughts/university/philo-1aa3/Nietzsche|Nietzsche]]'s _Beyond Good and Evil_
+
+> The will to truth, which is still going to tempt us to many a hazardous enterprise; that celebrated veracity of which all philosophers have hitherto spoken with reverence: what questions this will to truth has already set before us! What strange, wicked, questionable questions! It is already a long story — yet does it not seem as if it has only just begun? Is it any wonder we should at last grow distrustful, lose our patience, turn impatiently away? That this sphinx should teach us too to ask questions? Who really is it that here questions us? What really is it in us that wants ‘the truth’?
+
+Nietzsche critiques the traditional approaches of truth and morality, deemed it &quot;hazardous enterprise&quot;. From a perspective of a philosophers, who are &quot;deemed to pursue the truth&quot; doesn't seem to fully understand why
+
+> We did indeed pause for a long time before the question of the origin of this will — until finally we came to a complete halt before an even more fundamental question. We asked after the value of this will. Granted we want truth: why not rather untruth? And uncertainty? Even ignorance? — The problem of the value of truth stepped before us — or was it we who stepped before this problem? Which of us is Oedipus here? Which of us sphinx? It is, it seems, a rendezvous of questions and question-marks. And, would you believe it, it has finally almost come to seem to us that this problem has never before been posed — that we have been the first to see it, to fix our eye on it, to hazard it? For there is a hazard in it and perhaps there exists no greater hazard</pre
+                        >
+                      </div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <span class="reading-time" title="Temps de lecture estimé">2 min read</span>
+                </li>
+              </ul>
               <ul class="tags">
                 <li><a href="../tags/seed" class="internal tag-link">seed</a></li>
                 <li><a href="../tags/philosophy" class="internal tag-link">philosophy</a></li>
@@ -200,38 +231,34 @@
                 <ul>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd></div>
-                      <span>recherche</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd><span>recherche</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd></div>
-                      <span>graphique</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd><span>graphique</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd></div>
-                      <span>page d'accueil</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd
+                      ><span>page d'accueil</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd></div>
-                      <span>curseur de chat</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd
+                      ><span>curseur de chat</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd></div>
-                      <span>projets</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd><span>projets</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd></div>
-                      <span>curius</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd><span>curius</span>
                     </div>
                   </li>
                 </ul>
@@ -274,7 +301,7 @@
             <div id="global-graph-outer">
               <div
                 id="global-graph-container"
-                data-cfg='{"drag":false,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
+                data-cfg='{"drag":true,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
               ></div>
             </div>
           </div>

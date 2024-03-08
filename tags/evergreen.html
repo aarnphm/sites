@@ -1,19 +1,19 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <title>Étiquette: #evergreen</title>
+    <title>Étiquette: evergreen</title>
     <meta charset="utf-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
-    <meta property="og:title" content="Étiquette: #evergreen" />
+    <meta property="og:title" content="Étiquette: evergreen" />
     <meta property="og:type" content="website" />
     <meta name="twitter:site" content="@aarnphm_" />
     <meta name="twitter:creator" content="@aarnphm_" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Étiquette: #evergreen" />
+    <meta name="twitter:title" content="Étiquette: evergreen" />
     <meta name="twitter:description" content="Aucune description fournie" />
     <meta property="og:description" content="Aucune description fournie" />
     <meta property="og:image:type" content="image/webp" />
@@ -65,7 +65,7 @@
       const fetchData = fetch("../static/contentIndex.json").then((data) => data.json())
     </script>
   </head>
-  <body data-slug="tags/evergreen" data-enable-preview="true">
+  <body data-slug="tags/evergreen" data-enable-preview="true" data-menu="false">
     <div id="quartz-root" class="page">
       <div id="quartz-body">
         <div class="left sidebar">
@@ -107,7 +107,7 @@
             <div id="global-graph-outer">
               <div
                 id="global-graph-container"
-                data-cfg='{"drag":false,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
+                data-cfg='{"drag":true,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
               ></div>
             </div>
           </div>
@@ -119,38 +119,34 @@
                 <ul>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd></div>
-                      <span>recherche</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd><span>recherche</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd></div>
-                      <span>graphique</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd><span>graphique</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd></div>
-                      <span>page d'accueil</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd
+                      ><span>page d'accueil</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd></div>
-                      <span>curseur de chat</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd
+                      ><span>curseur de chat</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd></div>
-                      <span>projets</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd><span>projets</span>
                     </div>
                   </li>
                   <li>
                     <div id="shortcuts">
-                      <div><kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd></div>
-                      <span>curius</span>
+                      <kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd><span>curius</span>
                     </div>
                   </li>
                 </ul>
@@ -163,9 +159,25 @@
           <div class="popover-hint">
             <article></article>
             <div class="page-listing">
-              <p>16 éléments avec cette étiquette.</p>
+              <p>17 éléments avec cette étiquette.</p>
               <div>
                 <ul class="section-ul">
+                  <li class="section-li">
+                    <div class="section">
+                      <p class="meta">06 mars 2024</p>
+                      <div class="desc">
+                        <h3>
+                          <a href="../thoughts/atelier-with-friends/" class="internal"
+                            >atelier with friends.</a
+                          >
+                        </h3>
+                      </div>
+                      <ul class="tags">
+                        <li><a class="internal tag-link" href="../tags/menu">menu</a></li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
+                      </ul>
+                    </div>
+                  </li>
                   <li class="section-li">
                     <div class="section">
                       <p class="meta">06 févr. 2024</p>
@@ -173,9 +185,7 @@
                         <h3><a href="../movies" class="internal">movies.</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
                       </ul>
                     </div>
                   </li>
@@ -186,9 +196,7 @@
                         <h3><a href="../music" class="internal">playlist.</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
                       </ul>
                     </div>
                   </li>
@@ -199,11 +207,9 @@
                         <h3><a href="../curius" class="internal">curius.</a></h3>
                       </div>
                       <ul class="tags">
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
                         <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
-                        <li>
-                          <a class="internal tag-link" href="../tags/hyperlinks">#hyperlinks</a>
+                          <a class="internal tag-link" href="../tags/hyperlinks">hyperlinks</a>
                         </li>
                       </ul>
                     </div>
@@ -215,10 +221,8 @@
                         <h3><a href="../influence" class="internal">affecter.</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
-                        <li><a class="internal tag-link" href="../tags/growth">#growth</a></li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
+                        <li><a class="internal tag-link" href="../tags/growth">growth</a></li>
                       </ul>
                     </div>
                   </li>
@@ -229,9 +233,7 @@
                         <h3><a href="../quotes" class="internal">Advice</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
                       </ul>
                     </div>
                   </li>
@@ -242,9 +244,7 @@
                         <h3><a href="../thoughts/Expenses" class="internal">Expenses</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
                       </ul>
                     </div>
                   </li>
@@ -255,10 +255,8 @@
                         <h3><a href="../thoughts/" class="internal">notes.</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
-                        <li><a class="internal tag-link" href="../tags/fruit">#fruit</a></li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
+                        <li><a class="internal tag-link" href="../tags/fruit">fruit</a></li>
                       </ul>
                     </div>
                   </li>
@@ -270,11 +268,9 @@
                       </div>
                       <ul class="tags">
                         <li>
-                          <a class="internal tag-link" href="../tags/philosophy">#philosophy</a>
+                          <a class="internal tag-link" href="../tags/philosophy">philosophy</a>
                         </li>
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
                       </ul>
                     </div>
                   </li>
@@ -285,10 +281,8 @@
                         <h3><a href="../thoughts/Scents" class="internal">Scents</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
-                        <li><a class="internal tag-link" href="../tags/self">#self</a></li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
+                        <li><a class="internal tag-link" href="../tags/self">self</a></li>
                       </ul>
                     </div>
                   </li>
@@ -299,10 +293,8 @@
                         <h3><a href="../thoughts/Dishes" class="internal">Menus</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
-                        <li><a class="internal tag-link" href="../tags/cooking">#cooking</a></li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
+                        <li><a class="internal tag-link" href="../tags/menu">menu</a></li>
                       </ul>
                     </div>
                   </li>
@@ -315,10 +307,8 @@
                         </h3>
                       </div>
                       <ul class="tags">
-                        <li><a class="internal tag-link" href="../tags/film">#film</a></li>
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
+                        <li><a class="internal tag-link" href="../tags/film">film</a></li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
                       </ul>
                     </div>
                   </li>
@@ -329,10 +319,8 @@
                         <h3><a href="../thoughts/writing" class="internal">Writing</a></h3>
                       </div>
                       <ul class="tags">
-                        <li><a class="internal tag-link" href="../tags/sapling">#sapling</a></li>
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
+                        <li><a class="internal tag-link" href="../tags/sapling">sapling</a></li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
                       </ul>
                     </div>
                   </li>
@@ -343,10 +331,8 @@
                         <h3><a href="../" class="internal">Aaron's notes</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
-                        <li><a class="internal tag-link" href="../tags/fruit">#fruit</a></li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
+                        <li><a class="internal tag-link" href="../tags/fruit">fruit</a></li>
                       </ul>
                     </div>
                   </li>
@@ -357,9 +343,7 @@
                         <h3><a href="../books" class="internal">antilibrary.</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
                       </ul>
                     </div>
                   </li>
@@ -370,12 +354,8 @@
                         <h3><a href="../ideas" class="internal">Backburners</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/technical">#technical</a>
-                        </li>
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
+                        <li><a class="internal tag-link" href="../tags/technical">technical</a></li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
                       </ul>
                     </div>
                   </li>
@@ -386,12 +366,8 @@
                         <h3><a href="../projects" class="internal">projects.</a></h3>
                       </div>
                       <ul class="tags">
-                        <li>
-                          <a class="internal tag-link" href="../tags/evergreen">#evergreen</a>
-                        </li>
-                        <li>
-                          <a class="internal tag-link" href="../tags/technical">#technical</a>
-                        </li>
+                        <li><a class="internal tag-link" href="../tags/evergreen">evergreen</a></li>
+                        <li><a class="internal tag-link" href="../tags/technical">technical</a></li>
                       </ul>
                     </div>
                   </li>

@@ -50,6 +50,15 @@
     <loc>https://aarnphm.xyz/quotes</loc>
     <lastmod>2024-01-23T00:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://aarnphm.xyz/tags/commerce4be3</loc>
+    <lastmod>2024-01-10T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://aarnphm.xyz/tags/philosophy</loc>
+    <lastmod>2024-03-06T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://aarnphm.xyz/tags/sfwr2fa3</loc>
+    <lastmod>2024-03-08T09:02:42.813Z</lastmod>
+  </url><url>
     <loc>https://aarnphm.xyz/tags/sfwr3dx4</loc>
     <lastmod>2024-01-09T00:00:00.000Z</lastmod>
   </url><url>
@@ -109,6 +118,9 @@
   </url><url>
     <loc>https://aarnphm.xyz/thoughts/Continuous-batching</loc>
     <lastmod>2024-02-08T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://aarnphm.xyz/thoughts/Coriolis-Effect</loc>
+    <lastmod>2024-03-07T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://aarnphm.xyz/thoughts/Database</loc>
     <lastmod>2024-02-09T00:00:00.000Z</lastmod>
@@ -284,6 +296,12 @@
     <loc>https://aarnphm.xyz/thoughts/aesthetic-value</loc>
     <lastmod>2024-01-30T00:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://aarnphm.xyz/thoughts/atelier-with-friends/</loc>
+    <lastmod>2024-03-07T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://aarnphm.xyz/thoughts/atelier-with-friends/orangeville</loc>
+    <lastmod>2024-03-08T00:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://aarnphm.xyz/thoughts/confirmation-bias</loc>
     <lastmod>2024-02-07T00:00:00.000Z</lastmod>
   </url><url>
@@ -407,6 +425,9 @@
     <loc>https://aarnphm.xyz/thoughts/taxonomy</loc>
     <lastmod>2024-02-07T00:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://aarnphm.xyz/thoughts/university/astron-2e03/Atmosphere</loc>
+    <lastmod>2024-03-07T00:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://aarnphm.xyz/thoughts/university/astron-2e03/Blackbody-Radiation</loc>
     <lastmod>2024-02-06T00:00:00.000Z</lastmod>
   </url><url>
@@ -435,9 +456,6 @@
     <lastmod>2024-01-31T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://aarnphm.xyz/thoughts/university/commerce-4be3/Pay-model</loc>
-    <lastmod>2024-01-10T00:00:00.000Z</lastmod>
-  </url><url>
-    <loc>https://aarnphm.xyz/thoughts/university/commerce-4be3/</loc>
     <lastmod>2024-01-10T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://aarnphm.xyz/thoughts/university/compsci-4x03/A1</loc>
@@ -593,14 +611,14 @@
     <loc>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/A1</loc>
     <lastmod>2024-02-16T00:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/DFA</loc>
+    <lastmod>2024-01-12T00:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/NFA</loc>
     <lastmod>2024-01-30T00:00:00.000Z</lastmod>
   </url><url>
-    <loc>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/W1</loc>
-    <lastmod>2024-01-12T00:00:00.000Z</lastmod>
-  </url><url>
-    <loc>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/</loc>
-    <lastmod>2024-01-12T00:00:00.000Z</lastmod>
+    <loc>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/Nous</loc>
+    <lastmod>2024-03-08T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://aarnphm.xyz/thoughts/university/sfwr-3bb4/Sequential-programming</loc>
     <lastmod>2023-09-11T00:00:00.000Z</lastmod>
@@ -649,6 +667,9 @@
   </url><url>
     <loc>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/stability</loc>
     <lastmod>2024-02-06T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/steady-state-error</loc>
+    <lastmod>2024-03-06T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://aarnphm.xyz/thoughts/writing</loc>
     <lastmod>2023-07-29T00:00:00.000Z</lastmod>
