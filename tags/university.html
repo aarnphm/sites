@@ -3,8 +3,6 @@
   <head>
     <title>Étiquette: university</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -54,12 +52,6 @@
       type="text/css"
       spa-preserve
     />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
     <script src="../prescript.js" type="application/javascript" spa-preserve></script>
     <script type="application/javascript" spa-preserve>
       const fetchData = fetch("../static/contentIndex.json").then((data) => data.json())
@@ -68,94 +60,99 @@
   <body data-slug="tags/university" data-enable-preview="true" data-menu="false">
     <div id="quartz-root" class="page">
       <div id="quartz-body">
-        <div class="left sidebar">
-          <div class="search">
-            <div id="search-icon">
-              <p>Recherche</p>
-              <div></div>
-              <svg
-                tabindex="0"
-                aria-labelledby="title desc"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 19.9 19.7"
-              >
-                <title id="title">Search</title>
-                <desc id="desc">Search</desc>
-                <g class="search-path" fill="none">
-                  <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path>
-                  <circle cx="8" cy="8" r="7"></circle>
-                </g>
-              </svg>
-            </div>
-            <div id="search-container">
-              <div id="search-space">
-                <input
-                  autocomplete="off"
-                  id="search-bar"
-                  name="search"
-                  type="text"
-                  aria-label="Rechercher quelque chose"
-                  placeholder="Rechercher quelque chose"
-                />
-                <div id="search-layout" data-preview="true"></div>
-              </div>
-            </div>
-          </div>
-          <div class="graph">
-            <div id="global-graph-icon"></div>
-            <div id="global-graph-outer">
-              <div
-                id="global-graph-container"
-                data-cfg='{"drag":true,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
-              ></div>
-            </div>
-          </div>
-          <div class="keybind desktop-only" lang="fr">
-            <kbd id="shortcut-key" data-mapping='["cmd--/","ctrl--/"]'>⌘ /</kbd>
-            <div id="shortcut-container">
-              <div id="shortcut-space">
-                <div id="title">raccourcis clavier</div>
-                <ul>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd><span>recherche</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd><span>graphique</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd
-                      ><span>page d'accueil</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd
-                      ><span>curseur de chat</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd><span>projets</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd><span>curius</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="center">
-          <div class="page-header"><div class="popover-hint"></div></div>
+          <div class="page-header">
+            <header>
+              <div class="search">
+                <div id="search-icon">
+                  <p>Recherche</p>
+                  <div></div>
+                  <svg
+                    tabindex="0"
+                    aria-labelledby="title desc"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 19.9 19.7"
+                  >
+                    <title id="title">Search</title>
+                    <desc id="desc">Search</desc>
+                    <g class="search-path" fill="none">
+                      <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path>
+                      <circle cx="8" cy="8" r="7"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <div id="search-container">
+                  <div id="search-space">
+                    <input
+                      autocomplete="off"
+                      id="search-bar"
+                      name="search"
+                      type="text"
+                      aria-label="Rechercher quelque chose"
+                      placeholder="Rechercher quelque chose"
+                    />
+                    <div id="search-layout" data-preview="true"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="graph">
+                <div id="global-graph-icon"></div>
+                <div id="global-graph-outer">
+                  <div
+                    id="global-graph-container"
+                    data-cfg='{"drag":true,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
+                  ></div>
+                </div>
+              </div>
+              <div class="keybind desktop-only" lang="fr">
+                <kbd id="shortcut-key" data-mapping='["cmd--/","ctrl--/"]'>⌘ /</kbd>
+                <div id="shortcut-container">
+                  <div id="shortcut-space">
+                    <div id="title">raccourcis clavier</div>
+                    <ul>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd
+                          ><span>recherche</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd
+                          ><span>graphique</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd
+                          ><span>page d'accueil</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd
+                          ><span>curseur de chat</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd
+                          ><span>projets</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd><span>curius</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="popover-hint"></div>
+          </div>
           <div class="popover-hint">
             <article></article>
             <div class="page-listing">
@@ -351,7 +348,6 @@
       </div>
       <div class="spacer"></div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -599,14 +595,6 @@
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="../postscript.js" type="module"></script>

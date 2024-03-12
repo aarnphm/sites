@@ -3,8 +3,6 @@
   <head>
     <title>Prompt engineering</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -16,16 +14,16 @@
     <meta name="twitter:title" content="Prompt engineering" />
     <meta
       name="twitter:description"
-      content="A constructive way to form communications with LLMs. A constructive way to form communications with LLMs. A constructive way to form communications with LLMs."
+      content="A constructive way to form communications with LLMs. As we improve the quality of prompts, we can expect better results from the models. Similar to linguistic, a good prompt is a good form of communication with the system."
     />
     <meta
       property="og:description"
-      content="A constructive way to form communications with LLMs. A constructive way to form communications with LLMs. A constructive way to form communications with LLMs."
+      content="A constructive way to form communications with LLMs. As we improve the quality of prompts, we can expect better results from the models. Similar to linguistic, a good prompt is a good form of communication with the system."
     />
     <meta property="og:image:type" content="image/webp" />
     <meta
       property="og:image:alt"
-      content="A constructive way to form communications with LLMs. A constructive way to form communications with LLMs. A constructive way to form communications with LLMs."
+      content="A constructive way to form communications with LLMs. As we improve the quality of prompts, we can expect better results from the models. Similar to linguistic, a good prompt is a good form of communication with the system."
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -50,7 +48,7 @@
     <link rel="canonical" href="https:/aarnphm.xyz/thoughts/prompt-engineering" />
     <meta
       name="description"
-      content="A constructive way to form communications with LLMs. A constructive way to form communications with LLMs. A constructive way to form communications with LLMs."
+      content="A constructive way to form communications with LLMs. As we improve the quality of prompts, we can expect better results from the models. Similar to linguistic, a good prompt is a good form of communication with the system."
     />
     <meta name="generator" content="Quartz" />
     <link href="../index.css" rel="stylesheet" type="text/css" spa-preserve />
@@ -62,12 +60,6 @@
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
       rel="stylesheet"
       type="text/css"
       spa-preserve
@@ -96,35 +88,7 @@
                       class="page-modification"
                       title="Date de modification du contenu de la page"
                       ><em>13 févr. 2024</em></span
-                    >
-                    <div class="popover" id="content-popover">
-                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
-                        <pre data-language="markdown">
----
-id: prompt engineering
-tags:
-  - seed
-  - ml
-date: &quot;2024-02-12&quot;
-title: Prompt engineering
----
-
-A constructive way to form communications with [[thoughts/LLMs]]. As we improve the quality of prompts, we can expect better results from the models. Similar to [[thoughts/linguistic]], a good prompt is a good form of communication with the system.
-
-This is different from [[thoughts/zero-shot learning|zero-shot prompting]]
-
-## CoT prompting
-
-See also: [[thoughts/NLP]]
-
-You can think of it as explaining a big topics to a five years old. You break down topic into smaller, logic parts that mimics a train of thoughts.
-
-## Least-to-most prompting
-
-Prompted to first list the sub-problems to a problem, then solve them in sequence.</pre
-                        >
-                      </div>
-                    </div></a
+                    ></a
                   >
                 </li>
                 <li>
@@ -373,7 +337,6 @@ Prompted to first list the sub-problems to a problem, then solve them in sequenc
       </div>
       <div class="spacer"></div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -621,14 +584,6 @@ Prompted to first list the sub-problems to a problem, then solve them in sequenc
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="../postscript.js" type="module"></script>

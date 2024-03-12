@@ -1,15 +1,3 @@
-input#cursor-chat-box {
-  background-color: var(--light);
-  outline: none;
-  font-family:
-    GT Sectra Book,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Helvetica,
-    Arial,
-    sans-serif !important;
-}
 @media (max-width: 1520px) {
   .desktop-only {
     display: none;
@@ -425,6 +413,10 @@ body[data-slug="index"] {
 }
 body[data-slug="index"] > * {
   font-family: var(--bodyFont);
+}
+body[data-slug="index"] header {
+  margin: 2rem 0;
+  display: flex !important;
 }
 body[data-slug="index"] .page-header {
   margin-top: 0 !important;
@@ -2712,6 +2704,7 @@ audio::-webkit-media-controls-panel {
     line-height: 1.272em;
   }
 }
+header,
 .left,
 .right {
   grid-template-rows: min-content;
@@ -2744,34 +2737,43 @@ audio::-webkit-media-controls-panel {
     grid-area: 1/1/2/3;
   }
 }
+header .search,
 .right .search {
   grid-area: 1/1/2/3;
 }
+header .keybind,
 .right .keybind {
   grid-area: 1/3/2/4;
   justify-self: end;
 }
+header .graph,
 .right .graph {
   grid-area: 2/1/2/4;
 }
+header .backlinks,
 .right .backlinks {
   grid-area: 3/1/3/4;
 }
+header .toc,
 .right .toc {
   grid-area: 4/1/4/4;
 }
 @media (max-width: 1520px) {
+  header,
   .right {
     align-items: unset;
   }
+  header .search,
   .right .search {
     max-width: unset;
     grid-area: 1/1/2/3;
   }
+  header .graph,
   .right .graph {
     grid-area: 2/1/2/1;
     max-width: 22rem;
   }
+  header .backlinks,
   .right .backlinks {
     grid-area: 2/2/2/3;
   }
@@ -2789,7 +2791,7 @@ audio::-webkit-media-controls-panel {
     sans-serif;
   --bodyFont: "GT Sectra Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif;
-  --codeFont: "Berkeley Mono", ui-monospace, SFMono-Regular, SF Mono, Menlo, monospace;
+  --codeFont: "Berkeley Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
 }
 :root[saved-theme="dark"] {
   --light: #1f1d30;

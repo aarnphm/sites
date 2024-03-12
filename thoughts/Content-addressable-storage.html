@@ -3,8 +3,6 @@
   <head>
     <title>Content-addressable storage</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -16,16 +14,16 @@
     <meta name="twitter:title" content="Content-addressable storage" />
     <meta
       name="twitter:description"
-      content="Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location. Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location."
+      content="Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location. If you have a book, say “Control Systems Engineer by N.S.Nise, with ISBN: 978-1-119-47422-7”, you can find the book anywhere, including its information and content."
     />
     <meta
       property="og:description"
-      content="Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location. Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location."
+      content="Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location. If you have a book, say “Control Systems Engineer by N.S.Nise, with ISBN: 978-1-119-47422-7”, you can find the book anywhere, including its information and content."
     />
     <meta property="og:image:type" content="image/webp" />
     <meta
       property="og:image:alt"
-      content="Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location. Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location."
+      content="Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location. If you have a book, say “Control Systems Engineer by N.S.Nise, with ISBN: 978-1-119-47422-7”, you can find the book anywhere, including its information and content."
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -53,7 +51,7 @@
     <link rel="canonical" href="https:/aarnphm.xyz/thoughts/Content-addressable-storage" />
     <meta
       name="description"
-      content="Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location. Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location."
+      content="Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location. If you have a book, say “Control Systems Engineer by N.S.Nise, with ISBN: 978-1-119-47422-7”, you can find the book anywhere, including its information and content."
     />
     <meta name="generator" content="Quartz" />
     <link href="../index.css" rel="stylesheet" type="text/css" spa-preserve />
@@ -65,12 +63,6 @@
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
       rel="stylesheet"
       type="text/css"
       spa-preserve
@@ -103,40 +95,7 @@
                       class="page-modification"
                       title="Date de modification du contenu de la page"
                       ><em>08 févr. 2024</em></span
-                    >
-                    <div class="popover" id="content-popover">
-                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
-                        <pre data-language="markdown">
----
-id: Content-addressable storage
-tags:
-  - seed
-  - technical
-date: &quot;2023-04-15&quot;
-title: Content-addressable storage
----
-
-Content-addressed storage is a mechanism to store information such that it can be retrieved based on its content, not name or location.
-
-> If you have a book, say &quot;Control Systems Engineer by N.S.Nise, with ISBN: 978-1-119-47422-7&quot;, you can find the book anywhere, including its information and content.
->
-> By contrast, if I use location-addressing to identify the book, say, &quot;the book on the second shelf of the third row in the library&quot;, it would be difficult to find the book if the library is reorganized.
-
-| Content-addressed | Location-addressed |
-|--------------- | --------------- |
-| use cryptographic hash functions[^1] to generate unique keys to retrieved based on contents | e.g: [[thoughts/HTTP]], look up content by its location (URI). Thus contents is controlled by the owner of the location   |
-
-
-## Immutable Objects, Mutable References
-
-Utilize [[thoughts/Merkle DAG]], immutable content-addressed objects, and mutable pointers to the DAG, which creates a dichotomy presents in many distributed systems.
-
-See also [[thoughts/IPFS]], [[thoughts/Block-reference mechanism]]
-
-[^1]: See [[thoughts/cryptography#functions|cryptographic functions]]</pre
-                        >
-                      </div>
-                    </div></a
+                    ></a
                   >
                 </li>
                 <li>
@@ -421,7 +380,6 @@ See also [[thoughts/IPFS]], [[thoughts/Block-reference mechanism]]
       </div>
       <div class="spacer"></div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -669,14 +627,6 @@ See also [[thoughts/IPFS]], [[thoughts/Block-reference mechanism]]
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="../postscript.js" type="module"></script>

@@ -6,22 +6,46 @@
       <description>Les dernières 40 notes on Aaron&#039;s notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Color</title>
+    <link>https://aarnphm.xyz/thoughts/Color</link>
+    <guid>https://aarnphm.xyz/thoughts/Color</guid>
+    <description>theory. Complementary Analogous Triadic See also coolors.co contrast, combination, thickness background Color surface area .</description>
+    <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Gestalt Principles</title>
+    <link>https://aarnphm.xyz/thoughts/Gestalt-Principles</link>
+    <guid>https://aarnphm.xyz/thoughts/Gestalt-Principles</guid>
+    <description>Relates to how we perceive composition Proximity Common Region.</description>
+    <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>composition</title>
+    <link>https://aarnphm.xyz/thoughts/composition</link>
+    <guid>https://aarnphm.xyz/thoughts/composition</guid>
+    <description>How we combine elements to make a comprehensive model. Uses Color.</description>
+    <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>design</title>
+    <link>https://aarnphm.xyz/thoughts/design</link>
+    <guid>https://aarnphm.xyz/thoughts/design</guid>
+    <description>what?.</description>
+    <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
     <title>Discrete Mathematics</title>
     <link>https://aarnphm.xyz/tags/sfwr2fa3</link>
     <guid>https://aarnphm.xyz/tags/sfwr2fa3</guid>
-    <description>See books Prof. See books Prof. See books Prof. See books Prof. See books Prof. See books Prof. See books Prof. See books Prof. See books Prof. See books Prof.</description>
+    <description>See books Prof. Vincent Maccio Assignment 1: week 5 Assignment 2: week 9 Midterm: March 8th Assignment 3: week 12.</description>
     <pubDate>Fri, 08 Mar 2024 09:02:42 GMT</pubDate>
   </item><item>
     <title>orangeville.</title>
     <link>https://aarnphm.xyz/thoughts/atelier-with-friends/orangeville</link>
     <guid>https://aarnphm.xyz/thoughts/atelier-with-friends/orangeville</guid>
-    <description>atelier with friends uno - orangeville. atelier with friends uno - orangeville. atelier with friends uno - orangeville. atelier with friends uno - orangeville.</description>
+    <description>atelier with friends uno - orangeville.</description>
     <pubDate>Fri, 08 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Automata</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/Nous</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/Nous</guid>
-    <description>Q1: T/F, if F explain why. Q1: T/F, if F explain why. Q1: T/F, if F explain why. Q1: T/F, if F explain why. Q1: T/F, if F explain why. Q1: T/F, if F explain why.</description>
+    <description>Q1: T/F, if F explain why. Q4: regular expression, 5 separate q Q2/Q3: DFAs and NFAs Product construction: ∩ ∪ of DFAs Subset construction: NFA to DFA Quotient construction: State minimization Set theory Complement in Σ∗: L=Σ∗−L associative: (A∪B)∪C(A∩B)∩C(AB)C​=A∪(B∪C),=A∩(B∩C),=A(BC).​ commutative: A∪BA∩B​=B∪A=B∩A​ null set null set ∅ is the identity for ∪ and annihilator for set concatenation A∪∅=A and A∅=∅A=∅ set {ϵ} is an identity for set concatenation {ϵ}A=A{ϵ}=A Set union and intersection are distributive over set concatenation A∪(B∩C) A∩(B∪C)​=(A∪B)∩(A∪C)=(A∩B)∪(A∩C)​ Set concatenation distributes over union A(B∪C) (A∪B)C​=AB∪AC=AC∪BC​ DFA DFA#definition Let δ:Q×Σ→Q, thus δ^:Q×Σ∗→Q δ(q,c)→p therefore δ^(q,w)→p regularity Important δ^(q,ϵ) δ^(q,xa)​=q=δ(δ^(q,x),a)​ Important a subset A⊂Σ∗ is regular if and only if there exists a DFA M such that L(M)=L Important All finite languages are regular, but not all regular languages are finite examples Show L is regular where L={x∣x%3=0∪x=ϵ}, with Σ={0,1} Three states, q0​,q1​,q2​, where q0​ denotes the string mod 3 is 0, q1​ denotes the string mod 3 is 1, and q2​ denotes the string mod 3 is 2.</description>
     <pubDate>Fri, 08 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Coriolis Effect</title>
@@ -33,73 +57,73 @@
     <title>atelier with friends.</title>
     <link>https://aarnphm.xyz/thoughts/atelier-with-friends/</link>
     <guid>https://aarnphm.xyz/thoughts/atelier-with-friends/</guid>
-    <description>Somewhat impromptu supper club hosted by yours truly. Somewhat impromptu supper club hosted by yours truly. Somewhat impromptu supper club hosted by yours truly.</description>
+    <description>Somewhat impromptu supper club hosted by yours truly.</description>
     <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Atmospheric properties for exoplanets</title>
     <link>https://aarnphm.xyz/thoughts/university/astron-2e03/Atmosphere</link>
     <guid>https://aarnphm.xyz/thoughts/university/astron-2e03/Atmosphere</guid>
-    <description>Ref: slides features. Ref: slides features. Ref: slides features. Ref: slides features. Ref: slides features. Ref: slides features. Ref: slides features. Ref: slides features.</description>
+    <description>Ref: slides features. H=ωmH​gkB​T​ solid or dash solid q larger mean molecular weights? B: shallow features ⇒ higher mean molecular weights mass-metallicity trend Question Can we detect clouds in exoplanets? Clouds suppress atmospheric chemical signatures Important Introduced a degeneracy between cloud-top pressure and mean molecular weight clouds/winds on giant planets.</description>
     <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>philosophy</title>
     <link>https://aarnphm.xyz/tags/philosophy</link>
     <guid>https://aarnphm.xyz/tags/philosophy</guid>
-    <description>Toute idée fausse finit dans le sang, mais il s'agit toujours du sang des autres. Toute idée fausse finit dans le sang, mais il s'agit toujours du sang des autres.</description>
+    <description>Toute idée fausse finit dans le sang, mais il s'agit toujours du sang des autres. C'est ce qui explique que certains de nos philosophes se sentent à l'aise pour dire n'importe quoi.</description>
     <pubDate>Wed, 06 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>steady-state error</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/steady-state-error</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/steady-state-error</guid>
-    <description>See also slides Important System type is the number of integrators in the forward path, thus value of n . See also slides Important System type is the number of integrators in the forward path, thus value of n .</description>
+    <description>See also slides Important System type is the number of integrators in the forward path, thus value of n .</description>
     <pubDate>Wed, 06 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Alignment</title>
     <link>https://aarnphm.xyz/thoughts/Alignment</link>
     <guid>https://aarnphm.xyz/thoughts/Alignment</guid>
-    <description>See also: Overton Window and this blog on alignment research The act of aligning oneself with a particular group or ideology. See also: Overton Window and this blog on alignment research The act of aligning oneself with a particular group or ideology.</description>
+    <description>See also: Overton Window and this blog on alignment research The act of aligning oneself with a particular group or ideology. This can be done for a variety of reasons, including: To gain social acceptance To gain power To gain resources Often known as a solution to solve “hallucination” in large models token-generation.</description>
     <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Overton Window</title>
     <link>https://aarnphm.xyz/thoughts/Overton-Window</link>
     <guid>https://aarnphm.xyz/thoughts/Overton-Window</guid>
-    <description>also known as window of discourse A window into the ideas that frames ideas that people are prepared to entertain. also known as window of discourse A window into the ideas that frames ideas that people are prepared to entertain.</description>
+    <description>also known as window of discourse A window into the ideas that frames ideas that people are prepared to entertain. All ideas outside the window are not seriously considered.</description>
     <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>ethics</title>
     <link>https://aarnphm.xyz/thoughts/ethics</link>
     <guid>https://aarnphm.xyz/thoughts/ethics</guid>
-    <description>Closely connected to value theory, or moral philosophy. Closely connected to value theory, or moral philosophy. Closely connected to value theory, or moral philosophy.</description>
+    <description>Closely connected to value theory, or moral philosophy. Kantian ethics presupposes that there is a universal moral law that applies to all rational beings, or his deontological ethics framework that based on “categorical imperative”.</description>
     <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Root mean square</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/prelab</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/prelab</guid>
-    <description>See also: pdf problème 1. See also: pdf problème 1. See also: pdf problème 1. See also: pdf problème 1. See also: pdf problème 1. See also: pdf problème 1.</description>
+    <description>See also: pdf problème 1. The Root Mean Square (RMS) value of a signal f(t) that is periodic with period T is given by the equation T1​∫0T​(f(t))2dt​ It can be shown that the RMS value of u(t)=Bsinωt is 2​B​ 1.a Square wave The square wave function is defined as: f(t)={10​if 0≤t&lt;2T​if 2T​≤t&lt;T​ import sympy as sp t = sp.symbols(&#039;t&#039;) T = 2 RMS = sp.sqrt(1/T * sp.integrate(1, (t, 0, T/2))) RMS = 2​1​ 1.b Sawtooth wave A sawtooth wave function is defined as: f(t)=T2A​(t−2T​) import sympy as sp t = sp.symbols(&#039;t&#039;) T = 1 A = 0.5 f_t = 2 * A / T * (t - T/2) RMS = sp.sqrt(1/T * sp.integrate(f_t**2, (t, 0, T))) RMS = 63​​ 1.c sine wave A general form of the sine wave can be written as f(t)=Asin(ωt+ϕ) Amplitude is 2.3, no phase shift RMS = 2​2.3​ problème 2.</description>
     <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>PJRT</title>
     <link>https://aarnphm.xyz/thoughts/PJRT</link>
     <guid>https://aarnphm.xyz/thoughts/PJRT</guid>
-    <description>Blog post and source Lower stack layer for framework and hardware communication. Blog post and source Lower stack layer for framework and hardware communication.</description>
+    <description>Blog post and source Lower stack layer for framework and hardware communication. As abstraction to transpile to different hardware targets: TPU, GPU.</description>
     <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>TPU 🚧</title>
     <link>https://aarnphm.xyz/thoughts/TPU</link>
     <guid>https://aarnphm.xyz/thoughts/TPU</guid>
-    <description> Avertissement En construction.  Avertissement En construction.  Avertissement En construction.  Avertissement En construction.  Avertissement En construction.</description>
+    <description> Avertissement En construction.</description>
     <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>logic 🚧</title>
     <link>https://aarnphm.xyz/thoughts/logic</link>
     <guid>https://aarnphm.xyz/thoughts/logic</guid>
-    <description> Avertissement En construction.  Avertissement En construction.  Avertissement En construction.  Avertissement En construction.  Avertissement En construction.</description>
+    <description> Avertissement En construction.</description>
     <pubDate>Sat, 02 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Second-order systems</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/a2/content</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/a2/content</guid>
-    <description>problem 1. problem 1. problem 1. problem 1. problem 1. problem 1. problem 1. problem 1. problem 1. problem 1. problem 1. problem 1. problem 1. problem 1. problem 1.</description>
+    <description>problem 1. Consider the following system: Question Using the properties of second-order systems, determine Kp​ and Kd​ such that the overshoot is 10 percent and the settling time is 1 second.</description>
     <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Existentialism</title>
@@ -117,13 +141,13 @@
     <title>Camus</title>
     <link>https://aarnphm.xyz/thoughts/Camus</link>
     <guid>https://aarnphm.xyz/thoughts/Camus</guid>
-    <description>Of the absurd reasoning and existentialism. Of the absurd reasoning and existentialism. Of the absurd reasoning and existentialism. Of the absurd reasoning and existentialism.</description>
+    <description>Of the absurd reasoning and existentialism. The Myth of Sisyphus Absurd and suicide Suicide is the solution for the absurd: People never died because of ontological arguments Suicide is often the result of people who didn’t find worth in the living Life is not worth living therefore I took the easy way out as a paradox: Suicide is the justification of meaning of life ← the most important question for philosophers From Nietzchean prose, those who say “no” acts as if they said “yes”: Schopenhauer Fantasise the act of eluding: Hope of another life one must “deserve” or trickery those who lives not for life itself but for some great idea that will transcend it, refine it, give it meaning, and betray it.</description>
     <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Designing Pay Levels and Employee Benefits</title>
     <link>https://aarnphm.xyz/thoughts/university/commerce-4be3/Designing-Pay-Levels--and-Employee-Benefits</link>
     <guid>https://aarnphm.xyz/thoughts/university/commerce-4be3/Designing-Pay-Levels--and-Employee-Benefits</guid>
-    <description>See also Designing Pay Levels, Pay Mix and Pay Structure and Pay Employment Benefits decision for externally competitive pay levels and structure. See also Designing Pay Levels, Pay Mix and Pay Structure and Pay Employment Benefits decision for externally competitive pay levels and structure.</description>
+    <description>See also Designing Pay Levels, Pay Mix and Pay Structure and Pay Employment Benefits decision for externally competitive pay levels and structure. employer’s competitive pay policy purpose of survey construct market line.</description>
     <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Root locus control</title>
@@ -135,55 +159,61 @@
     <title>Root locus</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/Root-locus</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/Root-locus</guid>
-    <description>See also slides. See also slides. See also slides. See also slides. See also slides. See also slides. See also slides. See also slides. See also slides. See also slides.</description>
+    <description>See also slides.</description>
     <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Voltage-controlled electromechanical systems</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/content</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/content</guid>
-    <description>See lab notes and prelab. See lab notes and prelab. See lab notes and prelab. See lab notes and prelab. See lab notes and prelab. See lab notes and prelab.</description>
+    <description>See lab notes and prelab. Question Do you notice a pattern in the DC gain values you calculated? If so, what is that pattern? All DC gain are constant around A≈98.76, and Input voltage wrt DC gain is linear.</description>
     <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>group theory</title>
     <link>https://aarnphm.xyz/thoughts/Group-theory</link>
     <guid>https://aarnphm.xyz/thoughts/Group-theory</guid>
-    <description>Graph isomorphism. Graph isomorphism. Graph isomorphism. Graph isomorphism. Graph isomorphism. Graph isomorphism. Graph isomorphism. Graph isomorphism. Graph isomorphism.</description>
+    <description>Graph isomorphism.</description>
     <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>reason</title>
     <link>https://aarnphm.xyz/thoughts/reason</link>
     <guid>https://aarnphm.xyz/thoughts/reason</guid>
-    <description>inductive. inductive. inductive. inductive. inductive. inductive. inductive. inductive. inductive. inductive. inductive. inductive. inductive. inductive. inductive.</description>
+    <description>inductive. deductive.</description>
     <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Heating, Cooling, and the Greenhouse Effect</title>
     <link>https://aarnphm.xyz/thoughts/university/astron-2e03/Heating-Cooling-GH-effect</link>
     <guid>https://aarnphm.xyz/thoughts/university/astron-2e03/Heating-Cooling-GH-effect</guid>
-    <description>Ref: slides toy modal. Ref: slides toy modal. Ref: slides toy modal. Ref: slides toy modal. Ref: slides toy modal. Ref: slides toy modal. Ref: slides toy modal.</description>
+    <description>Ref: slides toy modal. eq: Tsurf​ 1.32×Tatm, 2​ General form of T_{\text{surf}} with n atmospheric layers Tsurf​=[ω(n+1)S​]41​=(n+1)41​×Tatm, n​ .</description>
     <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Graphs</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Graphs</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Graphs</guid>
-    <description>See also slides Node as information and edges as relationship between data Directed acyclic graph (DAG) Application: Merkle DAG undirected. See also slides Node as information and edges as relationship between data Directed acyclic graph (DAG) Application: Merkle DAG undirected.</description>
+    <description>See also slides Node as information and edges as relationship between data Directed acyclic graph (DAG) Application: Merkle DAG undirected. (\mathcal{N}, \mathcal{E}) N: set of vertices E: set of undirected edges: E⊆N×N path is a sequence of nodes and edges connect two nodes.</description>
     <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Hash tables</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Hash-tables</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Hash-tables</guid>
-    <description>See also slides. See also slides. See also slides. See also slides. See also slides. See also slides. See also slides. See also slides. See also slides. See also slides.</description>
+    <description>See also slides.</description>
     <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Min heap and binary search tree</title>
     <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a5/A5</link>
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a5/A5</guid>
-    <description> Problème 1.  Problème 1.  Problème 1.  Problème 1.  Problème 1.  Problème 1.  Problème 1.  Problème 1.  Problème 1.  Problème 1.  Problème 1.  Problème 1.  Problème 1.</description>
+    <description> Problème 1. Consider the following sequence of values S=[3,42,39,86,49,89,99,20,88,51,64] Note We can represent tree textually via the following representation 13 ( 11 ( 8 ( 2 4 ) 12 ( * 1 ) ) 7 ( 5 6 ( 99 * ) ) ) Where we use ∗ as a placeholder for a missing child for those nodes that only have a single child.</description>
+    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>LLRB and hash tables</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a6/A6</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a6/A6</guid>
+    <description> Problème 1. Consider the sequence of values S=[3,42,39,86,49,89,99,20,88,51,64] 1.1 Draw a left-leaning red-black tree obtained by adding the values in S in sequence.</description>
     <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Embedding</title>
     <link>https://aarnphm.xyz/thoughts/Embedding</link>
     <guid>https://aarnphm.xyz/thoughts/Embedding</guid>
-    <description>See also Transformers. See also Transformers. See also Transformers. See also Transformers. See also Transformers. See also Transformers. See also Transformers.</description>
+    <description>See also Transformers.</description>
     <pubDate>Sun, 25 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Lyapunov time</title>
@@ -195,7 +225,7 @@
     <title>personal computing</title>
     <link>https://aarnphm.xyz/thoughts/personal-computing</link>
     <guid>https://aarnphm.xyz/thoughts/personal-computing</guid>
-    <description>See this tweet. See this tweet. See this tweet. See this tweet. See this tweet. See this tweet. See this tweet. See this tweet. See this tweet. See this tweet.</description>
+    <description>See this tweet.</description>
     <pubDate>Sun, 25 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>representations.</title>
@@ -207,7 +237,7 @@
     <title>Giles Deleuze</title>
     <link>https://aarnphm.xyz/thoughts/Giles-Deleuze</link>
     <guid>https://aarnphm.xyz/thoughts/Giles-Deleuze</guid>
-    <description>French philosopher, known for his work on the concept of multiplicity, being and affirmation. French philosopher, known for his work on the concept of multiplicity, being and affirmation.</description>
+    <description>French philosopher, known for his work on the concept of multiplicity, being and affirmation. Also work on critical philosophy and the study of sense and value.</description>
     <pubDate>Sat, 24 Feb 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Will to Power</title>
@@ -215,36 +245,6 @@
     <guid>https://aarnphm.xyz/thoughts/Will-to-Power</guid>
     <description></description>
     <pubDate>Sat, 24 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>action theory</title>
-    <link>https://aarnphm.xyz/thoughts/action-theory</link>
-    <guid>https://aarnphm.xyz/thoughts/action-theory</guid>
-    <description>There is a huge difference between activity and passivity. There is a huge difference between activity and passivity. There is a huge difference between activity and passivity.</description>
-    <pubDate>Thu, 22 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>fashion.</title>
-    <link>https://aarnphm.xyz/thoughts/fashion</link>
-    <guid>https://aarnphm.xyz/thoughts/fashion</guid>
-    <description>Fashion, rather a hobby than a need (prob. Fashion, rather a hobby than a need (prob. Fashion, rather a hobby than a need (prob. Fashion, rather a hobby than a need (prob.</description>
-    <pubDate>Mon, 19 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>identity</title>
-    <link>https://aarnphm.xyz/thoughts/identity</link>
-    <guid>https://aarnphm.xyz/thoughts/identity</guid>
-    <description>Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud. Freud.</description>
-    <pubDate>Mon, 19 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>taste</title>
-    <link>https://aarnphm.xyz/thoughts/taste</link>
-    <guid>https://aarnphm.xyz/thoughts/taste</guid>
-    <description>as guide. as guide. as guide. as guide. as guide. as guide. as guide. as guide. as guide. as guide. as guide. as guide. as guide. as guide. as guide. as guide. as guide.</description>
-    <pubDate>Mon, 19 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Chaos is the driven force within life, intuitive yet disheveled.</title>
-    <link>https://aarnphm.xyz/posts/Chaos</link>
-    <guid>https://aarnphm.xyz/posts/Chaos</guid>
-    <description>Chaos has, and always be a driven force within life, intuitive yet disheveled. Chaos has, and always be a driven force within life, intuitive yet disheveled.</description>
-    <pubDate>Sun, 18 Feb 2024 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>

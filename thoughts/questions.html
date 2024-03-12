@@ -3,8 +3,6 @@
   <head>
     <title>questions</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -66,12 +64,6 @@
       type="text/css"
       spa-preserve
     />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
     <script src="../prescript.js" type="application/javascript" spa-preserve></script>
     <script type="application/javascript" spa-preserve>
       const fetchData = fetch("../static/contentIndex.json").then((data) => data.json())
@@ -96,36 +88,7 @@
                       class="page-modification"
                       title="Date de modification du contenu de la page"
                       ><em>07 févr. 2024</em></span
-                    >
-                    <div class="popover" id="content-popover">
-                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
-                        <pre data-language="markdown">
----
-id: questions
-tags:
-  - seed
-date: &quot;2024-02-07&quot;
-title: questions
----
-
-What is questions really?
-
-People always say &quot;there is no such thing as a stupid question&quot;, but I do think questions comes from innate ability and desire to learn, not coming from subjective opinion.
-
-Source: [Ask better questions on Kernel](https://www.kernel.community/en/learn/module-2/better-questions/)
-
-### Socratic method
-
-[[thoughts/university/philo-1aa3/Socrates|Socrates]] are notoriously known for just asking questions and involve in such dialogue.
-
-A method of hypothesis elimination, in that better hypotheses are found by steadily identifying and eliminating those that lead to contradictions.
-
-A Socratic Circle is an approach to understanding texts. It is based off the assumption that all knowledge is a posteriori knowledge, all thinking comes from asking questions, and that one question should lead to asking further questions.
-
-Students will then often involved in a Socratic [[thoughts/dialectics|dialects]], where inner circle will explore and ask questions, the outer circle will then provide feedback and vice versa.</pre
-                        >
-                      </div>
-                    </div></a
+                    ></a
                   >
                 </li>
                 <li>
@@ -340,7 +303,6 @@ Students will then often involved in a Socratic [[thoughts/dialectics|dialects]]
       </div>
       <div class="spacer"></div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -588,14 +550,6 @@ Students will then often involved in a Socratic [[thoughts/dialectics|dialects]]
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="../postscript.js" type="module"></script>

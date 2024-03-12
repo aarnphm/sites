@@ -3,8 +3,6 @@
   <head>
     <title>Nagle's algorithm and TCP_CORK</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -66,12 +64,6 @@
       type="text/css"
       spa-preserve
     />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
     <script src="../prescript.js" type="application/javascript" spa-preserve></script>
     <script type="application/javascript" spa-preserve>
       const fetchData = fetch("../static/contentIndex.json").then((data) => data.json())
@@ -96,39 +88,7 @@
                       class="page-modification"
                       title="Date de modification du contenu de la page"
                       ><em>07 févr. 2024</em></span
-                    >
-                    <div class="popover" id="content-popover">
-                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
-                        <pre data-language="markdown">
----
-id: Nagle and TCP Cork
-tags:
-  - seed
-  - networking
-title: Nagle's algorithm and TCP_CORK
-date: 2022-07-01
----
-
-### Nagle's algorithm and Delay ACK
-
-- _small packets_ -> not for TCP
-  -> Nagle algorithm: `Maximize ratio of packets - data content`
-  -> Delay ACK: `silly window`
-
-```prolog
-if available_data &amp; window_size > MSS
-	send payload on wire
-else
-	if unconfirmed_data
-		queue
-	else
-		send
-```
-
-### Cork algorithm</pre
-                        >
-                      </div>
-                    </div></a
+                    ></a
                   >
                 </li>
                 <li>
@@ -377,7 +337,6 @@ else
       </div>
       <div class="spacer"></div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -625,14 +584,6 @@ else
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="../postscript.js" type="module"></script>

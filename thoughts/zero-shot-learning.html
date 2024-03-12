@@ -3,8 +3,6 @@
   <head>
     <title>zero-shot prompting</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -16,16 +14,16 @@
     <meta name="twitter:title" content="zero-shot prompting" />
     <meta
       name="twitter:description"
-      content="Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems. Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems."
+      content="Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems. Instruction-tuning actually improve zero-shot learning performance."
     />
     <meta
       property="og:description"
-      content="Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems. Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems."
+      content="Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems. Instruction-tuning actually improve zero-shot learning performance."
     />
     <meta property="og:image:type" content="image/webp" />
     <meta
       property="og:image:alt"
-      content="Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems. Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems."
+      content="Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems. Instruction-tuning actually improve zero-shot learning performance."
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -50,7 +48,7 @@
     <link rel="canonical" href="https:/aarnphm.xyz/thoughts/zero-shot-learning" />
     <meta
       name="description"
-      content="Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems. Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems."
+      content="Source The paper argues that zero-shot prompting on a instruction-tuned small language models outperform LLMs systems. Instruction-tuning actually improve zero-shot learning performance."
     />
     <meta name="generator" content="Quartz" />
     <link href="../index.css" rel="stylesheet" type="text/css" spa-preserve />
@@ -62,12 +60,6 @@
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
       rel="stylesheet"
       type="text/css"
       spa-preserve
@@ -96,29 +88,7 @@
                       class="page-modification"
                       title="Date de modification du contenu de la page"
                       ><em>13 févr. 2024</em></span
-                    >
-                    <div class="popover" id="content-popover">
-                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
-                        <pre data-language="markdown">
----
-id: zero-shot learning
-tags:
-  - llm
-date: &quot;2024-02-12&quot;
-title: zero-shot prompting
----
-
-[Source](https://arxiv.org/pdf/2109.01652.pdf)
-
-The paper argues that zero-shot prompting on a instruction-tuned small language models outperform [[thoughts/LLMs]] systems.
-
-- Instruction-tuning actually improve zero-shot learning performance.
-- Mostly tested on FLAN, but show results throughout with GPT-3 and on few reading comprehension dataset.
-
-Honorable mentions include prompt tuning or few-shots prompting</pre
-                        >
-                      </div>
-                    </div></a
+                    ></a
                   >
                 </li>
                 <li>
@@ -283,7 +253,6 @@ Honorable mentions include prompt tuning or few-shots prompting</pre
       </div>
       <div class="spacer"></div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -531,14 +500,6 @@ Honorable mentions include prompt tuning or few-shots prompting</pre
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="../postscript.js" type="module"></script>

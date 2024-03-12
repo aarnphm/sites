@@ -3,8 +3,6 @@
   <head>
     <title>Intelligence amplification</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -66,12 +64,6 @@
       type="text/css"
       spa-preserve
     />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
     <script src="../prescript.js" type="application/javascript" spa-preserve></script>
     <script type="application/javascript" spa-preserve>
       const fetchData = fetch("../static/contentIndex.json").then((data) => data.json())
@@ -100,35 +92,7 @@
                       class="page-modification"
                       title="Date de modification du contenu de la page"
                       ><em>01 mars 2024</em></span
-                    >
-                    <div class="popover" id="content-popover">
-                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
-                        <pre data-language="markdown">
----
-id: Intelligence amplification
-tags:
-  - seed
-  - ml
-date: &quot;2024-01-07&quot;
-title: Intelligence amplification
----
-
-[Original tweet](https://twitter.com/karpathy/status/1744062845426532473)
-
-Intelligence should be thought as a tool for thought, not an independent agent
-
-These systems should be built on top of human intelligence, not replace it.
-
-Next-token prediction is primitive to call a system intelligent.
-
-Can a [[thoughts/Transformers|transformers]] ever be [[thoughts/Turing-complete Transformers|Turing-complete]]?
-
-## research area.
-
-A lot of alpha in mechanistic analysis of the [[thoughts/representations|representations]] these models exhibit., or &quot;virtual brain analysis&quot;.</pre
-                        >
-                      </div>
-                    </div></a
+                    ></a
                   >
                 </li>
                 <li>
@@ -333,7 +297,6 @@ A lot of alpha in mechanistic analysis of the [[thoughts/representations|represe
       </div>
       <div class="spacer"></div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -581,14 +544,6 @@ A lot of alpha in mechanistic analysis of the [[thoughts/representations|represe
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="../postscript.js" type="module"></script>

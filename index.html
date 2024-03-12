@@ -3,8 +3,6 @@
   <head>
     <title>Aaron's notes</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -41,12 +39,6 @@
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
       rel="stylesheet"
       type="text/css"
       spa-preserve
@@ -210,52 +202,50 @@
                     <div class="recent-links">
                       <ul class="landing-notes">
                         <li>
-                          <a
-                            href="./thoughts/atelier-with-friends/orangeville"
-                            class="min-links internal"
+                          <a href="./thoughts/Alignment" class="min-links internal"
                             ><div class="landing-meta">
-                              <span class="landing-mspan">07 mars 2024</span
-                              ><span class="landing-mtitle">orangeville.</span>
+                              <span class="landing-mspan">04 mars 2024</span
+                              ><span class="landing-mtitle">Alignment</span>
                             </div></a
                           >
                         </li>
                         <li>
-                          <a href="./thoughts/AGI" class="min-links internal"
+                          <a href="./thoughts/Color" class="min-links internal"
                             ><div class="landing-meta">
-                              <span class="landing-mspan">06 févr. 2024</span
-                              ><span class="landing-mtitle">AGI</span>
+                              <span class="landing-mspan">08 mars 2024</span
+                              ><span class="landing-mtitle">Color</span>
                             </div></a
                           >
                         </li>
                         <li>
-                          <a href="./thoughts/LLMs" class="min-links internal"
+                          <a href="./thoughts/Entropy" class="min-links internal"
                             ><div class="landing-meta">
-                              <span class="landing-mspan">06 févr. 2024</span
-                              ><span class="landing-mtitle">LLMs</span>
+                              <span class="landing-mspan">10 janv. 2024</span
+                              ><span class="landing-mtitle">Entropy</span>
                             </div></a
                           >
                         </li>
                         <li>
-                          <a href="./thoughts/Dishes" class="min-links internal"
+                          <a href="./thoughts/Gestalt-Principles" class="min-links internal"
                             ><div class="landing-meta">
-                              <span class="landing-mspan">25 oct. 2023</span
-                              ><span class="landing-mtitle">Menus</span>
+                              <span class="landing-mspan">08 mars 2024</span
+                              ><span class="landing-mtitle">Gestalt Principles</span>
                             </div></a
                           >
                         </li>
                         <li>
-                          <a href="./thoughts/Coriolis-Effect" class="min-links internal"
+                          <a href="./thoughts/Information-Theory" class="min-links internal"
                             ><div class="landing-meta">
-                              <span class="landing-mspan">06 mars 2024</span
-                              ><span class="landing-mtitle">Coriolis Effect</span>
+                              <span class="landing-mspan">19 janv. 2024</span
+                              ><span class="landing-mtitle">Information Theory</span>
                             </div></a
                           >
                         </li>
                         <li>
-                          <a href="./thoughts/Camus" class="min-links internal"
+                          <a href="./thoughts/composition" class="min-links internal"
                             ><div class="landing-meta">
-                              <span class="landing-mspan">27 févr. 2024</span
-                              ><span class="landing-mtitle">Camus</span>
+                              <span class="landing-mspan">08 mars 2024</span
+                              ><span class="landing-mtitle">composition</span>
                             </div></a
                           >
                         </li>
@@ -263,7 +253,7 @@
                       <p>
                         <em
                           ><a href="./thoughts/" class="min-links internal"
-                            >Voir 96 de plus →</a
+                            >Voir 100 de plus →</a
                           ></em
                         >
                       </p>
@@ -437,7 +427,6 @@
         </div>
       </div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -685,14 +674,6 @@
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="./postscript.js" type="module"></script>

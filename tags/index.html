@@ -3,8 +3,6 @@
   <head>
     <title>Index des étiquettes</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -45,12 +43,6 @@
       type="text/css"
       spa-preserve
     />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
     <script src="../prescript.js" type="application/javascript" spa-preserve></script>
     <script type="application/javascript" spa-preserve>
       const fetchData = fetch("../static/contentIndex.json").then((data) => data.json())
@@ -59,94 +51,99 @@
   <body data-slug="tags/index" data-enable-preview="true" data-menu="false">
     <div id="quartz-root" class="page">
       <div id="quartz-body">
-        <div class="left sidebar">
-          <div class="search">
-            <div id="search-icon">
-              <p>Recherche</p>
-              <div></div>
-              <svg
-                tabindex="0"
-                aria-labelledby="title desc"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 19.9 19.7"
-              >
-                <title id="title">Search</title>
-                <desc id="desc">Search</desc>
-                <g class="search-path" fill="none">
-                  <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path>
-                  <circle cx="8" cy="8" r="7"></circle>
-                </g>
-              </svg>
-            </div>
-            <div id="search-container">
-              <div id="search-space">
-                <input
-                  autocomplete="off"
-                  id="search-bar"
-                  name="search"
-                  type="text"
-                  aria-label="Rechercher quelque chose"
-                  placeholder="Rechercher quelque chose"
-                />
-                <div id="search-layout" data-preview="true"></div>
-              </div>
-            </div>
-          </div>
-          <div class="graph">
-            <div id="global-graph-icon"></div>
-            <div id="global-graph-outer">
-              <div
-                id="global-graph-container"
-                data-cfg='{"drag":true,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
-              ></div>
-            </div>
-          </div>
-          <div class="keybind desktop-only" lang="fr">
-            <kbd id="shortcut-key" data-mapping='["cmd--/","ctrl--/"]'>⌘ /</kbd>
-            <div id="shortcut-container">
-              <div id="shortcut-space">
-                <div id="title">raccourcis clavier</div>
-                <ul>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd><span>recherche</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd><span>graphique</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd
-                      ><span>page d'accueil</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd
-                      ><span>curseur de chat</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd><span>projets</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div id="shortcuts">
-                      <kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd><span>curius</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="center">
-          <div class="page-header"><div class="popover-hint"></div></div>
+          <div class="page-header">
+            <header>
+              <div class="search">
+                <div id="search-icon">
+                  <p>Recherche</p>
+                  <div></div>
+                  <svg
+                    tabindex="0"
+                    aria-labelledby="title desc"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 19.9 19.7"
+                  >
+                    <title id="title">Search</title>
+                    <desc id="desc">Search</desc>
+                    <g class="search-path" fill="none">
+                      <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path>
+                      <circle cx="8" cy="8" r="7"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <div id="search-container">
+                  <div id="search-space">
+                    <input
+                      autocomplete="off"
+                      id="search-bar"
+                      name="search"
+                      type="text"
+                      aria-label="Rechercher quelque chose"
+                      placeholder="Rechercher quelque chose"
+                    />
+                    <div id="search-layout" data-preview="true"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="graph">
+                <div id="global-graph-icon"></div>
+                <div id="global-graph-outer">
+                  <div
+                    id="global-graph-container"
+                    data-cfg='{"drag":true,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
+                  ></div>
+                </div>
+              </div>
+              <div class="keybind desktop-only" lang="fr">
+                <kbd id="shortcut-key" data-mapping='["cmd--/","ctrl--/"]'>⌘ /</kbd>
+                <div id="shortcut-container">
+                  <div id="shortcut-space">
+                    <div id="title">raccourcis clavier</div>
+                    <ul>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--k">⌘ k</kbd
+                          ><span>recherche</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--g">⌘ g</kbd
+                          ><span>graphique</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--\">⌘ \</kbd
+                          ><span>page d'accueil</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--.">⌘ .</kbd
+                          ><span>curseur de chat</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--l">⌘ l</kbd
+                          ><span>projets</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div id="shortcuts">
+                          <kbd id="clickable-kbd" data-keybind="cmd--j">⌘ j</kbd><span>curius</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="popover-hint"></div>
+          </div>
           <div class="popover-hint">
             <article><p></p></article>
             <p>Trouvé 40 étiquettes au total.</p>
@@ -294,11 +291,7 @@
               </div>
               <div>
                 <h2><a class="internal tag-link" href="../tags/commerce4be3">commerce4be3</a></h2>
-                <p>
-                  Introduction to Compensation theory. Introduction to Compensation theory.
-                  Introduction to Compensation theory. Introduction to Compensation theory.
-                  Introduction to Compensation theory.
-                </p>
+                <p>Introduction to Compensation theory.</p>
                 <div class="page-listing">
                   <p>6 éléments avec cette étiquette.</p>
                   <ul class="section-ul">
@@ -1900,7 +1893,8 @@
                 <h2><a class="internal tag-link" href="../tags/philosophy">philosophy</a></h2>
                 <p>
                   Toute idée fausse finit dans le sang, mais il s'agit toujours du sang des autres.
-                  Toute idée fausse finit dans le sang, mais il s'agit toujours du sang des autres.
+                  C'est ce qui explique que certains de nos philosophes se sentent à l'aise pour
+                  dire n'importe quoi.
                 </p>
                 <div class="page-listing">
                   <p>
@@ -2280,10 +2274,60 @@
                 <h2><a class="internal tag-link" href="../tags/seed">seed</a></h2>
                 <div class="page-listing">
                   <p>
-                    82 éléments avec cette étiquette.
+                    86 éléments avec cette étiquette.
                     <span>Affichage des premières 10 étiquettes.</span>
                   </p>
                   <ul class="section-ul">
+                    <li class="section-li">
+                      <div class="section">
+                        <p class="meta">08 mars 2024</p>
+                        <div class="desc">
+                          <h3><a href="../thoughts/Color" class="internal">Color</a></h3>
+                        </div>
+                        <ul class="tags">
+                          <li><a class="internal tag-link" href="../tags/seed">seed</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="section-li">
+                      <div class="section">
+                        <p class="meta">08 mars 2024</p>
+                        <div class="desc">
+                          <h3>
+                            <a href="../thoughts/Gestalt-Principles" class="internal"
+                              >Gestalt Principles</a
+                            >
+                          </h3>
+                        </div>
+                        <ul class="tags">
+                          <li><a class="internal tag-link" href="../tags/seed">seed</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="section-li">
+                      <div class="section">
+                        <p class="meta">08 mars 2024</p>
+                        <div class="desc">
+                          <h3>
+                            <a href="../thoughts/composition" class="internal">composition</a>
+                          </h3>
+                        </div>
+                        <ul class="tags">
+                          <li><a class="internal tag-link" href="../tags/seed">seed</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="section-li">
+                      <div class="section">
+                        <p class="meta">08 mars 2024</p>
+                        <div class="desc">
+                          <h3><a href="../thoughts/design" class="internal">design</a></h3>
+                        </div>
+                        <ul class="tags">
+                          <li><a class="internal tag-link" href="../tags/seed">seed</a></li>
+                        </ul>
+                      </div>
+                    </li>
                     <li class="section-li">
                       <div class="section">
                         <p class="meta">06 mars 2024</p>
@@ -2369,68 +2413,6 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="section-li">
-                      <div class="section">
-                        <p class="meta">24 févr. 2024</p>
-                        <div class="desc">
-                          <h3><a href="../thoughts/Embedding" class="internal">Embedding</a></h3>
-                        </div>
-                        <ul class="tags">
-                          <li><a class="internal tag-link" href="../tags/seed">seed</a></li>
-                          <li><a class="internal tag-link" href="../tags/ml">ml</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="section-li">
-                      <div class="section">
-                        <p class="meta">24 févr. 2024</p>
-                        <div class="desc">
-                          <h3>
-                            <a href="../thoughts/Lyapunov-time" class="internal">Lyapunov time</a>
-                          </h3>
-                        </div>
-                        <ul class="tags">
-                          <li><a class="internal tag-link" href="../tags/seed">seed</a></li>
-                          <li><a class="internal tag-link" href="../tags/math">math</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="section-li">
-                      <div class="section">
-                        <p class="meta">24 févr. 2024</p>
-                        <div class="desc">
-                          <h3>
-                            <a href="../thoughts/personal-computing" class="internal"
-                              >personal computing</a
-                            >
-                          </h3>
-                        </div>
-                        <ul class="tags">
-                          <li><a class="internal tag-link" href="../tags/seed">seed</a></li>
-                          <li>
-                            <a class="internal tag-link" href="../tags/computing">computing</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="section-li">
-                      <div class="section">
-                        <p class="meta">24 févr. 2024</p>
-                        <div class="desc">
-                          <h3>
-                            <a href="../thoughts/representations" class="internal"
-                              >representations.</a
-                            >
-                          </h3>
-                        </div>
-                        <ul class="tags">
-                          <li><a class="internal tag-link" href="../tags/seed">seed</a></li>
-                          <li>
-                            <a class="internal tag-link" href="../tags/philosophy">philosophy</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -2478,7 +2460,7 @@
                 <h2><a class="internal tag-link" href="../tags/sfwr2c03">sfwr2c03</a></h2>
                 <div class="page-listing">
                   <p>
-                    11 éléments avec cette étiquette.
+                    12 éléments avec cette étiquette.
                     <span>Affichage des premières 10 étiquettes.</span>
                   </p>
                   <ul class="section-ul">
@@ -2519,6 +2501,21 @@
                           <h3>
                             <a href="../thoughts/university/sfwr-2c03/a5/A5" class="internal"
                               >Min heap and binary search tree</a
+                            >
+                          </h3>
+                        </div>
+                        <ul class="tags">
+                          <li><a class="internal tag-link" href="../tags/sfwr2c03">sfwr2c03</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="section-li">
+                      <div class="section">
+                        <p class="meta">25 févr. 2024</p>
+                        <div class="desc">
+                          <h3>
+                            <a href="../thoughts/university/sfwr-2c03/a6/A6" class="internal"
+                              >LLRB and hash tables</a
                             >
                           </h3>
                         </div>
@@ -2617,29 +2614,14 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="section-li">
-                      <div class="section">
-                        <p class="meta">07 janv. 2024</p>
-                        <div class="desc">
-                          <h3>
-                            <a href="../thoughts/university/sfwr-2c03/a1/A1" class="internal"
-                              >Time complexity and recurrence relations</a
-                            >
-                          </h3>
-                        </div>
-                        <ul class="tags">
-                          <li><a class="internal tag-link" href="../tags/sfwr2c03">sfwr2c03</a></li>
-                        </ul>
-                      </div>
-                    </li>
                   </ul>
                 </div>
               </div>
               <div>
                 <h2><a class="internal tag-link" href="../tags/sfwr2fa3">sfwr2fa3</a></h2>
                 <p>
-                  See books Prof. See books Prof. See books Prof. See books Prof. See books Prof.
-                  See books Prof. See books Prof. See books Prof. See books Prof. See books Prof.
+                  See books Prof. Vincent Maccio Assignment 1: week 5 Assignment 2: week 9 Midterm:
+                  March 8th Assignment 3: week 12.
                 </p>
                 <div class="page-listing">
                   <p>5 éléments avec cette étiquette.</p>
@@ -2767,9 +2749,9 @@
               <div>
                 <h2><a class="internal tag-link" href="../tags/sfwr3dx4">sfwr3dx4</a></h2>
                 <p>
-                  Douglas Down at ITB216 Book: N.S. Douglas Down at ITB216 Book: N.S. Douglas Down
-                  at ITB216 Book: N.S. Douglas Down at ITB216 Book: N.S. Douglas Down at ITB216
-                  Book: N.S.
+                  Douglas Down at ITB216 Book: N.S. Nise, Control Systems Engineering (8th edition),
+                  John Wiley &amp;amp; Sons Inc., 2019. ISBN: 978-1-119-47422-7 and pdf version
+                  Sheets can be found here.
                 </p>
                 <div class="page-listing">
                   <p>
@@ -3539,7 +3521,6 @@
       </div>
       <div class="spacer"></div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -3787,14 +3768,6 @@
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="../postscript.js" type="module"></script>

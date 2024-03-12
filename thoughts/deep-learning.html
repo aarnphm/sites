@@ -3,8 +3,6 @@
   <head>
     <title>deep learning</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -16,16 +14,16 @@
     <meta name="twitter:title" content="deep learning" />
     <meta
       name="twitter:description"
-      content="See also: The Little Book of Deep Learning (pdf or lectures) math. See also: The Little Book of Deep Learning (pdf or lectures) math. See also: The Little Book of Deep Learning (pdf or lectures) math."
+      content="See also: The Little Book of Deep Learning (pdf or lectures) math. frameworks. PyTorch Jax: from autograd project, by pretty much the same core team ."
     />
     <meta
       property="og:description"
-      content="See also: The Little Book of Deep Learning (pdf or lectures) math. See also: The Little Book of Deep Learning (pdf or lectures) math. See also: The Little Book of Deep Learning (pdf or lectures) math."
+      content="See also: The Little Book of Deep Learning (pdf or lectures) math. frameworks. PyTorch Jax: from autograd project, by pretty much the same core team ."
     />
     <meta property="og:image:type" content="image/webp" />
     <meta
       property="og:image:alt"
-      content="See also: The Little Book of Deep Learning (pdf or lectures) math. See also: The Little Book of Deep Learning (pdf or lectures) math. See also: The Little Book of Deep Learning (pdf or lectures) math."
+      content="See also: The Little Book of Deep Learning (pdf or lectures) math. frameworks. PyTorch Jax: from autograd project, by pretty much the same core team ."
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -50,7 +48,7 @@
     <link rel="canonical" href="https:/aarnphm.xyz/thoughts/deep-learning" />
     <meta
       name="description"
-      content="See also: The Little Book of Deep Learning (pdf or lectures) math. See also: The Little Book of Deep Learning (pdf or lectures) math. See also: The Little Book of Deep Learning (pdf or lectures) math."
+      content="See also: The Little Book of Deep Learning (pdf or lectures) math. frameworks. PyTorch Jax: from autograd project, by pretty much the same core team ."
     />
     <meta name="generator" content="Quartz" />
     <link href="../index.css" rel="stylesheet" type="text/css" spa-preserve />
@@ -62,12 +60,6 @@
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
       rel="stylesheet"
       type="text/css"
       spa-preserve
@@ -96,30 +88,7 @@
                       class="page-modification"
                       title="Date de modification du contenu de la page"
                       ><em>07 févr. 2024</em></span
-                    >
-                    <div class="popover" id="content-popover">
-                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
-                        <pre data-language="markdown">
----
-id: deep learning
-tags:
-  - ml
-  - seed
-date: &quot;2024-01-11&quot;
-title: deep learning
----
-
-See also: [The Little Book of Deep Learning](/books#2024) ([pdf](https://fleuret.org/public/lbdl.pdf) or [lectures](https://fleuret.org/dlc/))
-
-### math.
-
-### frameworks.
-
-- [PyTorch](https://pytorch.org/)
-- [[thoughts/Jax|Jax]]: from [autograd](https://github.com/HIPS/autograd) project, by pretty much the same core team</pre
-                        >
-                      </div>
-                    </div></a
+                    ></a
                   >
                 </li>
                 <li>
@@ -376,7 +345,6 @@ See also: [The Little Book of Deep Learning](/books#2024) ([pdf](https://fleuret
       </div>
       <div class="spacer"></div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -624,14 +592,6 @@ See also: [The Little Book of Deep Learning](/books#2024) ([pdf](https://fleuret
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="../postscript.js" type="module"></script>

@@ -3,8 +3,6 @@
   <head>
     <title>Quantization</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -16,16 +14,16 @@
     <meta name="twitter:title" content="Quantization" />
     <meta
       name="twitter:description"
-      content="See also: this talk I gave at Hack the North 2023. See also: this talk I gave at Hack the North 2023. See also: this talk I gave at Hack the North 2023."
+      content="See also: this talk I gave at Hack the North 2023. reduce computational and memory costs of running inference with representing the weight and activations with low-precision data type int16 - half precision bfloat16 int8 Note This also applies to post-training quantization, where the methodology is applied after the model has been trained, instead of during load-time."
     />
     <meta
       property="og:description"
-      content="See also: this talk I gave at Hack the North 2023. See also: this talk I gave at Hack the North 2023. See also: this talk I gave at Hack the North 2023."
+      content="See also: this talk I gave at Hack the North 2023. reduce computational and memory costs of running inference with representing the weight and activations with low-precision data type int16 - half precision bfloat16 int8 Note This also applies to post-training quantization, where the methodology is applied after the model has been trained, instead of during load-time."
     />
     <meta property="og:image:type" content="image/webp" />
     <meta
       property="og:image:alt"
-      content="See also: this talk I gave at Hack the North 2023. See also: this talk I gave at Hack the North 2023. See also: this talk I gave at Hack the North 2023."
+      content="See also: this talk I gave at Hack the North 2023. reduce computational and memory costs of running inference with representing the weight and activations with low-precision data type int16 - half precision bfloat16 int8 Note This also applies to post-training quantization, where the methodology is applied after the model has been trained, instead of during load-time."
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -50,7 +48,7 @@
     <link rel="canonical" href="https:/aarnphm.xyz/thoughts/quantization" />
     <meta
       name="description"
-      content="See also: this talk I gave at Hack the North 2023. See also: this talk I gave at Hack the North 2023. See also: this talk I gave at Hack the North 2023."
+      content="See also: this talk I gave at Hack the North 2023. reduce computational and memory costs of running inference with representing the weight and activations with low-precision data type int16 - half precision bfloat16 int8 Note This also applies to post-training quantization, where the methodology is applied after the model has been trained, instead of during load-time."
     />
     <meta name="generator" content="Quartz" />
     <link href="../index.css" rel="stylesheet" type="text/css" spa-preserve />
@@ -62,12 +60,6 @@
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
       rel="stylesheet"
       type="text/css"
       spa-preserve
@@ -96,84 +88,7 @@
                       class="page-modification"
                       title="Date de modification du contenu de la page"
                       ><em>19 févr. 2024</em></span
-                    >
-                    <div class="popover" id="content-popover">
-                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
-                        <pre data-language="markdown">
----
-id: quantization
-tags:
-  - seed
-  - ml
-date: &quot;2024-02-05&quot;
-title: Quantization
----
-
-See also: [[thoughts/images/htn-openllm.pdf|this talk]] I gave at Hack the North 2023.
-
-> reduce computational and memory costs of running inference with representing the weight and activations with low-precision data type
-
-- `int16` - [[thoughts/quantization#fp32-to-fp16|half precision]]
-- `bfloat16`
-- `int8`
-
-> [!note]
-> 
-> This also applies to post-training quantization, where the methodology is applied after the model has been trained, instead of during load-time.
-
-## `fp32` to `fp16`
-
-> Does my operation support `fp16`?
-
-- CPU does support saving `fp16` weights, but computations are done in `fp32`
-
-> Does my operation _sensitive_ to `fp16`?
-
-For example `epsilon` in `LayerNormalization` usually is very small $1e^{-12}$, but smallest value in `fp16` is $\approx 6e^{-5}$, which cause `NaN` issues.
-
-## `fp32` to `int8`
-
-
-Consider a float `x` in `[a, b]`, such that _affine quantization scheme_:
-
-$$
-x = S \cdot (x_q - Z)
-$$
-
-where:
-
-- $x_q$ is the quantized `int8` associated with `x`
-- $S$ and $Z$ are scaling and zero-point parameters
-  - $S$ is the scale, positive `float32`
-  - $Z$ is the zero-point, or the `int8` value corresponding to value `0` in `fp32`
-
-Thus quantized value $x_q$ is: $x_q = \text{round}(x / S + Z)$
-
-And `fp32` value outside of `[a, b]` is clipped to closest representable value.
-
-$$
-\forall x \in [a, b] \quad x_q = \text{clip}(\text{round}(x/S + Z), \text{round}(a/S + Z), \text{round}(b/S + Z))
-$$
-
-See also: [paper](https://arxiv.org/abs/1712.05877)
-
-## quantization time
-
-- Post-training **dynamic quantization**: range of each activation is computed on the fly at _runtime_
-- Post-training **static quantization**: range of each activation is computed _offline_ before _runtime_
-  - Observers are put on activations to collect their value
-  - certain number of forward passes on calibration datasets
-  - range of each computation are computed according to some _calibration technique_
-- **Quantization aware training**: range of each activation is computed _during training_
-  - `fake_quantize` operations are inserted in the computation graph
-  - `fake_quantize` is a no-op during inference, but during training, it simulates the effect of quantization
-
-## Methods and libraries
-
-[bitsandbytes](https://github.com/TimDettmers/bitsandbytes) and [GPTQ](https://arxiv.org/abs/2210.17323)</pre
-                        >
-                      </div>
-                    </div></a
+                    ></a
                   >
                 </li>
                 <li>
@@ -910,7 +825,6 @@ See also: [paper](https://arxiv.org/abs/1712.05877)
       </div>
       <div class="spacer"></div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -1158,14 +1072,6 @@ See also: [paper](https://arxiv.org/abs/1712.05877)
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="../postscript.js" type="module"></script>

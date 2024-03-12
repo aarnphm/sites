@@ -3,8 +3,6 @@
   <head>
     <title>Jax</title>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
@@ -16,16 +14,16 @@
     <meta name="twitter:title" content="Jax" />
     <meta
       name="twitter:description"
-      content="Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd."
+      content="Numpy + Autograd. Use XLA to compile and run NumPy code on accelerators. Asynchronous dispatch, for sync use block_until_ready() import jax.numpy as jnp from jax import random key = random.PRNGKey(0) x = random.normal(key, (10,)) jnp.dot(x, x.T).block_until_ready() notable function: jit() for compilation of multiple computations grad() for performing transformation (autodiff, Jacobian-vector product) vmap() for auto-vectorisation Arrays are immutable in Jax Treat functions as pure as to compiled with XLA import jax.numpy as jnp from jax import jit @jit def diff(a, b, w=0): return jnp.dot(a, b) + w."
     />
     <meta
       property="og:description"
-      content="Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd."
+      content="Numpy + Autograd. Use XLA to compile and run NumPy code on accelerators. Asynchronous dispatch, for sync use block_until_ready() import jax.numpy as jnp from jax import random key = random.PRNGKey(0) x = random.normal(key, (10,)) jnp.dot(x, x.T).block_until_ready() notable function: jit() for compilation of multiple computations grad() for performing transformation (autodiff, Jacobian-vector product) vmap() for auto-vectorisation Arrays are immutable in Jax Treat functions as pure as to compiled with XLA import jax.numpy as jnp from jax import jit @jit def diff(a, b, w=0): return jnp.dot(a, b) + w."
     />
     <meta property="og:image:type" content="image/webp" />
     <meta
       property="og:image:alt"
-      content="Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd."
+      content="Numpy + Autograd. Use XLA to compile and run NumPy code on accelerators. Asynchronous dispatch, for sync use block_until_ready() import jax.numpy as jnp from jax import random key = random.PRNGKey(0) x = random.normal(key, (10,)) jnp.dot(x, x.T).block_until_ready() notable function: jit() for compilation of multiple computations grad() for performing transformation (autodiff, Jacobian-vector product) vmap() for auto-vectorisation Arrays are immutable in Jax Treat functions as pure as to compiled with XLA import jax.numpy as jnp from jax import jit @jit def diff(a, b, w=0): return jnp.dot(a, b) + w."
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -50,7 +48,7 @@
     <link rel="canonical" href="https:/aarnphm.xyz/thoughts/Jax" />
     <meta
       name="description"
-      content="Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd. Numpy + Autograd."
+      content="Numpy + Autograd. Use XLA to compile and run NumPy code on accelerators. Asynchronous dispatch, for sync use block_until_ready() import jax.numpy as jnp from jax import random key = random.PRNGKey(0) x = random.normal(key, (10,)) jnp.dot(x, x.T).block_until_ready() notable function: jit() for compilation of multiple computations grad() for performing transformation (autodiff, Jacobian-vector product) vmap() for auto-vectorisation Arrays are immutable in Jax Treat functions as pure as to compiled with XLA import jax.numpy as jnp from jax import jit @jit def diff(a, b, w=0): return jnp.dot(a, b) + w."
     />
     <meta name="generator" content="Quartz" />
     <link href="../index.css" rel="stylesheet" type="text/css" spa-preserve />
@@ -62,12 +60,6 @@
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
-    <link
-      href="https://unpkg.com/cursor-chat/dist/style.css"
       rel="stylesheet"
       type="text/css"
       spa-preserve
@@ -96,53 +88,7 @@
                       class="page-modification"
                       title="Date de modification du contenu de la page"
                       ><em>04 mars 2024</em></span
-                    >
-                    <div class="popover" id="content-popover">
-                      <div class="popover-inner" data-content-type="text/html" style="width: 50rem">
-                        <pre data-language="markdown">
----
-id: Jax
-tags:
-  - seed
-  - ml
-date: &quot;2022-11-07&quot;
-title: Jax
----
-
-Numpy + [[thoughts/Autograd|Autograd]]. Use [[thoughts/XLA|XLA]] to compile and run NumPy code on accelerators.
-Asynchronous dispatch, for sync use `block_until_ready()`
-
-```python
-import jax.numpy as jnp
-from jax import random
-
-key = random.PRNGKey(0)
-x = random.normal(key, (10,))
-jnp.dot(x, x.T).block_until_ready()
-```
-
-- notable function:
-  - `jit()` for compilation of multiple computations
-  - `grad()` for performing transformation (autodiff, Jacobian-vector product)
-  - `vmap()` for auto-vectorisation
-
-> Arrays are **immutable** in Jax
-
-- Treat functions as pure as to compiled with [[thoughts/XLA]]
-
-```python
-import jax.numpy as jnp
-
-from jax import jit
-
-
-@jit
-def diff(a, b, w=0):
-    return jnp.dot(a, b) + w
-```</pre
-                        >
-                      </div>
-                    </div></a
+                    ></a
                   >
                 </li>
                 <li>
@@ -360,7 +306,6 @@ def diff(a, b, w=0):
       </div>
       <div class="spacer"></div>
     </div>
-    <div id="cursor-chat-layer"><input type="text" id="cursor-chat-box" /></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
@@ -608,14 +553,6 @@ def diff(a, b, w=0):
           querySelector: ".mermaid",
         })
       }
-    })
-  </script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      const chat = await import("https://esm.sh/cursor-chat")
-      chat.initCursorChat(`cursor-chat-room-${window.location.host + window.location.pathname}`, {
-        triggerKey: ".",
-      })
     })
   </script>
   <script src="../postscript.js" type="module"></script>
