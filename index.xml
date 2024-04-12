@@ -6,6 +6,132 @@
       <description>Les dernières 40 notes on Aaron&#039;s notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>being.</title>
+    <link>https://aarnphm.xyz/thoughts/being</link>
+    <guid>https://aarnphm.xyz/thoughts/being</guid>
+    <description>What is being as a part of epistemology? why do we practice art? Practice anything, no matter how well or how bad, we practice art as a act of becoming, for our soul to grow. ...</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Economics as an engineer, a guide.</title>
+    <link>https://aarnphm.xyz/thoughts/university/eng-3px3/Finals</link>
+    <guid>https://aarnphm.xyz/thoughts/university/eng-3px3/Finals</guid>
+    <description>samples. 29.a 30.a behavioural economics invisible hand of the market: self-interest of individuals leads to the best outcome for society as a whole, in a free market economy, as rational actors are motivated by incentives.</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Non-linear Optimization</title>
+    <link>https://aarnphm.xyz/thoughts/university/eng-3px3/Non-linear-optimization</link>
+    <guid>https://aarnphm.xyz/thoughts/university/eng-3px3/Non-linear-optimization</guid>
+    <description>See also slides.</description>
+    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Context-free grammar and push-down Turing machine</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/a3/A3</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/a3/A3</guid>
+    <description>Problème 1. Give a context free grammar for the following language: L={anbmck∣k=n+m} Solution The following CFG generates the language L: SS1​S2​S3​ABC​→S1​∣S2​∣S3​→aS1​c∣aS1​∣A→bS2​c∣bS2​∣B→aS3​b∣cS3​∣C→aAc∣aA∣a∣ε→bBc∣bB∣b∣ε→aCb∣cC∣c∣ε​ Problème 2.</description>
+    <pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Observer and state-space model</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/a5/A5</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/a5/A5</guid>
+    <description>Problemè 1 Consider the following state-space model: x˙y​=​00−5​10−6​010​​x+​001​​u=[1​0​0​]x​ Design an observer to place the observer poles at -10, -10, -15 Solution The ...</description>
+    <pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>latent space</title>
+    <link>https://aarnphm.xyz/thoughts/latent-space</link>
+    <guid>https://aarnphm.xyz/thoughts/latent-space</guid>
+    <description></description>
+    <pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Steady state error and PID controller</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab5/prelab</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab5/prelab</guid>
+    <description>See also problem Problemè 1 In Lab 4, We used a PD compensator to control our ball and beam apparatus. The transfer function of our PD compensator was as follows: GC​(s)=KD​s+KP​ However, we did not use the compensator in this form.</description>
+    <pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>MST with shortest path optimisation</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a10/A10</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a10/A10</guid>
+    <description> Problème 1. Consider we want to build McMaster Maps, the best online route planning tool in existence. The developers of McMaster maps have decided to represent road information in terms of a a massive graph in which nodes are crossing and the edges are the roads between crossings.</description>
+    <pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Joint-control open-loop system</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/a4/A4</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/a4/A4</guid>
+    <description>See also problem Problemè 1 A robot arm has a joint-control open-loop transfer function G(s)=s(s+10)(s+40)300(s+100)​ 1.a Plot the asymptotic approximation of the Bode plot The ...</description>
+    <pubDate>Thu, 28 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Attractor</title>
+    <link>https://aarnphm.xyz/thoughts/attractor</link>
+    <guid>https://aarnphm.xyz/thoughts/attractor</guid>
+    <description>A set of points described by a dynamical system. Some exhibits chaotic behaviour, see also Paul Bourke’s work Often create visually appealing patterns, but its applications range from physics to biology: how we understand weather patterns, bird migration patterns, quantum phenomena.</description>
+    <pubDate>Mon, 25 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Shortest path and series-parallel graph</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a9/A9</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a9/A9</guid>
+    <description> Problème 1. A regional government wants to improve their existing infrastructure between a collection of towns T. In specific, the government want to build a minimum number of roads such that there is a route from each town to each other town.</description>
+    <pubDate>Mon, 25 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>dundurn.</title>
+    <link>https://aarnphm.xyz/thoughts/atelier-with-friends/dundurn</link>
+    <guid>https://aarnphm.xyz/thoughts/atelier-with-friends/dundurn</guid>
+    <description>atelier with friends deux - orangeville.</description>
+    <pubDate>Sat, 23 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Trees path</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a8/A8</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a8/A8</guid>
+    <description> Problème 1. Let G=(N,E) be an undirected tree (graph G is undirected, connected, and has ∣N∣=∣E∣+1 if we count edges (v,w) and (w,v) as the same edge).</description>
+    <pubDate>Fri, 22 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Gather</title>
+    <link>https://aarnphm.xyz/thoughts/Gather</link>
+    <guid>https://aarnphm.xyz/thoughts/Gather</guid>
+    <description>Gather, by The Mother Company.</description>
+    <pubDate>Wed, 20 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Uber compensation analysis</title>
+    <link>https://aarnphm.xyz/thoughts/university/commerce-4be3/Final-report</link>
+    <guid>https://aarnphm.xyz/thoughts/university/commerce-4be3/Final-report</guid>
+    <description>a Uber compensation policies case study.</description>
+    <pubDate>Wed, 20 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Root locus and graphical analysis</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab4/prelab</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab4/prelab</guid>
+    <description>See also problem Problemè 1 1.a What does a root locus plot depict? A root locus plot depicts locations of the closed-loop poles of a system in the complex s-plane as a function of a gain ...</description>
+    <pubDate>Wed, 20 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>distraction</title>
+    <link>https://aarnphm.xyz/thoughts/distraction</link>
+    <guid>https://aarnphm.xyz/thoughts/distraction</guid>
+    <description>See this tweet.</description>
+    <pubDate>Mon, 18 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Regex, pumping lemma</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/a2/A2</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2fa3/a2/A2</guid>
+    <description>Problème 1. Give regular expression for the languages bellow 1.a L={anbm∣(n+m)%2=0} L=(aa)∗(bb)∗+a(aa)∗b(bb)∗ 1.b L={w∣w does not contain the substring: aba} L=b∗+b∗a+b∗+b∗(ab+)∗ab∗ 1.c L={w∣w has an even number of b′s} L=a∗+a∗ba∗ba∗ Problème 2.</description>
+    <pubDate>Mon, 18 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Open-loop system</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/a3/A3</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/a3/A3</guid>
+    <description>See also problem Problemè 1 A unity feedback system has transfer function G(s)=s(s2+4s+13)K​ 1.a Plot the root locus for this problem We need to find the poles and zeros of the open-loop ...</description>
+    <pubDate>Mon, 18 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Graph search and A-star</title>
+    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a7/A7</link>
+    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a7/A7</guid>
+    <description> Problème 1. Consider a m×n game board in which each cell has a numeric value, e.g: GHIJK​A13123​B24433​C24112​D34341​E44114​F21422​​ A player starts the game with a token in the top-left cell (the cell GA in this example) and the player finishes the game by moving to the bottom-right cell (the cell KF in this example).</description>
+    <pubDate>Sun, 17 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Discrete Mathematics</title>
+    <link>https://aarnphm.xyz/tags/sfwr2fa3</link>
+    <guid>https://aarnphm.xyz/tags/sfwr2fa3</guid>
+    <description>See books Prof. Vincent Maccio Assignment 1: week 5 Assignment 2: week 9 Midterm: March 8th Assignment 3: week 12.</description>
+    <pubDate>Fri, 15 Mar 2024 23:17:27 GMT</pubDate>
+  </item><item>
     <title>Color</title>
     <link>https://aarnphm.xyz/thoughts/Color</link>
     <guid>https://aarnphm.xyz/thoughts/Color</guid>
@@ -30,12 +156,6 @@
     <description>what?.</description>
     <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
-    <title>Discrete Mathematics</title>
-    <link>https://aarnphm.xyz/tags/sfwr2fa3</link>
-    <guid>https://aarnphm.xyz/tags/sfwr2fa3</guid>
-    <description>See books Prof. Vincent Maccio Assignment 1: week 5 Assignment 2: week 9 Midterm: March 8th Assignment 3: week 12.</description>
-    <pubDate>Fri, 08 Mar 2024 09:02:42 GMT</pubDate>
-  </item><item>
     <title>orangeville.</title>
     <link>https://aarnphm.xyz/thoughts/atelier-with-friends/orangeville</link>
     <guid>https://aarnphm.xyz/thoughts/atelier-with-friends/orangeville</guid>
@@ -57,7 +177,7 @@
     <title>atelier with friends.</title>
     <link>https://aarnphm.xyz/thoughts/atelier-with-friends/</link>
     <guid>https://aarnphm.xyz/thoughts/atelier-with-friends/</guid>
-    <description>Somewhat impromptu supper club hosted by yours truly.</description>
+    <description>Somewhat impromptu supper club hosted by yours truly. See also dishes for a comprehensive repertoire.</description>
     <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Atmospheric properties for exoplanets</title>
@@ -125,126 +245,6 @@
     <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/a2/content</guid>
     <description>problem 1. Consider the following system: Question Using the properties of second-order systems, determine Kp​ and Kd​ such that the overshoot is 10 percent and the settling time is 1 second.</description>
     <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Existentialism</title>
-    <link>https://aarnphm.xyz/thoughts/Existentialism</link>
-    <guid>https://aarnphm.xyz/thoughts/Existentialism</guid>
-    <description></description>
-    <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Die Verwandlung, Frank Kafka</title>
-    <link>https://aarnphm.xyz/thoughts/metamorphosis</link>
-    <guid>https://aarnphm.xyz/thoughts/metamorphosis</guid>
-    <description></description>
-    <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Camus</title>
-    <link>https://aarnphm.xyz/thoughts/Camus</link>
-    <guid>https://aarnphm.xyz/thoughts/Camus</guid>
-    <description>Of the absurd reasoning and existentialism. The Myth of Sisyphus Absurd and suicide Suicide is the solution for the absurd: People never died because of ontological arguments Suicide is often the result of people who didn’t find worth in the living Life is not worth living therefore I took the easy way out as a paradox: Suicide is the justification of meaning of life ← the most important question for philosophers From Nietzchean prose, those who say “no” acts as if they said “yes”: Schopenhauer Fantasise the act of eluding: Hope of another life one must “deserve” or trickery those who lives not for life itself but for some great idea that will transcend it, refine it, give it meaning, and betray it.</description>
-    <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Designing Pay Levels and Employee Benefits</title>
-    <link>https://aarnphm.xyz/thoughts/university/commerce-4be3/Designing-Pay-Levels--and-Employee-Benefits</link>
-    <guid>https://aarnphm.xyz/thoughts/university/commerce-4be3/Designing-Pay-Levels--and-Employee-Benefits</guid>
-    <description>See also Designing Pay Levels, Pay Mix and Pay Structure and Pay Employment Benefits decision for externally competitive pay levels and structure. employer’s competitive pay policy purpose of survey construct market line.</description>
-    <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Root locus control</title>
-    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/Root-locus-control</link>
-    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/Root-locus-control</guid>
-    <description>See also slides and Root locus closed-loop properties of the function of K1​G(s) @font-face { font-family: &quot;Virgil&quot;; src: url(&quot;excalidraw.com/Virgil.woff2&quot;); ...</description>
-    <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Root locus</title>
-    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/Root-locus</link>
-    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/Root-locus</guid>
-    <description>See also slides.</description>
-    <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Voltage-controlled electromechanical systems</title>
-    <link>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/content</link>
-    <guid>https://aarnphm.xyz/thoughts/university/sfwr-3dx4/lab3/content</guid>
-    <description>See lab notes and prelab. Question Do you notice a pattern in the DC gain values you calculated? If so, what is that pattern? All DC gain are constant around A≈98.76, and Input voltage wrt DC gain is linear.</description>
-    <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>group theory</title>
-    <link>https://aarnphm.xyz/thoughts/Group-theory</link>
-    <guid>https://aarnphm.xyz/thoughts/Group-theory</guid>
-    <description>Graph isomorphism.</description>
-    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>reason</title>
-    <link>https://aarnphm.xyz/thoughts/reason</link>
-    <guid>https://aarnphm.xyz/thoughts/reason</guid>
-    <description>inductive. deductive.</description>
-    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Heating, Cooling, and the Greenhouse Effect</title>
-    <link>https://aarnphm.xyz/thoughts/university/astron-2e03/Heating-Cooling-GH-effect</link>
-    <guid>https://aarnphm.xyz/thoughts/university/astron-2e03/Heating-Cooling-GH-effect</guid>
-    <description>Ref: slides toy modal. eq: Tsurf​ 1.32×Tatm, 2​ General form of T_{\text{surf}} with n atmospheric layers Tsurf​=[ω(n+1)S​]41​=(n+1)41​×Tatm, n​ .</description>
-    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Graphs</title>
-    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Graphs</link>
-    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Graphs</guid>
-    <description>See also slides Node as information and edges as relationship between data Directed acyclic graph (DAG) Application: Merkle DAG undirected. (\mathcal{N}, \mathcal{E}) N: set of vertices E: set of undirected edges: E⊆N×N path is a sequence of nodes and edges connect two nodes.</description>
-    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Hash tables</title>
-    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Hash-tables</link>
-    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/Hash-tables</guid>
-    <description>See also slides.</description>
-    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Min heap and binary search tree</title>
-    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a5/A5</link>
-    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a5/A5</guid>
-    <description> Problème 1. Consider the following sequence of values S=[3,42,39,86,49,89,99,20,88,51,64] Note We can represent tree textually via the following representation 13 ( 11 ( 8 ( 2 4 ) 12 ( * 1 ) ) 7 ( 5 6 ( 99 * ) ) ) Where we use ∗ as a placeholder for a missing child for those nodes that only have a single child.</description>
-    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>LLRB and hash tables</title>
-    <link>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a6/A6</link>
-    <guid>https://aarnphm.xyz/thoughts/university/sfwr-2c03/a6/A6</guid>
-    <description> Problème 1. Consider the sequence of values S=[3,42,39,86,49,89,99,20,88,51,64] 1.1 Draw a left-leaning red-black tree obtained by adding the values in S in sequence.</description>
-    <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Embedding</title>
-    <link>https://aarnphm.xyz/thoughts/Embedding</link>
-    <guid>https://aarnphm.xyz/thoughts/Embedding</guid>
-    <description>See also Transformers.</description>
-    <pubDate>Sun, 25 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Lyapunov time</title>
-    <link>https://aarnphm.xyz/thoughts/Lyapunov-time</link>
-    <guid>https://aarnphm.xyz/thoughts/Lyapunov-time</guid>
-    <description></description>
-    <pubDate>Sun, 25 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>personal computing</title>
-    <link>https://aarnphm.xyz/thoughts/personal-computing</link>
-    <guid>https://aarnphm.xyz/thoughts/personal-computing</guid>
-    <description>See this tweet.</description>
-    <pubDate>Sun, 25 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>representations.</title>
-    <link>https://aarnphm.xyz/thoughts/representations</link>
-    <guid>https://aarnphm.xyz/thoughts/representations</guid>
-    <description></description>
-    <pubDate>Sun, 25 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Giles Deleuze</title>
-    <link>https://aarnphm.xyz/thoughts/Giles-Deleuze</link>
-    <guid>https://aarnphm.xyz/thoughts/Giles-Deleuze</guid>
-    <description>French philosopher, known for his work on the concept of multiplicity, being and affirmation. Also work on critical philosophy and the study of sense and value.</description>
-    <pubDate>Sat, 24 Feb 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Will to Power</title>
-    <link>https://aarnphm.xyz/thoughts/Will-to-Power</link>
-    <guid>https://aarnphm.xyz/thoughts/Will-to-Power</guid>
-    <description></description>
-    <pubDate>Sat, 24 Feb 2024 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>

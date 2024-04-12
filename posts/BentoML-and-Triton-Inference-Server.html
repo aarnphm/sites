@@ -1,477 +1,106 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <title>BentoML. Triton Inference Server. Choose 2</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="og:site_name" content="Aaron's notes" />
-    <meta property="og:locale" content="fr-FR" />
-    <meta property="og:title" content="BentoML. Triton Inference Server. Choose 2" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:site" content="@aarnphm_" />
-    <meta name="twitter:creator" content="@aarnphm_" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="BentoML. Triton Inference Server. Choose 2" />
-    <meta name="twitter:description" content="BentoML and Triton Inference Server integration." />
-    <meta property="og:description" content="BentoML and Triton Inference Server integration." />
-    <meta property="og:image:type" content="image/webp" />
-    <meta property="og:image:alt" content="BentoML and Triton Inference Server integration." />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:width" content="1200" />
-    <meta property="og:height" content="630" />
-    <meta
-      property="og:image"
-      content="https://aarnphm.xyz/static/social-images/posts-BentoML-and-Triton-Inference-Server.webp"
-    />
-    <meta
-      property="og:url"
-      content="https:/aarnphm.xyz/posts/BentoML-and-Triton-Inference-Server"
-    />
-    <meta
-      property="og:image"
-      content="https://aarnphm.xyz/static/social-images/posts-BentoML-and-Triton-Inference-Server.webp"
-    />
-    <meta
-      name="twitter:image"
-      content="https://aarnphm.xyz/static/social-images/posts-BentoML-and-Triton-Inference-Server.webp"
-    />
-    <meta property="twitter:domain" content="https://aarnphm.xyz/" />
-    <meta
-      property="twitter:url"
-      content="https:/aarnphm.xyz/posts/BentoML-and-Triton-Inference-Server"
-    />
-    <link rel="icon" href="../static/icon.webp" />
-    <link rel="canonical" href="https:/aarnphm.xyz/posts/BentoML-and-Triton-Inference-Server" />
-    <meta name="description" content="BentoML and Triton Inference Server integration." />
-    <meta name="generator" content="Quartz" />
-    <link href="../index.css" rel="stylesheet" type="text/css" spa-preserve />
-    <link
-      href="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css"
-      rel="stylesheet"
-      type="text/css"
-      spa-preserve
-    />
-    <script src="../prescript.js" type="application/javascript" spa-preserve></script>
-    <script type="application/javascript" spa-preserve>
-      const fetchData = fetch("../static/contentIndex.json").then((data) => data.json())
-    </script>
-  </head>
-  <body
-    data-slug="posts/BentoML-and-Triton-Inference-Server"
-    data-enable-preview="true"
-    data-menu="false"
-  >
-    <div id="quartz-root" class="page">
-      <div id="quartz-body">
-        <div class="center">
-          <div class="page-header">
-            <div class="popover-hint">
-              <h1 class="article-title">BentoML. Triton Inference Server. Choose 2</h1>
-              <ul class="content-meta">
-                <li>
-                  <span class="page-creation" title="Date de création du contenu de la page"
-                    ><em>21 mars 2023</em></span
-                  >
-                </li>
-                <li>
-                  <a class="ref-source internal"
-                    ><span
-                      class="page-modification"
-                      title="Date de modification du contenu de la page"
-                      ><em>09 févr. 2024</em></span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <span class="reading-time" title="Temps de lecture estimé">7 min read</span>
-                </li>
-              </ul>
-              <ul class="tags">
-                <li><a href="../tags/technical" class="internal tag-link">technical</a></li>
-                <li><a href="../tags/ml" class="internal tag-link">ml</a></li>
-              </ul>
-            </div>
-          </div>
-          <article class="popover-hint">
-            <p>
-              We are seeing a surge in recent months of developments and works on large language
-              models (LLM) and its applications such as ChatGPT,
-              <a
-                href="https://modelserving.com/blog/creating-stable-diffusion-20-service-with-bentoml-and-diffusers"
-                class="external"
-                >Stable Diffusion<svg class="external-icon" viewBox="0 0 512 512">
-                  <path
-                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                  ></path></svg></a
-              >, Copilot.
-            </p>
-            <p>
-              However, deploying and serving LLMs at scale is a challenging task that requires
-              specific domain expertise and inference infrastructure. A
-              <a
-                href="https://twitter.com/tomgoldsteincs/status/1600196981955100694?s=20"
-                class="external"
-                >rough estimation<svg class="external-icon" viewBox="0 0 512 512">
-                  <path
-                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                  ></path></svg
-              ></a>
-              of running ChatGPT shows that serving efficiency is critical to making such models
-              work at scale. These operations are often known as Large Language Models Operations
-              (LLMOps). LLMOps, in general, is considered as a subset of MLOps, which is a set of
-              practices combining software engineering, DevOps, and data science to automate and
-              scale the end-to-end lifecycle of ML models.
-            </p>
-            <p>
-              Teams can encounter several problems when running inference on large models,
-              including:
-            </p>
-            <ul>
-              <li>
-                <em>Resource utilisation</em>: Large models require a significant amount of
-                computational power to run, which can be challenging for teams with limited
-                resources. Serving frameworks should utilise all available resources to be
-                cost-effective.
-              </li>
-              <li>
-                <em>Model optimisation</em>: Large models often contains a lot of redundant layers
-                and parameters that can be pruned to reduce model size and speed up inference. A
-                serving framework ideally should be able to provide support for model optimisation
-                library to aid this process.
-              </li>
-              <li>
-                <em>Serving latency</em>: Large language models often require complex batching
-                strategies to enable real-time inference. A serving framework should be equipped
-                with batching strategies to optimise for low-latency serving.
-              </li>
-            </ul>
-            <p>
-              In this blog post, we will be demonstrating the capabilities of BentoML and Triton
-              Inference Server to help you solve these problems.
-            </p>
-            <h2 id="what-is-triton-inference-server">
-              What is Triton Inference Server?<a
-                role="anchor"
-                aria-hidden="true"
-                tabindex="-1"
-                data-no-popover="true"
-                href="#what-is-triton-inference-server"
-                class="internal"
-                ><svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                  <path
-                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                  ></path></svg
-              ></a>
-            </h2>
-            <p>
-              Triton Inference Server is a high performance, open-source inference server for
-              serving deep learning models. It is designed to serve a variety of deep learning
-              models and frameworks, such as ONNX, TensorFlow, TensorRT. It is also designed with
-              optimisations to maximise hardware utilisation through various model execution and
-              efficient batching strategies.
-            </p>
-            <blockquote>
-              <p>
-                Triton Inference Server is great for serving large language models, where you want a
-                high-performance inference server that can utilise all available resources with
-                complex batching strategies.
-              </p>
-            </blockquote>
-            <h2 id="what-is-bentoml">
-              What is BentoML?<a
-                role="anchor"
-                aria-hidden="true"
-                tabindex="-1"
-                data-no-popover="true"
-                href="#what-is-bentoml"
-                class="internal"
-                ><svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                  <path
-                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                  ></path></svg
-              ></a>
-            </h2>
-            <p>
-              <a
-                href="../projects#bentoml--build-production-grade-ai-application"
-                class="internal alias"
-                data-slug="projects"
-                >BentoML</a
-              >
-              is an open-source platform designed to facilitate the development, shipping, and
-              scaling of AI applications. It empowers teams to rapidly develop AI applications that
-              involve multiple models and custom logic using Python. Once developed, BentoML allows
-              these applications to be seamlessly shipped to production on any cloud platform with
-              engineering best practices already integrated. Additionally, BentoML makes it easy to
-              scale these applications efficiently based on usage, ensuring that they can handle any
-              level of demand.
-            </p>
-            <h2 id="what-motivated-the-triton-integration">
-              What Motivated the Triton Integration?<a
-                role="anchor"
-                aria-hidden="true"
-                tabindex="-1"
-                data-no-popover="true"
-                href="#what-motivated-the-triton-integration"
-                class="internal"
-                ><svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                  <path
-                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                  ></path></svg
-              ></a>
-            </h2>
-            <p>
-              Starting BentoML v1.0.16, Triton Inference Servers can now be seamlessly used as a
-              <a href="https://docs.bentoml.org/en/latest/concepts/runner.html" class="external"
-                >Runner<svg class="external-icon" viewBox="0 0 512 512">
-                  <path
-                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                  ></path></svg></a
-              >. Runners are abstractions of logic that can execute on either CPU or GPU and scale
-              independently. Prior to the Triton integration, one of the drawbacks of using Python
-              runners is the Global Interpreter Lock (GIL), where it only allows one thread to be
-              executed at a time. While the model inference can still run on GPU or multi-threaded
-              CPU, the IO logic is still subjective to the limitations of GIL, which limits the
-              underlying hardware utilisation (CPU and GPU). Triton’s C++ runtime is optimised for
-              high throughput model serving. By using Triton as a runner, users can take full
-              advantages of Triton’s high-performance inference, while continue enjoy all features
-              that BentoML offers.
-            </p>
-            <h2 id="too-much-talking-ok-lets-dive-in">
-              Too much talking? Ok lets dive in!<a
-                role="anchor"
-                aria-hidden="true"
-                tabindex="-1"
-                data-no-popover="true"
-                href="#too-much-talking-ok-lets-dive-in"
-                class="internal"
-                ><svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                  <path
-                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                  ></path></svg
-              ></a>
-            </h2>
-            <p>
-              In a nutshell, BentoML provides the capabilities for users to run Triton Inference
-              Server via <code>bentoml.triton.Runner</code>:
-            </p>
-            <figure data-rehype-pretty-code-figure>
-              <pre
-                style="
-                  --shiki-light: #575279;
-                  --shiki-dark: #e0def4;
-                  --shiki-light-bg: #faf4ed;
-                  --shiki-dark-bg: #191724;
-                "
-                tabindex="0"
-                data-language="python"
-                data-theme="rose-pine-dawn rose-pine"
-              ><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton_runner </span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> bentoml</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">Runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;triton-runner&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> model_repository</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;s3://org/model_repository&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre>
-            </figure>
-            <p>
-              In order to use the <code>bentoml.triton</code> API, users are required to have the
-              Triton Inference Server
-              <a
-                href="https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver"
-                class="external"
-                >container image<svg class="external-icon" viewBox="0 0 512 512">
-                  <path
-                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                  ></path></svg
-              ></a>
-              available locally.
-            </p>
-            <figure data-rehype-pretty-code-figure>
-              <pre
-                style="
-                  --shiki-light: #575279;
-                  --shiki-dark: #e0def4;
-                  --shiki-light-bg: #faf4ed;
-                  --shiki-dark-bg: #191724;
-                "
-                tabindex="0"
-                data-language="bash"
-                data-theme="rose-pine-dawn rose-pine"
-              ><code data-language="bash" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">docker</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> pull</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> nvcr.io/nvidia/tritonserver:23.01-py3</span></span></code></pre>
-            </figure>
-            <p>Install the extension for BentoML with Triton support:</p>
-            <figure data-rehype-pretty-code-figure>
-              <pre
-                style="
-                  --shiki-light: #575279;
-                  --shiki-dark: #e0def4;
-                  --shiki-light-bg: #faf4ed;
-                  --shiki-dark-bg: #191724;
-                "
-                tabindex="0"
-                data-language="bash"
-                data-theme="rose-pine-dawn rose-pine"
-              ><code data-language="bash" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">pip</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> install</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;"> -U</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> &quot;bentoml[triton]&quot;</span></span></code></pre>
-            </figure>
-            <p>
-              Triton Inference Server evolves around the concepts of model repository, a
-              filesystem-based persistent volume that contains the models and
-              <a
-                href="https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/model_configuration.html"
-                class="external"
-                >Triton’s model configuration<svg class="external-icon" viewBox="0 0 512 512">
-                  <path
-                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                  ></path></svg></a
-              >. We will provide a quick walk-through in the section below for you to get started.
-            </p>
-            <p>
-              The following section assumes that you have a basic understanding of BentoML
-              architecture. If you are new to BentoML, we recommend you to read our
-              <a href="https://docs.bentoml.org/en/latest/tutorial.html" class="external"
-                >Getting Started<svg class="external-icon" viewBox="0 0 512 512">
-                  <path
-                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                  ></path></svg
-              ></a>
-              guide first.
-            </p>
-            <p>
-              You can also find the full example repository
-              <a
-                href="https://github.com/bentoml/BentoML/tree/main/examples/triton"
-                class="external"
-                >here<svg class="external-icon" viewBox="0 0 512 512">
-                  <path
-                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                  ></path></svg></a
-              >.
-            </p>
-            <h3 id="preparing-your-model">
-              Preparing your model<a
-                role="anchor"
-                aria-hidden="true"
-                tabindex="-1"
-                data-no-popover="true"
-                href="#preparing-your-model"
-                class="internal"
-                ><svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                  <path
-                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                  ></path></svg
-              ></a>
-            </h3>
-            <p>
-              To prepare your model repository under your BentoML project, you will need to put your
-              model in the following file structure:
-            </p>
-            <figure data-rehype-pretty-code-figure>
-              <pre
-                style="
-                  --shiki-light: #575279;
-                  --shiki-dark: #e0def4;
-                  --shiki-light-bg: #faf4ed;
-                  --shiki-dark-bg: #191724;
-                "
-                tabindex="0"
-                data-language="bash"
-                data-theme="rose-pine-dawn rose-pine"
-              ><code data-language="bash" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">»</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> tree</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> model_repository</span></span>
+<!DOCTYPE html>
+<html lang="fr"><head><title>BentoML. Triton Inference Server. Choose 2</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Aaron's notes"/><meta property="og:locale" content="fr-FR"/><meta property="og:title" content="BentoML. Triton Inference Server. Choose 2"/><meta property="og:type" content="website"/><meta name="twitter:site" content="@aarnphm_"/><meta name="twitter:creator" content="@aarnphm_"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="BentoML. Triton Inference Server. Choose 2"/><meta name="twitter:description" content="BentoML and Triton Inference Server integration."/><meta property="og:description" content="BentoML and Triton Inference Server integration."/><meta property="og:image:type" content="image/webp"/><meta property="og:image:alt" content="BentoML and Triton Inference Server integration."/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:width" content="1200"/><meta property="og:height" content="630"/><meta property="og:image" content="https://aarnphm.xyz/static/social-images/posts-BentoML-and-Triton-Inference-Server.webp"/><meta property="og:url" content="https:/aarnphm.xyz/posts/BentoML-and-Triton-Inference-Server"/><meta property="og:image" content="https://aarnphm.xyz/static/social-images/posts-BentoML-and-Triton-Inference-Server.webp"/><meta name="twitter:image" content="https://aarnphm.xyz/static/social-images/posts-BentoML-and-Triton-Inference-Server.webp"/><meta property="twitter:domain" content="https://aarnphm.xyz/"/><meta property="twitter:url" content="https:/aarnphm.xyz/posts/BentoML-and-Triton-Inference-Server"/><link rel="icon" href="../static/icon.webp"/><link rel="canonical" href="https:/aarnphm.xyz/posts/BentoML-and-Triton-Inference-Server"/><meta name="description" content="BentoML and Triton Inference Server integration."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="posts/BentoML-and-Triton-Inference-Server" data-enable-preview="true" data-menu="false"><div id="quartz-root" class="page"><div id="quartz-body"><div class="center"><div class="page-header"><div class="popover-hint"><h1 class="article-title">BentoML. Triton Inference Server. Choose 2</h1><ul class="content-meta"><li><span class="page-creation" title="Date de création du contenu de la page"><em>21 mars 2023</em></span></li><li><a class="ref-source internal"><span class="page-modification" title="Date de modification du contenu de la page"><em>09 févr. 2024</em></span></a></li><li><span class="reading-time" title="Temps de lecture estimé">7 min de lecture</span></li></ul><ul class="tags"><li><a href="../tags/technical" class="internal tag-link">technical</a></li><li><a href="../tags/ml" class="internal tag-link">ml</a></li></ul></div></div><article class="popover-hint"><p>We are seeing a surge in recent months of developments and works on large
+language models (LLM) and its applications such as ChatGPT,
+<a href="https://modelserving.com/blog/creating-stable-diffusion-20-service-with-bentoml-and-diffusers" class="external">Stable Diffusion<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>,
+Copilot.</p>
+<p>However, deploying and serving LLMs at scale is a challenging task that requires
+specific domain expertise and inference infrastructure. A
+<a href="https://twitter.com/tomgoldsteincs/status/1600196981955100694?s=20" class="external">rough estimation<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+of running ChatGPT shows that serving efficiency is critical to making such
+models work at scale. These operations are often known as Large Language Models
+Operations (LLMOps). LLMOps, in general, is considered as a subset of MLOps,
+which is a set of practices combining software engineering, DevOps, and data
+science to automate and scale the end-to-end lifecycle of ML models.</p>
+<p>Teams can encounter several problems when running inference on large models,
+including:</p>
+<ul>
+<li><em>Resource utilisation</em>: Large models require a significant amount of
+computational power to run, which can be challenging for teams with limited
+resources. Serving frameworks should utilise all available resources to be
+cost-effective.</li>
+<li><em>Model optimisation</em>: Large models often contains a lot of redundant layers
+and parameters that can be pruned to reduce model size and speed up inference.
+A serving framework ideally should be able to provide support for model
+optimisation library to aid this process.</li>
+<li><em>Serving latency</em>: Large language models often require complex batching
+strategies to enable real-time inference. A serving framework should be
+equipped with batching strategies to optimise for low-latency serving.</li>
+</ul>
+<p>In this blog post, we will be demonstrating the capabilities of BentoML and
+Triton Inference Server to help you solve these problems.</p>
+<h2 id="what-is-triton-inference-server">What is Triton Inference Server?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-is-triton-inference-server" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Triton Inference Server is a high performance, open-source inference server for
+serving deep learning models. It is designed to serve a variety of deep learning
+models and frameworks, such as ONNX, TensorFlow, TensorRT. It is also designed
+with optimisations to maximise hardware utilisation through various model
+execution and efficient batching strategies.</p>
+<blockquote>
+<p>Triton Inference Server is great for serving large language models, where you
+want a high-performance inference server that can utilise all available
+resources with complex batching strategies.</p>
+</blockquote>
+<h2 id="what-is-bentoml">What is BentoML?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-is-bentoml" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../projects#bentoml--build-production-grade-ai-application" class="internal alias" data-slug="projects">BentoML</a> is an open-source platform designed to facilitate the development,
+shipping, and scaling of AI applications. It empowers teams to rapidly develop
+AI applications that involve multiple models and custom logic using Python. Once
+developed, BentoML allows these applications to be seamlessly shipped to
+production on any cloud platform with engineering best practices already
+integrated. Additionally, BentoML makes it easy to scale these applications
+efficiently based on usage, ensuring that they can handle any level of demand.</p>
+<h2 id="what-motivated-the-triton-integration">What Motivated the Triton Integration?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-motivated-the-triton-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Starting BentoML v1.0.16, Triton Inference Servers can now be seamlessly used as
+a <a href="https://docs.bentoml.org/en/latest/concepts/runner.html" class="external">Runner<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. Runners are
+abstractions of logic that can execute on either CPU or GPU and scale
+independently. Prior to the Triton integration, one of the drawbacks of using
+Python runners is the Global Interpreter Lock (GIL), where it only allows one
+thread to be executed at a time. While the model inference can still run on GPU
+or multi-threaded CPU, the IO logic is still subjective to the limitations of
+GIL, which limits the underlying hardware utilisation (CPU and GPU). Triton’s
+C++ runtime is optimised for high throughput model serving. By using Triton as a
+runner, users can take full advantages of Triton’s high-performance inference,
+while continue enjoy all features that BentoML offers.</p>
+<h2 id="too-much-talking-ok-lets-dive-in">Too much talking? Ok lets dive in!<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#too-much-talking-ok-lets-dive-in" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>In a nutshell, BentoML provides the capabilities for users to run Triton
+Inference Server via <code>bentoml.triton.Runner</code>:</p>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="python" data-theme="rose-pine-dawn rose-pine"><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton_runner </span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> bentoml</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">Runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;triton-runner&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> model_repository</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;s3://org/model_repository&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre></figure>
+<p>In order to use the <code>bentoml.triton</code> API, users are required to have the Triton
+Inference Server
+<a href="https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver" class="external">container image<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+available locally.</p>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="bash" data-theme="rose-pine-dawn rose-pine"><code data-language="bash" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">docker</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> pull</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> nvcr.io/nvidia/tritonserver:23.01-py3</span></span></code></pre></figure>
+<p>Install the extension for BentoML with Triton support:</p>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="bash" data-theme="rose-pine-dawn rose-pine"><code data-language="bash" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">pip</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> install</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;"> -U</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> &quot;bentoml[triton]&quot;</span></span></code></pre></figure>
+<p>Triton Inference Server evolves around the concepts of model repository, a
+filesystem-based persistent volume that contains the models and
+<a href="https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/model_configuration.html" class="external">Triton’s model configuration<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+We will provide a quick walk-through in the section below for you to get
+started.</p>
+<p>The following section assumes that you have a basic understanding of BentoML
+architecture. If you are new to BentoML, we recommend you to read our
+<a href="https://docs.bentoml.org/en/latest/tutorial.html" class="external">Getting Started<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> guide first.</p>
+<p>You can also find the full example repository
+<a href="https://github.com/bentoml/BentoML/tree/main/examples/triton" class="external">here<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p>
+<h3 id="preparing-your-model">Preparing your model<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#preparing-your-model" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>To prepare your model repository under your BentoML project, you will need to
+put your model in the following file structure:</p>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="bash" data-theme="rose-pine-dawn rose-pine"><code data-language="bash" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">»</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> tree</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> model_repository</span></span>
 <span data-line> </span>
 <span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">model_repository</span></span>
 <span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">└──</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> torchscript_yolov5s</span></span>
 <span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">    ├──</span><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;"> 1</span></span>
 <span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">    │  </span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> └──</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> model.pt</span></span>
-<span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">    └──</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> config.pbtxt</span></span></code></pre>
-            </figure>
-            <p>
-              Where <code>1</code> is the version of the model, and <code>model.pt</code> is the
-              TorchScript model.
-            </p>
-            <blockquote>
-              <p>
-                Note that the model weight file name must prefix with
-                <code>model.&lt;extensions></code> for all Triton model. Refer to their
-                <a
-                  href="https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/model_configuration.html?highlight=model%20configuration"
-                  class="external"
-                  >documentation<svg class="external-icon" viewBox="0 0 512 512">
-                    <path
-                      d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                    ></path></svg
-                ></a>
-                for more details.
-              </p>
-            </blockquote>
-            <p>
-              The <code>config.pbtxt</code> file is the model configuration that denotes how Triton
-              can serve this models.
-            </p>
-            <p>The example for the <code>config.pbtxt</code> for YOLOv5 model is as follows:</p>
-            <figure data-rehype-pretty-code-figure>
-              <pre
-                style="
-                  --shiki-light: #575279;
-                  --shiki-dark: #e0def4;
-                  --shiki-light-bg: #faf4ed;
-                  --shiki-dark-bg: #191724;
-                "
-                tabindex="0"
-                data-language="protobuf"
-                data-theme="rose-pine-dawn rose-pine"
-              ><code data-language="protobuf" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span>platform: &quot;pytorch_libtorch&quot;</span></span>
+<span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">    └──</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> config.pbtxt</span></span></code></pre></figure>
+<p>Where <code>1</code> is the version of the model, and <code>model.pt</code> is the TorchScript model.</p>
+<blockquote>
+<p>Note that the model weight file name must prefix with <code>model.&lt;extensions></code> for
+all Triton model. Refer to their
+<a href="https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/model_configuration.html?highlight=model%20configuration" class="external">documentation<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+for more details.</p>
+</blockquote>
+<p>The <code>config.pbtxt</code> file is the model configuration that denotes how Triton can
+serve this models.</p>
+<p>The example for the <code>config.pbtxt</code> for YOLOv5 model is as follows:</p>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="protobuf" data-theme="rose-pine-dawn rose-pine"><code data-language="protobuf" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span>platform: &quot;pytorch_libtorch&quot;</span></span>
 <span data-line><span>input {</span></span>
 <span data-line><span>name: &quot;INPUT__0&quot;</span></span>
 <span data-line><span>data_type: TYPE_FP32</span></span>
@@ -486,577 +115,110 @@
 <span data-line><span>dims: -1</span></span>
 <span data-line><span>dims: 25200</span></span>
 <span data-line><span>dims: 85</span></span>
-<span data-line><span>}</span></span></code></pre>
-            </figure>
-            <blockquote>
-              <p>
-                Note that for PyTorch models, you will need to export your model to TorchScript
-                first. Refer to
-                <a href="https://pytorch.org/docs/stable/jit.html" class="external"
-                  >PyTorch’s guide<svg class="external-icon" viewBox="0 0 512 512">
-                    <path
-                      d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                    ></path></svg
-                ></a>
-                to learn more about how to convert your model to TorchScript.
-              </p>
-            </blockquote>
-            <h3 id="create-a-triton-runner">
-              Create a Triton Runner<a
-                role="anchor"
-                aria-hidden="true"
-                tabindex="-1"
-                data-no-popover="true"
-                href="#create-a-triton-runner"
-                class="internal"
-                ><svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                  <path
-                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                  ></path></svg
-              ></a>
-            </h3>
-            <p>
-              Now that we have our model repository ready, we can create a Triton Runner to interact
-              with others BentoML Runners.
-            </p>
-            <figure data-rehype-pretty-code-figure>
-              <pre
-                style="
-                  --shiki-light: #575279;
-                  --shiki-dark: #e0def4;
-                  --shiki-light-bg: #faf4ed;
-                  --shiki-dark-bg: #191724;
-                "
-                tabindex="0"
-                data-language="python"
-                data-theme="rose-pine-dawn rose-pine"
-              ><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton_runner </span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> bentoml</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">Runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;triton-runner&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> model_repository</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;./model_repository&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre>
-            </figure>
-            <blockquote>
-              <p>
-                Note: You can also use S3 or GCS as your model repository, by passing the path to
-                your S3/GCS bucket to the <code>model_repository</code> argument.
-              </p>
-            </blockquote>
-            <figure data-rehype-pretty-code-figure>
-              <pre
-                style="
-                  --shiki-light: #575279;
-                  --shiki-dark: #e0def4;
-                  --shiki-light-bg: #faf4ed;
-                  --shiki-dark-bg: #191724;
-                "
-                tabindex="0"
-                data-language="python"
-                data-theme="rose-pine-dawn rose-pine"
-              ><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton_runner </span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> bentoml</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">Runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;triton-runner&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> model_repository</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;gcs://org/model_repository&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre>
-            </figure>
-            <p>
-              Each model in the model repository can be accessed via the signature of this
-              <code>triton_runner</code> object. For example, the model
-              <code>torchscript_yolov5s</code> can be accessed via
-              <code>triton_runner.torchscript_yolov5s</code>, and you can invoke the inference of
-              such model with <code>run</code> or <code>async_run</code> method. This is similar to
-              how other BentoML’s built-in Runners work.
-            </p>
-            <figure data-rehype-pretty-code-figure>
-              <pre
-                style="
-                  --shiki-light: #575279;
-                  --shiki-dark: #e0def4;
-                  --shiki-light-bg: #faf4ed;
-                  --shiki-dark-bg: #191724;
-                "
-                tabindex="0"
-                data-language="python"
-                data-theme="rose-pine-dawn rose-pine"
-              ><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">@</span><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">svc</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">api</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;">input</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">bentoml</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">io</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">Image</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(),</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> output</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">bentoml</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">io</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">NumpyNdarray</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">())</span></span>
+<span data-line><span>}</span></span></code></pre></figure>
+<blockquote>
+<p>Note that for PyTorch models, you will need to export your model to
+TorchScript first. Refer to
+<a href="https://pytorch.org/docs/stable/jit.html" class="external">PyTorch’s guide<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> to learn more
+about how to convert your model to TorchScript.</p>
+</blockquote>
+<h3 id="create-a-triton-runner">Create a Triton Runner<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#create-a-triton-runner" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Now that we have our model repository ready, we can create a Triton Runner to
+interact with others BentoML Runners.</p>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="python" data-theme="rose-pine-dawn rose-pine"><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton_runner </span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> bentoml</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">Runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;triton-runner&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> model_repository</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;./model_repository&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre></figure>
+<blockquote>
+<p>Note: You can also use S3 or GCS as your model repository, by passing the path
+to your S3/GCS bucket to the <code>model_repository</code> argument.</p>
+</blockquote>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="python" data-theme="rose-pine-dawn rose-pine"><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton_runner </span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> bentoml</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">Runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;triton-runner&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> model_repository</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;gcs://org/model_repository&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre></figure>
+<p>Each model in the model repository can be accessed via the signature of this
+<code>triton_runner</code> object. For example, the model <code>torchscript_yolov5s</code> can be
+accessed via <code>triton_runner.torchscript_yolov5s</code>, and you can invoke the
+inference of such model with <code>run</code> or <code>async_run</code> method. This is similar to how
+other BentoML’s built-in Runners work.</p>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="python" data-theme="rose-pine-dawn rose-pine"><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">@</span><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">svc</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">api</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;">input</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">bentoml</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">io</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">Image</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(),</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> output</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">bentoml</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">io</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">NumpyNdarray</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">())</span></span>
 <span data-line><span style="--shiki-light:#286983;--shiki-dark:#31748F;">async</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;"> def</span><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;"> infer</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;">im</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">:</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> Image</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;"> -></span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> NDArray</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">[</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">t</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">Any</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">]:</span></span>
 <span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">    inputs </span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> preprocess</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">im</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span>
 <span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">    InferResult </span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;"> await</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> triton_runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">torchscript_yolov5s</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">async_run</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">inputs</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span>
-<span data-line><span style="--shiki-light:#286983;--shiki-dark:#31748F;">    return</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> InferResult</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">as_numpy</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;OUTPUT__0&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre>
-            </figure>
-            <p>
-              Let’s unpack this code snippet. First we define an async API that takes in an image
-              and returns a Numpy array. We then do some pre-processing to the input images and pass
-              it into the model <code>torchscript_yolov5s</code> via
-              <code>triton_runner.torchscript_yolov5s.async_run</code>.
-            </p>
-            <p>The signature of <code>async_run</code> or <code>run</code> method is as follows:</p>
-            <ul>
-              <li>
-                <p>
-                  <code>async_run</code> and <code>run</code> can only take either all positional
-                  arguments or all keyword arguments. The arguments must match the input signature
-                  of the model specified in the <code>config.pbtxt</code> file.
-                </p>
-                <p>
-                  From the aboved <code>config.pbtxt</code>, we can see that the input signature of
-                  the model is <code>INPUT__0</code>, which is a 3-dimensional tensor of type
-                  <code>TYPE_FP32</code> with a batch dimension. This means
-                  <code>async_run</code>/<code>run</code> method can only take in eithe ra single
-                  positional argument or a single keyword argument with the name
-                  <code>INPUT__0</code>.
-                </p>
-                <figure data-rehype-pretty-code-figure>
-                  <pre
-                    style="
-                      --shiki-light: #575279;
-                      --shiki-dark: #e0def4;
-                      --shiki-light-bg: #faf4ed;
-                      --shiki-dark-bg: #191724;
-                    "
-                    tabindex="0"
-                    data-language="python"
-                    data-theme="rose-pine-dawn rose-pine"
-                  ><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#797593;--shiki-dark:#908CAA;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;">#</span><span style="--shiki-light:#9893A5;--shiki-dark:#6E6A86;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> valid</span></span>
+<span data-line><span style="--shiki-light:#286983;--shiki-dark:#31748F;">    return</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> InferResult</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">as_numpy</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;">&quot;OUTPUT__0&quot;</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre></figure>
+<p>Let’s unpack this code snippet. First we define an async API that takes in an
+image and returns a Numpy array. We then do some pre-processing to the input
+images and pass it into the model <code>torchscript_yolov5s</code> via
+<code>triton_runner.torchscript_yolov5s.async_run</code>.</p>
+<p>The signature of <code>async_run</code> or <code>run</code> method is as follows:</p>
+<ul>
+<li>
+<p><code>async_run</code> and <code>run</code> can only take either all positional arguments or all
+keyword arguments. The arguments must match the input signature of the model
+specified in the <code>config.pbtxt</code> file.</p>
+<p>From the aboved <code>config.pbtxt</code>, we can see that the input signature of the
+model is <code>INPUT__0</code>, which is a 3-dimensional tensor of type <code>TYPE_FP32</code> with
+a batch dimension. This means <code>async_run</code>/<code>run</code> method can only take in eithe
+ra single positional argument or a single keyword argument with the name
+<code>INPUT__0</code>.</p>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="python" data-theme="rose-pine-dawn rose-pine"><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#797593;--shiki-dark:#908CAA;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;">#</span><span style="--shiki-light:#9893A5;--shiki-dark:#6E6A86;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> valid</span></span>
 <span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton_runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">torchscript_yolov5s</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">async_run</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">inputs</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span>
-<span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton_runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">torchscript_yolov5s</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">async_run</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;">INPUT__0</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">inputs</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre>
-                </figure>
-                <p>If the models has multiple inputs, the following are deemed as invalid:</p>
-                <figure data-rehype-pretty-code-figure>
-                  <pre
-                    style="
-                      --shiki-light: #575279;
-                      --shiki-dark: #e0def4;
-                      --shiki-light-bg: #faf4ed;
-                      --shiki-dark-bg: #191724;
-                    "
-                    tabindex="0"
-                    data-language="python"
-                    data-theme="rose-pine-dawn rose-pine"
-                  ><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#797593;--shiki-dark:#908CAA;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;">#</span><span style="--shiki-light:#9893A5;--shiki-dark:#6E6A86;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> invalid</span></span>
-<span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton_runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">torchscript_yolov5s</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">async_run</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">inputs</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> INPUT__1</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">inputs</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre>
-                </figure>
-              </li>
-              <li>
-                <p>
-                  <code>run</code>/<code>async_run</code> returns a <code>InferResult</code> object,
-                  which is a
-                  <a
-                    href="https://github.com/triton-inference-server/client/blob/403ebafda3f174eddc5b5a130a74b8d5c07607dd/src/python/library/tritonclient/grpc/__init__.py#L1997"
-                    class="external"
-                    >wrapper<svg class="external-icon" viewBox="0 0 512 512">
-                      <path
-                        d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                      ></path></svg
-                  ></a>
-                  around the response from Triton Inference Server. Refer to the internal docstring
-                  for more details.
-                </p>
-              </li>
-            </ul>
-            <p>
-              Additionally, the Triton runner also exposes all <code>tritonclient</code> model
-              management APIs so that users can fully utilize all features provided by Triton
-              Inference Server.
-            </p>
-            <h3 id="packaging-bentoservice-with-triton-inference-server">
-              Packaging BentoService with Triton Inference Server<a
-                role="anchor"
-                aria-hidden="true"
-                tabindex="-1"
-                data-no-popover="true"
-                href="#packaging-bentoservice-with-triton-inference-server"
-                class="internal"
-                ><svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                  <path
-                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                  ></path></svg
-              ></a>
-            </h3>
-            <p>
-              To package your BentoService with Triton Inference Server, you can add the following
-              to your existing <code>bentofile.yaml</code>:
-            </p>
-            <figure data-rehype-pretty-code-figure>
-              <pre
-                style="
-                  --shiki-light: #575279;
-                  --shiki-dark: #e0def4;
-                  --shiki-light-bg: #faf4ed;
-                  --shiki-dark-bg: #191724;
-                "
-                tabindex="0"
-                data-language="yaml"
-                data-theme="rose-pine-dawn rose-pine"
-              ><code data-language="yaml" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#56949F;--shiki-dark:#9CCFD8;">include</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">:</span></span>
+<span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton_runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">torchscript_yolov5s</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">async_run</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;">INPUT__0</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">inputs</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre></figure>
+<p>If the models has multiple inputs, the following are deemed as invalid:</p>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="python" data-theme="rose-pine-dawn rose-pine"><code data-language="python" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#797593;--shiki-dark:#908CAA;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;">#</span><span style="--shiki-light:#9893A5;--shiki-dark:#6E6A86;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> invalid</span></span>
+<span data-line><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">triton_runner</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">torchscript_yolov5s</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">async_run</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">inputs</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> INPUT__1</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">inputs</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span></span></code></pre></figure>
+</li>
+<li>
+<p><code>run</code>/<code>async_run</code> returns a <code>InferResult</code> object, which is a
+<a href="https://github.com/triton-inference-server/client/blob/403ebafda3f174eddc5b5a130a74b8d5c07607dd/src/python/library/tritonclient/grpc/__init__.py#L1997" class="external">wrapper<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+around the response from Triton Inference Server. Refer to the internal
+docstring for more details.</p>
+</li>
+</ul>
+<p>Additionally, the Triton runner also exposes all <code>tritonclient</code> model management
+APIs so that users can fully utilize all features provided by Triton Inference
+Server.</p>
+<h3 id="packaging-bentoservice-with-triton-inference-server">Packaging BentoService with Triton Inference Server<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#packaging-bentoservice-with-triton-inference-server" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>To package your BentoService with Triton Inference Server, you can add the
+following to your existing <code>bentofile.yaml</code>:</p>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="yaml" data-theme="rose-pine-dawn rose-pine"><code data-language="yaml" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#56949F;--shiki-dark:#9CCFD8;">include</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">:</span></span>
 <span data-line><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">  -</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> /model_repository</span></span>
 <span data-line><span style="--shiki-light:#56949F;--shiki-dark:#9CCFD8;">docker</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">:</span></span>
-<span data-line><span style="--shiki-light:#56949F;--shiki-dark:#9CCFD8;">  base_image</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">:</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> nvcr.io/nvidia/tritonserver:22.12-py3</span></span></code></pre>
-            </figure>
-            <p>
-              Note that the <code>base_image</code> is the Triton Inference Server docker image from
-              <a
-                href="https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver"
-                class="external"
-                >NVIDIA’s container catalog<svg class="external-icon" viewBox="0 0 512 512">
-                  <path
-                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                  ></path></svg></a
-              >.
-            </p>
-            <p>
-              If the model repository is stored in S3 or GCS, there is no need to add the
-              <code>include</code> section.
-            </p>
-            <p>
-              That’s it! Build the BentoService and containerize with <code>bentoml build</code> and
-              <code>bentoml containerize</code> respectively:
-            </p>
-            <figure data-rehype-pretty-code-figure>
-              <pre
-                style="
-                  --shiki-light: #575279;
-                  --shiki-dark: #e0def4;
-                  --shiki-light-bg: #faf4ed;
-                  --shiki-dark-bg: #191724;
-                "
-                tabindex="0"
-                data-language="bash"
-                data-theme="rose-pine-dawn rose-pine"
-              ><code data-language="bash" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">bentoml</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> build</span></span>
+<span data-line><span style="--shiki-light:#56949F;--shiki-dark:#9CCFD8;">  base_image</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">:</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> nvcr.io/nvidia/tritonserver:22.12-py3</span></span></code></pre></figure>
+<p>Note that the <code>base_image</code> is the Triton Inference Server docker image from
+<a href="https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver" class="external">NVIDIA’s container catalog<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p>
+<p>If the model repository is stored in S3 or GCS, there is no need to add the
+<code>include</code> section.</p>
+<p>That’s it! Build the BentoService and containerize with <code>bentoml build</code> and
+<code>bentoml containerize</code> respectively:</p>
+<figure data-rehype-pretty-code-figure><pre style="--shiki-light:#575279;--shiki-dark:#e0def4;--shiki-light-bg:#faf4ed;--shiki-dark-bg:#191724;" tabindex="0" data-language="bash" data-theme="rose-pine-dawn rose-pine"><code data-language="bash" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">bentoml</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> build</span></span>
 <span data-line> </span>
-<span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">bentoml</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> containerize</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> triton-integration:latest</span></span></code></pre>
-            </figure>
-            <h2 id="conclusion">
-              Conclusion<a
-                role="anchor"
-                aria-hidden="true"
-                tabindex="-1"
-                data-no-popover="true"
-                href="#conclusion"
-                class="internal"
-                ><svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                  <path
-                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                  ></path></svg
-              ></a>
-            </h2>
-            <p>
-              Congratulations! You can now fully utilize the power of Triton Inference Server with
-              BentoML through <code>bentoml.triton</code>. Our internal benchmark reveals upward of
-              40% performance improvement when using Triton Runner in comparison to its Python
-              counterpart.
-            </p>
-            <p>
-              You can read more about this integration from our
-              <a href="https://docs.bentoml.org/en/latest/integrations/triton.html" class="external"
-                >documentation<svg class="external-icon" viewBox="0 0 512 512">
-                  <path
-                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
-                  ></path></svg></a
-              >.
-            </p>
-          </article>
-        </div>
-        <div class="right sidebar">
-          <div class="search">
-            <div id="search-container">
-              <div id="search-space">
-                <input
-                  autocomplete="off"
-                  id="search-bar"
-                  name="search"
-                  type="text"
-                  aria-label="Rechercher quelque chose"
-                  placeholder="Rechercher quelque chose"
-                />
-                <div id="search-layout" data-preview="true"></div>
-              </div>
-            </div>
-          </div>
-          <div class="graph">
-            <div id="global-graph-icon"></div>
-            <div id="global-graph-outer">
-              <div
-                id="global-graph-container"
-                data-cfg='{"drag":true,"zoom":true,"depth":-1,"scale":0.9,"repelForce":0.3732,"centerForce":0.088,"linkDistance":30,"fontSize":0.5375,"opacityScale":1,"showTags":true,"removeTags":[],"focusOnHover":true}'
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="spacer"></div>
-    </div>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js"
-    type="application/javascript"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
-    type="application/javascript"
-  ></script>
-  <script type="module">
-    document.addEventListener("nav", async () => {
-      if (document.querySelector(".pseudocode.latex-pseudo")) {
-        pseudocode.renderClass("latex-pseudo")
-      }
-    })
-  </script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js"
-    type="application/javascript"
-  ></script>
-  <script type="application/javascript">
-    var h = Object.create
-    var f = Object.defineProperty
-    var m = Object.getOwnPropertyDescriptor
-    var d = Object.getOwnPropertyNames
-    var S = Object.getPrototypeOf,
-      y = Object.prototype.hasOwnProperty
-    var x = (n, t) => () => (t || n((t = { exports: {} }).exports, t), t.exports)
-    var v = (n, t, E, A) => {
-      if ((t && typeof t == "object") || typeof t == "function")
-        for (let F of d(t))
-          !y.call(n, F) &&
-            F !== E &&
-            f(n, F, { get: () => t[F], enumerable: !(A = m(t, F)) || A.enumerable })
-      return n
-    }
-    var w = (n, t, E) => (
-      (E = n != null ? h(S(n)) : {}),
-      v(t || !n || !n.__esModule ? f(E, "default", { value: n, enumerable: !0 }) : E, n)
-    )
-    var c = x((T, B) => {
-      "use strict"
-      B.exports = b
-      function a(n) {
-        return n instanceof Buffer
-          ? Buffer.from(n)
-          : new n.constructor(n.buffer.slice(), n.byteOffset, n.length)
-      }
-      function b(n) {
-        if (((n = n || {}), n.circles)) return R(n)
-        return n.proto ? A : E
-        function t(F, r) {
-          for (var u = Object.keys(F), D = new Array(u.length), i = 0; i < u.length; i++) {
-            var e = u[i],
-              l = F[e]
-            typeof l != "object" || l === null
-              ? (D[e] = l)
-              : l instanceof Date
-                ? (D[e] = new Date(l))
-                : ArrayBuffer.isView(l)
-                  ? (D[e] = a(l))
-                  : (D[e] = r(l))
-          }
-          return D
-        }
-        function E(F) {
-          if (typeof F != "object" || F === null) return F
-          if (F instanceof Date) return new Date(F)
-          if (Array.isArray(F)) return t(F, E)
-          if (F instanceof Map) return new Map(t(Array.from(F), E))
-          if (F instanceof Set) return new Set(t(Array.from(F), E))
-          var r = {}
-          for (var u in F)
-            if (Object.hasOwnProperty.call(F, u) !== !1) {
-              var D = F[u]
-              typeof D != "object" || D === null
-                ? (r[u] = D)
-                : D instanceof Date
-                  ? (r[u] = new Date(D))
-                  : D instanceof Map
-                    ? (r[u] = new Map(t(Array.from(D), E)))
-                    : D instanceof Set
-                      ? (r[u] = new Set(t(Array.from(D), E)))
-                      : ArrayBuffer.isView(D)
-                        ? (r[u] = a(D))
-                        : (r[u] = E(D))
+<span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">bentoml</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> containerize</span><span style="--shiki-light:#EA9D34;--shiki-dark:#F6C177;"> triton-integration:latest</span></span></code></pre></figure>
+<h2 id="conclusion">Conclusion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#conclusion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Congratulations! You can now fully utilize the power of Triton Inference Server
+with BentoML through <code>bentoml.triton</code>. Our internal benchmark reveals upward of
+40% performance improvement when using Triton Runner in comparison to its Python
+counterpart.</p>
+<p>You can read more about this integration from our
+<a href="https://docs.bentoml.org/en/latest/integrations/triton.html" class="external">documentation<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p></article></div><div class="right sidebar"><div class="search"><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Rechercher quelque chose" placeholder="Rechercher quelque chose"/><div id="search-layout" data-preview="true"></div></div></div></div><div class="graph"><div id="global-graph-icon"></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.3732,&quot;centerForce&quot;:0.088,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.5375,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true}"></div></div></div></div></div><div class="spacer"></div></div></body><script src="https://cdn.jsdelivr.net/npm/pseudocode@2.4.1/build/pseudocode.min.js" type="application/javascript"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" type="application/javascript"></script><script type="module">
+          document.addEventListener('nav', async () => {
+            if (document.querySelector('.pseudocode.latex-pseudo')) {
+              pseudocode.renderClass('latex-pseudo');
             }
-          return r
-        }
-        function A(F) {
-          if (typeof F != "object" || F === null) return F
-          if (F instanceof Date) return new Date(F)
-          if (Array.isArray(F)) return t(F, A)
-          if (F instanceof Map) return new Map(t(Array.from(F), A))
-          if (F instanceof Set) return new Set(t(Array.from(F), A))
-          var r = {}
-          for (var u in F) {
-            var D = F[u]
-            typeof D != "object" || D === null
-              ? (r[u] = D)
-              : D instanceof Date
-                ? (r[u] = new Date(D))
-                : D instanceof Map
-                  ? (r[u] = new Map(t(Array.from(D), A)))
-                  : D instanceof Set
-                    ? (r[u] = new Set(t(Array.from(D), A)))
-                    : ArrayBuffer.isView(D)
-                      ? (r[u] = a(D))
-                      : (r[u] = A(D))
-          }
-          return r
-        }
-      }
-      function R(n) {
-        var t = [],
-          E = []
-        return n.proto ? r : F
-        function A(u, D) {
-          for (var i = Object.keys(u), e = new Array(i.length), l = 0; l < i.length; l++) {
-            var s = i[l],
-              C = u[s]
-            if (typeof C != "object" || C === null) e[s] = C
-            else if (C instanceof Date) e[s] = new Date(C)
-            else if (ArrayBuffer.isView(C)) e[s] = a(C)
-            else {
-              var o = t.indexOf(C)
-              o !== -1 ? (e[s] = E[o]) : (e[s] = D(C))
-            }
-          }
-          return e
-        }
-        function F(u) {
-          if (typeof u != "object" || u === null) return u
-          if (u instanceof Date) return new Date(u)
-          if (Array.isArray(u)) return A(u, F)
-          if (u instanceof Map) return new Map(A(Array.from(u), F))
-          if (u instanceof Set) return new Set(A(Array.from(u), F))
-          var D = {}
-          t.push(u), E.push(D)
-          for (var i in u)
-            if (Object.hasOwnProperty.call(u, i) !== !1) {
-              var e = u[i]
-              if (typeof e != "object" || e === null) D[i] = e
-              else if (e instanceof Date) D[i] = new Date(e)
-              else if (e instanceof Map) D[i] = new Map(A(Array.from(e), F))
-              else if (e instanceof Set) D[i] = new Set(A(Array.from(e), F))
-              else if (ArrayBuffer.isView(e)) D[i] = a(e)
-              else {
-                var l = t.indexOf(e)
-                l !== -1 ? (D[i] = E[l]) : (D[i] = F(e))
-              }
-            }
-          return t.pop(), E.pop(), D
-        }
-        function r(u) {
-          if (typeof u != "object" || u === null) return u
-          if (u instanceof Date) return new Date(u)
-          if (Array.isArray(u)) return A(u, r)
-          if (u instanceof Map) return new Map(A(Array.from(u), r))
-          if (u instanceof Set) return new Set(A(Array.from(u), r))
-          var D = {}
-          t.push(u), E.push(D)
-          for (var i in u) {
-            var e = u[i]
-            if (typeof e != "object" || e === null) D[i] = e
-            else if (e instanceof Date) D[i] = new Date(e)
-            else if (e instanceof Map) D[i] = new Map(A(Array.from(e), r))
-            else if (e instanceof Set) D[i] = new Set(A(Array.from(e), r))
-            else if (ArrayBuffer.isView(e)) D[i] = a(e)
-            else {
-              var l = t.indexOf(e)
-              l !== -1 ? (D[i] = E[l]) : (D[i] = r(e))
-            }
-          }
-          return t.pop(), E.pop(), D
-        }
-      }
-    })
-    var P = Object.hasOwnProperty
-    var g = w(c(), 1),
-      I = (0, g.default)()
-    function p(n) {
-      return n.document.body.dataset.slug
-    }
-    var L = (n) => `${p(window)}-checkbox-${n}`
-    document.addEventListener("nav", () => {
-      document.querySelectorAll("input.checkbox-toggle").forEach((t, E) => {
-        let A = L(E),
-          F = (r) => {
-            let u = r.target?.checked ? "true" : "false"
-            localStorage.setItem(A, u)
-          }
-        t.addEventListener("change", F),
-          window.addCleanup(() => t.removeEventListener("change", F)),
-          localStorage.getItem(A) === "true" && (t.checked = !0)
-      })
-    })
-  </script>
-  <script type="application/javascript">
-    function c() {
-      let t = this.parentElement
-      t.classList.toggle("is-collapsed")
-      let l = t.classList.contains("is-collapsed") ? this.scrollHeight : t.scrollHeight
-      t.style.maxHeight = l + "px"
-      let o = t,
-        e = t.parentElement
-      for (; e; ) {
-        if (!e.classList.contains("callout")) return
-        let n = e.classList.contains("is-collapsed")
-          ? e.scrollHeight
-          : e.scrollHeight + o.scrollHeight
-        ;(e.style.maxHeight = n + "px"), (o = e), (e = e.parentElement)
-      }
-    }
-    function i() {
-      let t = document.getElementsByClassName("callout is-collapsible")
-      for (let s of t) {
-        let l = s.firstElementChild
-        if (l) {
-          l.addEventListener("click", c), window.addCleanup(() => l.removeEventListener("click", c))
-          let e = s.classList.contains("is-collapsed") ? l.scrollHeight : s.scrollHeight
-          s.style.maxHeight = e + "px"
-        }
-      }
-    }
-    document.addEventListener("nav", i)
-    window.addEventListener("resize", i)
-  </script>
-  <script type="module">
-    let mermaidImport = undefined
-    document.addEventListener("nav", async () => {
-      if (document.querySelector("code.mermaid")) {
-        mermaidImport ||= await import(
-          "https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs"
-        )
-        const mermaid = mermaidImport.default
-        const darkMode = document.documentElement.getAttribute("saved-theme") === "dark"
-        mermaid.initialize({
-          startOnLoad: false,
-          securityLevel: "loose",
-          theme: darkMode ? "dark" : "default",
-        })
+          })
+          </script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">var h=Object.create;var f=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var S=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var x=(n,t)=>()=>(t||n((t={exports:{}}).exports,t),t.exports);var v=(n,t,E,A)=>{if(t&&typeof t=="object"||typeof t=="function")for(let F of m(t))!y.call(n,F)&&F!==E&&f(n,F,{get:()=>t[F],enumerable:!(A=d(t,F))||A.enumerable});return n};var w=(n,t,E)=>(E=n!=null?h(S(n)):{},v(t||!n||!n.__esModule?f(E,"default",{value:n,enumerable:!0}):E,n));var c=x((T,B)=>{"use strict";B.exports=b;function a(n){return n instanceof Buffer?Buffer.from(n):new n.constructor(n.buffer.slice(),n.byteOffset,n.length)}function b(n){if(n=n||{},n.circles)return R(n);return n.proto?A:E;function t(F,r){for(var u=Object.keys(F),D=new Array(u.length),i=0;i<u.length;i++){var e=u[i],l=F[e];typeof l!="object"||l===null?D[e]=l:l instanceof Date?D[e]=new Date(l):ArrayBuffer.isView(l)?D[e]=a(l):D[e]=r(l)}return D}function E(F){if(typeof F!="object"||F===null)return F;if(F instanceof Date)return new Date(F);if(Array.isArray(F))return t(F,E);if(F instanceof Map)return new Map(t(Array.from(F),E));if(F instanceof Set)return new Set(t(Array.from(F),E));var r={};for(var u in F)if(Object.hasOwnProperty.call(F,u)!==!1){var D=F[u];typeof D!="object"||D===null?r[u]=D:D instanceof Date?r[u]=new Date(D):D instanceof Map?r[u]=new Map(t(Array.from(D),E)):D instanceof Set?r[u]=new Set(t(Array.from(D),E)):ArrayBuffer.isView(D)?r[u]=a(D):r[u]=E(D)}return r}function A(F){if(typeof F!="object"||F===null)return F;if(F instanceof Date)return new Date(F);if(Array.isArray(F))return t(F,A);if(F instanceof Map)return new Map(t(Array.from(F),A));if(F instanceof Set)return new Set(t(Array.from(F),A));var r={};for(var u in F){var D=F[u];typeof D!="object"||D===null?r[u]=D:D instanceof Date?r[u]=new Date(D):D instanceof Map?r[u]=new Map(t(Array.from(D),A)):D instanceof Set?r[u]=new Set(t(Array.from(D),A)):ArrayBuffer.isView(D)?r[u]=a(D):r[u]=A(D)}return r}}function R(n){var t=[],E=[];return n.proto?r:F;function A(u,D){for(var i=Object.keys(u),e=new Array(i.length),l=0;l<i.length;l++){var s=i[l],C=u[s];if(typeof C!="object"||C===null)e[s]=C;else if(C instanceof Date)e[s]=new Date(C);else if(ArrayBuffer.isView(C))e[s]=a(C);else{var o=t.indexOf(C);o!==-1?e[s]=E[o]:e[s]=D(C)}}return e}function F(u){if(typeof u!="object"||u===null)return u;if(u instanceof Date)return new Date(u);if(Array.isArray(u))return A(u,F);if(u instanceof Map)return new Map(A(Array.from(u),F));if(u instanceof Set)return new Set(A(Array.from(u),F));var D={};t.push(u),E.push(D);for(var i in u)if(Object.hasOwnProperty.call(u,i)!==!1){var e=u[i];if(typeof e!="object"||e===null)D[i]=e;else if(e instanceof Date)D[i]=new Date(e);else if(e instanceof Map)D[i]=new Map(A(Array.from(e),F));else if(e instanceof Set)D[i]=new Set(A(Array.from(e),F));else if(ArrayBuffer.isView(e))D[i]=a(e);else{var l=t.indexOf(e);l!==-1?D[i]=E[l]:D[i]=F(e)}}return t.pop(),E.pop(),D}function r(u){if(typeof u!="object"||u===null)return u;if(u instanceof Date)return new Date(u);if(Array.isArray(u))return A(u,r);if(u instanceof Map)return new Map(A(Array.from(u),r));if(u instanceof Set)return new Set(A(Array.from(u),r));var D={};t.push(u),E.push(D);for(var i in u){var e=u[i];if(typeof e!="object"||e===null)D[i]=e;else if(e instanceof Date)D[i]=new Date(e);else if(e instanceof Map)D[i]=new Map(A(Array.from(e),r));else if(e instanceof Set)D[i]=new Set(A(Array.from(e),r));else if(ArrayBuffer.isView(e))D[i]=a(e);else{var l=t.indexOf(e);l!==-1?D[i]=E[l]:D[i]=r(e)}}return t.pop(),E.pop(),D}}});var P=Object.hasOwnProperty;var g=w(c(),1),I=(0,g.default)();function p(n){return n.document.body.dataset.slug}var L=n=>`${p(window)}-checkbox-${n}`;document.addEventListener("nav",()=>{document.querySelectorAll("input.checkbox-toggle").forEach((t,E)=>{let A=L(E),F=r=>{let u=r.target?.checked?"true":"false";localStorage.setItem(A,u)};t.addEventListener("change",F),window.addCleanup(()=>t.removeEventListener("change",F)),localStorage.getItem(A)==="true"&&(t.checked=!0)})});
+</script><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script type="module">
+          let mermaidImport = undefined
+          document.addEventListener('nav', async () => {
+            if (document.querySelector("code.mermaid")) {
+              mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+              const mermaid = mermaidImport.default
+              const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+              mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose',
+                theme: darkMode ? 'dark' : 'default'
+              })
 
-        await mermaid.run({
-          querySelector: ".mermaid",
-        })
-      }
-    })
-  </script>
-  <script src="../postscript.js" type="module"></script>
-</html>
+              await mermaid.run({
+                querySelector: '.mermaid'
+              })
+            }
+          });
+          </script><script src="../postscript.js" type="module"></script></html>
