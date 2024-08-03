@@ -331,179 +331,181 @@
     type="application/javascript"
   ></script>
   <script type="application/javascript">
-    var h = Object.create
+    var m = Object.create
     var f = Object.defineProperty
-    var d = Object.getOwnPropertyDescriptor
-    var m = Object.getOwnPropertyNames
-    var S = Object.getPrototypeOf,
-      y = Object.prototype.hasOwnProperty
-    var x = (n, t) => () => (t || n((t = { exports: {} }).exports, t), t.exports)
-    var v = (n, t, E, A) => {
+    var x = Object.getOwnPropertyDescriptor
+    var S = Object.getOwnPropertyNames
+    var y = Object.getPrototypeOf,
+      b = Object.prototype.hasOwnProperty
+    var R = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports)
+    var j = (e, t, n, A) => {
       if ((t && typeof t == "object") || typeof t == "function")
-        for (let F of m(t))
-          !y.call(n, F) &&
-            F !== E &&
-            f(n, F, { get: () => t[F], enumerable: !(A = d(t, F)) || A.enumerable })
-      return n
+        for (let i of S(t))
+          !b.call(e, i) &&
+            i !== n &&
+            f(e, i, { get: () => t[i], enumerable: !(A = x(t, i)) || A.enumerable })
+      return e
     }
-    var w = (n, t, E) => (
-      (E = n != null ? h(S(n)) : {}),
-      v(t || !n || !n.__esModule ? f(E, "default", { value: n, enumerable: !0 }) : E, n)
+    var v = (e, t, n) => (
+      (n = e != null ? m(y(e)) : {}),
+      j(t || !e || !e.__esModule ? f(n, "default", { value: e, enumerable: !0 }) : n, e)
     )
-    var c = x((T, B) => {
+    var p = R((_, g) => {
       "use strict"
-      B.exports = b
-      function a(n) {
-        return n instanceof Buffer
-          ? Buffer.from(n)
-          : new n.constructor(n.buffer.slice(), n.byteOffset, n.length)
+      g.exports = w
+      function B(e) {
+        return e instanceof Buffer
+          ? Buffer.from(e)
+          : new e.constructor(e.buffer.slice(), e.byteOffset, e.length)
       }
-      function b(n) {
-        if (((n = n || {}), n.circles)) return R(n)
-        return n.proto ? A : E
-        function t(F, r) {
-          for (var u = Object.keys(F), D = new Array(u.length), i = 0; i < u.length; i++) {
-            var e = u[i],
-              l = F[e]
-            typeof l != "object" || l === null
-              ? (D[e] = l)
-              : l instanceof Date
-                ? (D[e] = new Date(l))
-                : ArrayBuffer.isView(l)
-                  ? (D[e] = a(l))
-                  : (D[e] = r(l))
+      function w(e) {
+        if (((e = e || {}), e.circles)) return L(e)
+        let t = new Map()
+        if (
+          (t.set(Date, (F) => new Date(F)),
+          t.set(Map, (F, E) => new Map(A(Array.from(F), E))),
+          t.set(Set, (F, E) => new Set(A(Array.from(F), E))),
+          e.constructorHandlers)
+        )
+          for (let F of e.constructorHandlers) t.set(F[0], F[1])
+        let n = null
+        return e.proto ? C : i
+        function A(F, E) {
+          let u = Object.keys(F),
+            D = new Array(u.length)
+          for (let l = 0; l < u.length; l++) {
+            let r = u[l],
+              s = F[r]
+            typeof s != "object" || s === null
+              ? (D[r] = s)
+              : s.constructor !== Object && (n = t.get(s.constructor))
+                ? (D[r] = n(s, E))
+                : ArrayBuffer.isView(s)
+                  ? (D[r] = B(s))
+                  : (D[r] = E(s))
           }
           return D
         }
-        function E(F) {
+        function i(F) {
           if (typeof F != "object" || F === null) return F
-          if (F instanceof Date) return new Date(F)
-          if (Array.isArray(F)) return t(F, E)
-          if (F instanceof Map) return new Map(t(Array.from(F), E))
-          if (F instanceof Set) return new Set(t(Array.from(F), E))
-          var r = {}
-          for (var u in F)
-            if (Object.hasOwnProperty.call(F, u) !== !1) {
-              var D = F[u]
-              typeof D != "object" || D === null
-                ? (r[u] = D)
-                : D instanceof Date
-                  ? (r[u] = new Date(D))
-                  : D instanceof Map
-                    ? (r[u] = new Map(t(Array.from(D), E)))
-                    : D instanceof Set
-                      ? (r[u] = new Set(t(Array.from(D), E)))
-                      : ArrayBuffer.isView(D)
-                        ? (r[u] = a(D))
-                        : (r[u] = E(D))
-            }
-          return r
-        }
-        function A(F) {
-          if (typeof F != "object" || F === null) return F
-          if (F instanceof Date) return new Date(F)
-          if (Array.isArray(F)) return t(F, A)
-          if (F instanceof Map) return new Map(t(Array.from(F), A))
-          if (F instanceof Set) return new Set(t(Array.from(F), A))
-          var r = {}
-          for (var u in F) {
-            var D = F[u]
+          if (Array.isArray(F)) return A(F, i)
+          if (F.constructor !== Object && (n = t.get(F.constructor))) return n(F, i)
+          let E = {}
+          for (let u in F) {
+            if (Object.hasOwnProperty.call(F, u) === !1) continue
+            let D = F[u]
             typeof D != "object" || D === null
-              ? (r[u] = D)
-              : D instanceof Date
-                ? (r[u] = new Date(D))
-                : D instanceof Map
-                  ? (r[u] = new Map(t(Array.from(D), A)))
-                  : D instanceof Set
-                    ? (r[u] = new Set(t(Array.from(D), A)))
-                    : ArrayBuffer.isView(D)
-                      ? (r[u] = a(D))
-                      : (r[u] = A(D))
+              ? (E[u] = D)
+              : D.constructor !== Object && (n = t.get(D.constructor))
+                ? (E[u] = n(D, i))
+                : ArrayBuffer.isView(D)
+                  ? (E[u] = B(D))
+                  : (E[u] = i(D))
           }
-          return r
+          return E
+        }
+        function C(F) {
+          if (typeof F != "object" || F === null) return F
+          if (Array.isArray(F)) return A(F, C)
+          if (F.constructor !== Object && (n = t.get(F.constructor))) return n(F, C)
+          let E = {}
+          for (let u in F) {
+            let D = F[u]
+            typeof D != "object" || D === null
+              ? (E[u] = D)
+              : D.constructor !== Object && (n = t.get(D.constructor))
+                ? (E[u] = n(D, C))
+                : ArrayBuffer.isView(D)
+                  ? (E[u] = B(D))
+                  : (E[u] = C(D))
+          }
+          return E
         }
       }
-      function R(n) {
-        var t = [],
-          E = []
-        return n.proto ? r : F
-        function A(u, D) {
-          for (var i = Object.keys(u), e = new Array(i.length), l = 0; l < i.length; l++) {
-            var s = i[l],
-              C = u[s]
-            if (typeof C != "object" || C === null) e[s] = C
-            else if (C instanceof Date) e[s] = new Date(C)
-            else if (ArrayBuffer.isView(C)) e[s] = a(C)
+      function L(e) {
+        let t = [],
+          n = [],
+          A = new Map()
+        if (
+          (A.set(Date, (u) => new Date(u)),
+          A.set(Map, (u, D) => new Map(C(Array.from(u), D))),
+          A.set(Set, (u, D) => new Set(C(Array.from(u), D))),
+          e.constructorHandlers)
+        )
+          for (let u of e.constructorHandlers) A.set(u[0], u[1])
+        let i = null
+        return e.proto ? E : F
+        function C(u, D) {
+          let l = Object.keys(u),
+            r = new Array(l.length)
+          for (let s = 0; s < l.length; s++) {
+            let c = l[s],
+              o = u[c]
+            if (typeof o != "object" || o === null) r[c] = o
+            else if (o.constructor !== Object && (i = A.get(o.constructor))) r[c] = i(o, D)
+            else if (ArrayBuffer.isView(o)) r[c] = B(o)
             else {
-              var o = t.indexOf(C)
-              o !== -1 ? (e[s] = E[o]) : (e[s] = D(C))
+              let a = t.indexOf(o)
+              a !== -1 ? (r[c] = n[a]) : (r[c] = D(o))
             }
           }
-          return e
+          return r
         }
         function F(u) {
           if (typeof u != "object" || u === null) return u
-          if (u instanceof Date) return new Date(u)
-          if (Array.isArray(u)) return A(u, F)
-          if (u instanceof Map) return new Map(A(Array.from(u), F))
-          if (u instanceof Set) return new Set(A(Array.from(u), F))
-          var D = {}
-          t.push(u), E.push(D)
-          for (var i in u)
-            if (Object.hasOwnProperty.call(u, i) !== !1) {
-              var e = u[i]
-              if (typeof e != "object" || e === null) D[i] = e
-              else if (e instanceof Date) D[i] = new Date(e)
-              else if (e instanceof Map) D[i] = new Map(A(Array.from(e), F))
-              else if (e instanceof Set) D[i] = new Set(A(Array.from(e), F))
-              else if (ArrayBuffer.isView(e)) D[i] = a(e)
-              else {
-                var l = t.indexOf(e)
-                l !== -1 ? (D[i] = E[l]) : (D[i] = F(e))
-              }
-            }
-          return t.pop(), E.pop(), D
-        }
-        function r(u) {
-          if (typeof u != "object" || u === null) return u
-          if (u instanceof Date) return new Date(u)
-          if (Array.isArray(u)) return A(u, r)
-          if (u instanceof Map) return new Map(A(Array.from(u), r))
-          if (u instanceof Set) return new Set(A(Array.from(u), r))
-          var D = {}
-          t.push(u), E.push(D)
-          for (var i in u) {
-            var e = u[i]
-            if (typeof e != "object" || e === null) D[i] = e
-            else if (e instanceof Date) D[i] = new Date(e)
-            else if (e instanceof Map) D[i] = new Map(A(Array.from(e), r))
-            else if (e instanceof Set) D[i] = new Set(A(Array.from(e), r))
-            else if (ArrayBuffer.isView(e)) D[i] = a(e)
+          if (Array.isArray(u)) return C(u, F)
+          if (u.constructor !== Object && (i = A.get(u.constructor))) return i(u, F)
+          let D = {}
+          t.push(u), n.push(D)
+          for (let l in u) {
+            if (Object.hasOwnProperty.call(u, l) === !1) continue
+            let r = u[l]
+            if (typeof r != "object" || r === null) D[l] = r
+            else if (r.constructor !== Object && (i = A.get(r.constructor))) D[l] = i(r, F)
+            else if (ArrayBuffer.isView(r)) D[l] = B(r)
             else {
-              var l = t.indexOf(e)
-              l !== -1 ? (D[i] = E[l]) : (D[i] = r(e))
+              let s = t.indexOf(r)
+              s !== -1 ? (D[l] = n[s]) : (D[l] = F(r))
             }
           }
-          return t.pop(), E.pop(), D
+          return t.pop(), n.pop(), D
+        }
+        function E(u) {
+          if (typeof u != "object" || u === null) return u
+          if (Array.isArray(u)) return C(u, E)
+          if (u.constructor !== Object && (i = A.get(u.constructor))) return i(u, E)
+          let D = {}
+          t.push(u), n.push(D)
+          for (let l in u) {
+            let r = u[l]
+            if (typeof r != "object" || r === null) D[l] = r
+            else if (r.constructor !== Object && (i = A.get(r.constructor))) D[l] = i(r, E)
+            else if (ArrayBuffer.isView(r)) D[l] = B(r)
+            else {
+              let s = t.indexOf(r)
+              s !== -1 ? (D[l] = n[s]) : (D[l] = E(r))
+            }
+          }
+          return t.pop(), n.pop(), D
         }
       }
     })
-    var P = Object.hasOwnProperty
-    var g = w(c(), 1),
-      I = (0, g.default)()
-    function p(n) {
-      return n.document.body.dataset.slug
+    var W = Object.hasOwnProperty
+    var d = v(p(), 1),
+      $ = (0, d.default)()
+    function h(e) {
+      return e.document.body.dataset.slug
     }
-    var L = (n) => `${p(window)}-checkbox-${n}`
+    var O = (e) => `${h(window)}-checkbox-${e}`
     document.addEventListener("nav", () => {
-      document.querySelectorAll("input.checkbox-toggle").forEach((t, E) => {
-        let A = L(E),
-          F = (r) => {
-            let u = r.target?.checked ? "true" : "false"
-            localStorage.setItem(A, u)
+      document.querySelectorAll("input.checkbox-toggle").forEach((t, n) => {
+        let A = O(n),
+          i = (C) => {
+            let F = C.target?.checked ? "true" : "false"
+            localStorage.setItem(A, F)
           }
-        t.addEventListener("change", F),
-          window.addCleanup(() => t.removeEventListener("change", F)),
+        t.addEventListener("change", i),
+          window.addCleanup(() => t.removeEventListener("change", i)),
           localStorage.getItem(A) === "true" && (t.checked = !0)
       })
     })
