@@ -70,7 +70,7 @@
 }
 @media (max-width: 1520px) {
   .notes-outer {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 1520px) {
@@ -448,9 +448,9 @@ body[data-slug="index"] span[class*="rose"] {
   color: #ebbcba;
 }
 .notes-outer {
-  flex-direction: row;
-  justify-content: space-between;
-  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  display: grid;
 }
 .notes-outer #note-item .recent-links,
 .notes-outer #note-item .notes-container {
@@ -462,7 +462,7 @@ body[data-slug="index"] span[class*="rose"] {
 }
 @media (max-width: 1520px) {
   .notes-outer {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 .landing-notes {
@@ -2685,7 +2685,7 @@ audio::-webkit-media-controls-panel {
 .center {
   border: 1px solid var(--darkgray);
   margin: 3rem auto;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 @media (max-width: 1520px) {
   .center {
@@ -2776,6 +2776,16 @@ header .keybind {
 }
 header .breadcrumb-container {
   grid-area: 1/1/1/4;
+}
+@media (max-width: 1520px) {
+  header {
+    margin-bottom: 0;
+  }
+  header .search {
+    max-width: unset;
+    grid-area: 2/1/2/4;
+    min-width: 140px;
+  }
 }
 .breadcrumb-container {
   border-bottom: 1px solid var(--darkgray);
