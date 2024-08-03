@@ -731,8 +731,8 @@ main .rounded-t,
 main .rounded-md,
 main .gsc-comment-box-textarea-extras {
   border-radius: 0;
-  border-start-start-radius: 0;
-  border-start-end-radius: 0;
+  border-start-start-radius: 0 !important;
+  border-start-end-radius: 0 !important;
 }
 .search {
   flex-grow: 0.3;
