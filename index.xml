@@ -6,18 +6,6 @@
       <description>Les dernières 40 notes on Aaron&#039;s notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Discrete Mathematics</title>
-    <link>https://aarnphm.xyz/tags/sfwr2fa3</link>
-    <guid>https://aarnphm.xyz/tags/sfwr2fa3</guid>
-    <description>See books Prof. Vincent Maccio.</description>
-    <pubDate>Fri, 02 Aug 2024 23:46:33 GMT</pubDate>
-  </item><item>
-    <title>love</title>
-    <link>https://aarnphm.xyz/tags/love</link>
-    <guid>https://aarnphm.xyz/tags/love</guid>
-    <description></description>
-    <pubDate>Fri, 02 Aug 2024 21:46:59 GMT</pubDate>
-  </item><item>
     <title>friendship</title>
     <link>https://aarnphm.xyz/thoughts/friendship</link>
     <guid>https://aarnphm.xyz/thoughts/friendship</guid>
@@ -201,7 +189,7 @@
     <title>Automata</title>
     <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/Nous</link>
     <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/Nous</guid>
-    <description>Q1: T/F, if F explain why. Q4: regular expression, 5 separate q Q2/Q3: DFAs and NFAs Product construction: ∩ ∪ of DFAs Subset construction: NFA to DFA Quotient construction: State minimization Set theory Complement in Σ∗: L=Σ∗−L associative: (A∪B)∪C(A∩B)∩C(AB)C​=A∪(B∪C),=A∩(B∩C),=A(BC).​ commutative: A∪BA∩B​=B∪A=B∩A​ null set null set ∅ is the identity for ∪ and annihilator for set concatenation A∪∅=A and A∅=∅A=∅ set {ϵ} is an identity for set concatenation {ϵ}A=A{ϵ}=A Set union and intersection are distributive over set concatenation A∪(B∩C) A∩(B∪C)​=(A∪B)∩(A∪C)=(A∩B)∪(A∩C)​ Set concatenation distributes over union A(B∪C) (A∪B)C​=AB∪AC=AC∪BC​ DFA DFA#definition Let δ:Q×Σ→Q, thus δ^:Q×Σ∗→Q δ(q,c)→p therefore δ^(q,w)→p regularity Important δ^(q,ϵ) δ^(q,xa)​=q=δ(δ^(q,x),a)​ Important a subset A⊂Σ∗ is regular if and only if there exists a DFA M such that L(M)=L Important All finite languages are regular, but not all regular languages are finite examples Show L is regular where L={x∣x%3=0∪x=ϵ}, with Σ={0,1} Three states, q0​,q1​,q2​, where q0​ denotes the string mod 3 is 0, q1​ denotes the string mod 3 is 1, and q2​ denotes the string mod 3 is 2.</description>
+    <description>Book: pdf Q1: T/F, if F explain why. Q4: regular expression, 5 separate q Q2/Q3: DFAs and NFAs Product construction: ∩ ∪ of DFAs Subset construction: NFA to DFA Quotient construction: State minimization Set theory Complement in Σ∗: L=Σ∗−L associative: (A∪B)∪C(A∩B)∩C(AB)C​=A∪(B∪C),=A∩(B∩C),=A(BC).​ commutative: A∪BA∩B​=B∪A=B∩A​ null set null set ∅ is the identity for ∪ and annihilator for set concatenation A∪∅=A and A∅=∅A=∅ set {ϵ} is an identity for set concatenation {ϵ}A=A{ϵ}=A Set union and intersection are distributive over set concatenation A∪(B∩C) A∩(B∪C)​=(A∪B)∩(A∪C)=(A∩B)∪(A∩C)​ Set concatenation distributes over union A(B∪C) (A∪B)C​=AB∪AC=AC∪BC​ DFA DFA#definition Let δ:Q×Σ→Q, thus δ^:Q×Σ∗→Q δ(q,c)→p therefore δ^(q,w)→p regularity Important δ^(q,ϵ) δ^(q,xa)​=q=δ(δ^(q,x),a)​ Important a subset A⊂Σ∗ is regular if and only if there exists a DFA M such that L(M)=L Important All finite languages are regular, but not all regular languages are finite examples Show L is regular where L={x∣x%3=0∪x=ϵ}, with Σ={0,1} Three states, q0​,q1​,q2​, where q0​ denotes the string mod 3 is 0, q1​ denotes the string mod 3 is 1, and q2​ denotes the string mod 3 is 2.</description>
     <pubDate>Fri, 08 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>atelier with friends.</title>
@@ -215,12 +203,6 @@
     <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/astron-2e03/Atmosphere</guid>
     <description>Ref: slides features. H=ωmH​gkB​T​ solid or dash solid q larger mean molecular weights? B: shallow features ⇒ higher mean molecular weights mass-metallicity trend Question Can we detect clouds in exoplanets? Clouds suppress atmospheric chemical signatures Important Introduced a degeneracy between cloud-top pressure and mean molecular weight clouds/winds on giant planets.</description>
     <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>philosophy</title>
-    <link>https://aarnphm.xyz/tags/philosophy</link>
-    <guid>https://aarnphm.xyz/tags/philosophy</guid>
-    <description>Toute idée fausse finit dans le sang, mais il s'agit toujours du sang des autres. C'est ce qui explique que certains de nos philosophes se sentent à l'aise pour dire n'importe quoi.</description>
-    <pubDate>Wed, 06 Mar 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>steady-state error</title>
     <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/steady-state-error</link>
@@ -245,6 +227,24 @@
     <guid>https://aarnphm.xyz/thoughts/ethics</guid>
     <description>Closely connected to value theory, or moral philosophy. Kantian ethics presupposes that there is a universal moral law that applies to all rational beings, or his deontological ethics framework that based on “categorical imperative”.</description>
     <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Root mean square</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/lab3/prelab</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/lab3/prelab</guid>
+    <description>See also: pdf problème 1. The Root Mean Square (RMS) value of a signal f(t) that is periodic with period T is given by the equation T1​∫0T​(f(t))2dt​ It can be shown that the RMS value of u(t)=Bsinωt is 2​B​ 1.a Square wave The square wave function is defined as: f(t)={10​if 0≤t&lt;2T​if 2T​≤t&lt;T​ import sympy as sp t = sp.symbols(&#039;t&#039;) T = 2 RMS = sp.sqrt(1/T * sp.integrate(1, (t, 0, T/2))) RMS = 2​1​ 1.b Sawtooth wave A sawtooth wave function is defined as: f(t)=T2A​(t−2T​) import sympy as sp t = sp.symbols(&#039;t&#039;) T = 1 A = 0.5 f_t = 2 * A / T * (t - T/2) RMS = sp.sqrt(1/T * sp.integrate(f_t**2, (t, 0, T))) RMS = 63​​ 1.c sine wave A general form of the sine wave can be written as f(t)=Asin(ωt+ϕ) Amplitude is 2.3, no phase shift RMS = 2​2.3​ problème 2.</description>
+    <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>PJRT</title>
+    <link>https://aarnphm.xyz/thoughts/PJRT</link>
+    <guid>https://aarnphm.xyz/thoughts/PJRT</guid>
+    <description>Blog post and source Lower stack layer for framework and hardware communication. As abstraction to transpile to different hardware targets: TPU, GPU.</description>
+    <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>TPU</title>
+    <link>https://aarnphm.xyz/thoughts/TPU</link>
+    <guid>https://aarnphm.xyz/thoughts/TPU</guid>
+    <description>See also: XLA, and architecture.</description>
+    <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
