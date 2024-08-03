@@ -723,6 +723,7 @@ main .gsc-header {
 }
 main .gsc-comment-box:not(.gsc-comment-box-is-reply),
 main .gsc-comment-box-write,
+main .rounded-md,
 main .gsc-comment-box-textarea {
   border-radius: 0;
 }
@@ -2426,6 +2427,8 @@ html {
   scroll-behavior: smooth;
 }
 .article-title {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
   font-family: "ITCGaramondStdLtCond", var(--headerFont) !important;
   font-size: 2.8125rem !important;
   line-height: 2.8125rem !important;
@@ -2732,46 +2735,56 @@ header,
     grid-area: 1/1/2/3;
   }
 }
-header .search,
 .right .search {
   grid-area: 1/1/2/3;
 }
-header .keybind,
 .right .keybind {
   grid-area: 1/3/2/4;
   justify-self: end;
 }
-header .graph,
 .right .graph {
   grid-area: 2/1/2/4;
 }
-header .backlinks,
 .right .backlinks {
   grid-area: 3/1/3/4;
 }
-header .toc,
 .right .toc {
   grid-area: 4/1/4/4;
 }
 @media (max-width: 1520px) {
-  header,
   .right {
     align-items: unset;
   }
-  header .search,
   .right .search {
     max-width: unset;
     grid-area: 1/1/2/3;
   }
-  header .graph,
   .right .graph {
     grid-area: 2/1/2/1;
     max-width: 22rem;
   }
-  header .backlinks,
   .right .backlinks {
     grid-area: 2/2/2/3;
   }
+}
+header .search {
+  grid-area: 2/1/2/3;
+}
+header .keybind {
+  grid-area: 2/3/2/4;
+  justify-self: end;
+}
+header .breadcrumb-container {
+  grid-area: 1/1/1/4;
+}
+.breadcrumb-container {
+  border-bottom: 1px solid var(--darkgray);
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+.breadcrumb-element p {
+  margin-left: 0.25rem;
 }
 :root {
   --light: #fffaf3;

@@ -6,6 +6,18 @@
       <description>Les dernières 40 notes on Aaron&#039;s notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>m1</title>
+    <link>https://aarnphm.xyz/thoughts/theme/thoughts/thoughts/m1</link>
+    <guid>https://aarnphm.xyz/thoughts/theme/thoughts/thoughts/m1</guid>
+    <description></description>
+    <pubDate>Sat, 03 Aug 2024 05:48:52 GMT</pubDate>
+  </item><item>
+    <title>test</title>
+    <link>https://aarnphm.xyz/thoughts/theme/test</link>
+    <guid>https://aarnphm.xyz/thoughts/theme/test</guid>
+    <description></description>
+    <pubDate>Sat, 03 Aug 2024 05:48:32 GMT</pubDate>
+  </item><item>
     <title>friendship</title>
     <link>https://aarnphm.xyz/thoughts/friendship</link>
     <guid>https://aarnphm.xyz/thoughts/friendship</guid>
@@ -27,7 +39,7 @@
     <title>Monte-Carlo methods</title>
     <link>https://aarnphm.xyz/thoughts/Monte-Carlo</link>
     <guid>https://aarnphm.xyz/thoughts/Monte-Carlo</guid>
-    <description>tree search. a Search algorithm based on random sampling of the search space. Selection: root R and select successive child nodes until leaf L is reached.</description>
+    <description>tree search. a search algorithm based on random sampling of the search space. Selection: root R and select successive child nodes until leaf L is reached.</description>
     <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>The Prisoner&#039;s Dilemma</title>
@@ -233,18 +245,6 @@
     <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/lab3/prelab</guid>
     <description>See also: pdf problème 1. The Root Mean Square (RMS) value of a signal f(t) that is periodic with period T is given by the equation T1​∫0T​(f(t))2dt​ It can be shown that the RMS value of u(t)=Bsinωt is 2​B​ 1.a Square wave The square wave function is defined as: f(t)={10​if 0≤t&lt;2T​if 2T​≤t&lt;T​ import sympy as sp t = sp.symbols(&#039;t&#039;) T = 2 RMS = sp.sqrt(1/T * sp.integrate(1, (t, 0, T/2))) RMS = 2​1​ 1.b Sawtooth wave A sawtooth wave function is defined as: f(t)=T2A​(t−2T​) import sympy as sp t = sp.symbols(&#039;t&#039;) T = 1 A = 0.5 f_t = 2 * A / T * (t - T/2) RMS = sp.sqrt(1/T * sp.integrate(f_t**2, (t, 0, T))) RMS = 63​​ 1.c sine wave A general form of the sine wave can be written as f(t)=Asin(ωt+ϕ) Amplitude is 2.3, no phase shift RMS = 2​2.3​ problème 2.</description>
     <pubDate>Tue, 05 Mar 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>PJRT</title>
-    <link>https://aarnphm.xyz/thoughts/PJRT</link>
-    <guid>https://aarnphm.xyz/thoughts/PJRT</guid>
-    <description>Blog post and source Lower stack layer for framework and hardware communication. As abstraction to transpile to different hardware targets: TPU, GPU.</description>
-    <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>TPU</title>
-    <link>https://aarnphm.xyz/thoughts/TPU</link>
-    <guid>https://aarnphm.xyz/thoughts/TPU</guid>
-    <description>See also: XLA, and architecture.</description>
-    <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
