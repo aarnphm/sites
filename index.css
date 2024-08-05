@@ -203,90 +203,6 @@
     display: none !important;
   }
 }
-@media (min-width: 1510px) {
-  body[data-slug="books"] .page > #quartz-body > .center {
-    margin-top: 3rem;
-  }
-}
-body[data-slug="books"] .page > #quartz-body > .center > .page-header > .popover-hint {
-  flex-direction: row;
-  display: flex;
-}
-body[data-slug="books"] .page-header {
-  display: none;
-}
-@media (min-width: 1510px) {
-  body[data-slug="influence"] .page > #quartz-body > .center {
-    margin-top: 3rem;
-  }
-}
-body[data-slug="influence"] .page > #quartz-body > .center > .page-header > .popover-hint {
-  flex-direction: row;
-  display: flex;
-}
-body[data-slug="influence"] .page-header {
-  display: none;
-}
-@media (min-width: 1510px) {
-  body[data-slug="movies"] .page > #quartz-body > .center {
-    margin-top: 3rem;
-  }
-}
-body[data-slug="movies"] .page > #quartz-body > .center > .page-header > .popover-hint {
-  flex-direction: row;
-  display: flex;
-}
-body[data-slug="movies"] .page-header {
-  display: none;
-}
-@media (min-width: 1510px) {
-  body[data-slug="music"] .page > #quartz-body > .center {
-    margin-top: 3rem;
-  }
-}
-body[data-slug="music"] .page > #quartz-body > .center > .page-header > .popover-hint {
-  flex-direction: row;
-  display: flex;
-}
-body[data-slug="music"] .page-header {
-  display: none;
-}
-@media (min-width: 1510px) {
-  body[data-slug="quotes"] .page > #quartz-body > .center {
-    margin-top: 3rem;
-  }
-}
-body[data-slug="quotes"] .page > #quartz-body > .center > .page-header > .popover-hint {
-  flex-direction: row;
-  display: flex;
-}
-body[data-slug="quotes"] .page-header {
-  display: none;
-}
-@media (min-width: 1510px) {
-  body[data-slug="thoughts\/Scents"] .page > #quartz-body > .center {
-    margin-top: 3rem;
-  }
-}
-body[data-slug="thoughts\/Scents"] .page > #quartz-body > .center > .page-header > .popover-hint {
-  flex-direction: row;
-  display: flex;
-}
-body[data-slug="thoughts\/Scents"] .page-header {
-  display: none;
-}
-@media (min-width: 1510px) {
-  body[data-slug="uses"] .page > #quartz-body > .center {
-    margin-top: 3rem;
-  }
-}
-body[data-slug="uses"] .page > #quartz-body > .center > .page-header > .popover-hint {
-  flex-direction: row;
-  display: flex;
-}
-body[data-slug="uses"] .page-header {
-  display: none;
-}
 header {
   flex-direction: row;
   align-items: center;
@@ -524,101 +440,6 @@ a.min-links.internal {
 .content-container hr:after {
   content: none;
 }
-kbd {
-  font-family: var(--codeFont);
-  border: 1px solid var(--gray);
-  border-radius: 5px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.2rem 0.4rem;
-  line-height: 1rem;
-}
-.keybind {
-  cursor: pointer;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  flex-grow: 0 !important;
-  font-size: 0.8rem !important;
-}
-.keybind .bind.highlight-modal {
-  max-height: unset;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.2rem 0.4rem;
-}
-.keybind > #shortcut-container {
-  contain: layout;
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-  z-index: 999;
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-}
-.keybind > #shortcut-container.active {
-  display: inline-block;
-}
-.keybind > #shortcut-container > #shortcut-space {
-  background: var(--light);
-  border: 1px solid #aaa;
-  border-radius: 7px;
-  width: 18rem;
-  margin: 20% auto auto;
-  box-shadow:
-    0 14px 50px #1b21301f,
-    0 10px 30px #1b213029;
-}
-.keybind > #shortcut-container > #shortcut-space #title {
-  width: initial;
-  border: 0 solid #aaa;
-  border-bottom-width: 1px;
-  padding: 0.5rem 1rem;
-  font-size: 1.4rem;
-}
-.keybind > #shortcut-container > #shortcut-space ul {
-  width: initial;
-  margin-bottom: 0.5rem;
-  padding-inline: 1rem;
-  list-style: none;
-}
-.keybind > #shortcut-container > #shortcut-space ul span {
-  font-size: 1rem;
-}
-.keybind > #shortcut-container > #shortcut-space ul > li {
-  margin: 0;
-  padding: 0;
-}
-.keybind > #shortcut-container > #shortcut-space ul > li > #shortcuts {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin: 1rem 0;
-  display: grid;
-}
-.navigation-container {
-  font-family: var(--bodyFont);
-  text-align: right;
-  font-size: 0.9rem;
-  font-style: italic;
-}
-.navigation-container a {
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  font-weight: inherit;
-  background-color: #0000;
-  border-bottom: 1px dotted #2222224a;
-  border-radius: 0;
-  transition: none;
-}
-[saved-theme="dark"] .navigation-container a {
-  border-bottom: 1px dotted #ffffff4a;
-}
-.navigation-container a:hover > .popover {
-  display: none;
-}
 .breadcrumb-container {
   flex-flow: wrap;
   gap: 0.5rem;
@@ -733,6 +554,51 @@ main .gsc-comment-box-textarea-extras {
   border-radius: 0 !important;
   border-start-start-radius: 0 !important;
   border-start-end-radius: 0 !important;
+}
+.minimal-footer {
+  box-sizing: border-box;
+  border: 0 solid var(--gray);
+  font-family: var(--bodyFont);
+  border-top-width: 1px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  font-style: normal;
+  display: flex;
+}
+.minimal-footer > * {
+  margin: 0;
+  padding: 0;
+}
+.minimal-footer #icons {
+  flex-direction: row;
+  margin-top: 0.25rem;
+  line-height: 0;
+  display: flex;
+}
+.minimal-footer > a {
+  color: inherit;
+  background-color: inherit;
+  border-bottom: 1px dotted #2222224a;
+  border-radius: 0;
+  text-decoration: underline;
+  text-decoration-thickness: from-font;
+  transition: none;
+}
+.minimal-footer li {
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.8rem;
+  font-size: 0.8rem;
+  list-style: none;
+  display: inline-flex;
+}
+.minimal-footer li > * {
+  color: inherit;
 }
 .search {
   flex-grow: 0.3;
@@ -971,6 +837,80 @@ main .gsc-comment-box-textarea-extras {
 }
 .search > #search-container > #search-space > #search-layout > #results-container .result-card > p {
   margin-bottom: 0;
+}
+kbd {
+  font-family: var(--codeFont);
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.2rem 0.4rem;
+  line-height: 1rem;
+}
+.keybind {
+  cursor: pointer;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  flex-grow: 0 !important;
+  font-size: 0.8rem !important;
+}
+.keybind .bind.highlight-modal {
+  max-height: unset;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.2rem 0.4rem;
+}
+.keybind > #shortcut-container {
+  contain: layout;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+.keybind > #shortcut-container.active {
+  display: inline-block;
+}
+.keybind > #shortcut-container > #shortcut-space {
+  background: var(--light);
+  border: 1px solid #aaa;
+  border-radius: 7px;
+  width: 18rem;
+  margin: 20% auto auto;
+  box-shadow:
+    0 14px 50px #1b21301f,
+    0 10px 30px #1b213029;
+}
+.keybind > #shortcut-container > #shortcut-space #title {
+  width: initial;
+  border: 0 solid #aaa;
+  border-bottom-width: 1px;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+}
+.keybind > #shortcut-container > #shortcut-space ul {
+  width: initial;
+  margin-bottom: 0.5rem;
+  padding-inline: 1rem;
+  list-style: none;
+}
+.keybind > #shortcut-container > #shortcut-space ul span {
+  font-size: 1rem;
+}
+.keybind > #shortcut-container > #shortcut-space ul > li {
+  margin: 0;
+  padding: 0;
+}
+.keybind > #shortcut-container > #shortcut-space ul > li > #shortcuts {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 1rem 0;
+  display: grid;
 }
 .graph > h3 {
   margin: 0;
@@ -1599,6 +1539,27 @@ body[data-slug="curius"] .page > #quartz-body .center > .page-header {
 }
 .trail-ul li.curius-item-title .curius-item-span {
   max-width: 100%;
+}
+.navigation-container {
+  font-family: var(--bodyFont);
+  text-align: right;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.navigation-container a {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+  background-color: #0000;
+  border-bottom: 1px dotted #2222224a;
+  border-radius: 0;
+  transition: none;
+}
+[saved-theme="dark"] .navigation-container a {
+  border-bottom: 1px dotted #ffffff4a;
+}
+.navigation-container a:hover > .popover {
+  display: none;
 }
 .popover {
   z-index: 999;
@@ -2483,16 +2444,51 @@ pre.poetry {
     line-height: 2.25rem;
   }
 }
+article > a.internal:not([role="anchor"]),
+blockquote.twitter-tweet > a {
+  border-radius: unset;
+  background-color: unset;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 calc(100% - 0.1em);
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  margin: 0 0.08em;
+  padding-left: 0.3em;
+  position: relative;
+}
+article > a.internal:not([role="anchor"]):before,
+blockquote.twitter-tweet > a:before {
+  content: " ";
+  color: inherit;
+  background-image: linear-gradient(var(--light), var(--light)),
+    linear-gradient(var(--light), var(--light)), linear-gradient(currentColor, currentColor);
+  content: "";
+  background-position:
+    0 0,
+    0 100%,
+    0 calc(100% - 0.1em);
+  background-repeat: no-repeat;
+  background-size:
+    1px 0.6em,
+    1px 0.1em,
+    1px 1em;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
 a.internal {
   background-color: unset;
 }
 a.internal.tag-link {
   border-radius: unset;
+  background-color: unset;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 calc(100% - 0.1em);
   background-repeat: repeat-x;
   background-size: 1px 1px;
-  background-color: unset;
   margin: 0 0.08em;
   padding-left: 0.3em;
   position: relative;
@@ -2795,6 +2791,24 @@ header .breadcrumb-container {
 }
 .breadcrumb-element p {
   margin-left: 0.25rem;
+}
+blockquote.twitter-tweet {
+  border-left: unset;
+  border: 2px solid var(--secondary);
+  padding-bottom: 1rem;
+  position: relative;
+}
+blockquote.twitter-tweet:before {
+  content: "x.com";
+  background-color: var(--light);
+  color: var(--gray);
+  border: 1px solid var(--secondary);
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  top: -12px;
+  left: 12px;
 }
 :root {
   --light: #fffaf3;

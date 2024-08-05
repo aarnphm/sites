@@ -7,3 +7,6 @@ contentIndex.json
 *.jpeg
 node_modules
 static
+postscript.js
+prescript.js
+**/images
