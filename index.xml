@@ -6,6 +6,18 @@
       <description>Les dernières 40 notes on Aaron&#039;s notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>On ChatGPT and pedagogical consequences</title>
+    <link>https://aarnphm.xyz/posts/a1</link>
+    <guid>https://aarnphm.xyz/posts/a1</guid>
+    <description>The following in an excerpt of a paper I wrote for my coursework. Question In the context of Gartner’s hype cycle, what has been the trajectory of generative conversational AI? Should a format including generative conversational AI be introduced to replace traditional essay assignments in educational settings, and if so, what are some potential implications for student learning and assessment? (Dwivedi et al., 2023) Introduction.</description>
+    <pubDate>Wed, 02 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Hidden Markov model</title>
+    <link>https://aarnphm.xyz/thoughts/Hidden-Markov-model</link>
+    <guid>https://aarnphm.xyz/thoughts/Hidden-Markov-model</guid>
+    <description>See also wikipedia A Markov model where observations are dependent on a latent Markov process X an HMM has an additional requirement that the outcome of Y at time t = t_0 must be “influenced” ...</description>
+    <pubDate>Wed, 02 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
     <title>Orwellian</title>
     <link>https://aarnphm.xyz/thoughts/Orwellian</link>
     <guid>https://aarnphm.xyz/thoughts/Orwellian</guid>
@@ -35,12 +47,6 @@
     <guid>https://aarnphm.xyz/thoughts/Pavlovian-scale</guid>
     <description>Also known as classical conditioning.</description>
     <pubDate>Wed, 25 Sep 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>w2</title>
-    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/engineer-4a03/w2</link>
-    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/engineer-4a03/w2</guid>
-    <description></description>
-    <pubDate>Thu, 19 Sep 2024 23:12:29 GMT</pubDate>
   </item><item>
     <title>Bias and intercept</title>
     <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/Bias-and-intercept</link>
@@ -238,12 +244,6 @@
     <link>https://aarnphm.xyz/thoughts/latent-space</link>
     <guid>https://aarnphm.xyz/thoughts/latent-space</guid>
     <description></description>
-    <pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Steady state error and PID controller</title>
-    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/lab5/prelab</link>
-    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/lab5/prelab</guid>
-    <description>See also problem Problemè 1 In Lab 4, We used a PD compensator to control our ball and beam apparatus. The transfer function of our PD compensator was as follows: G_C(s) = K_Ds + K_P However, we did not use the compensator in this form.</description>
     <pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate>
   </item>
     </channel>
