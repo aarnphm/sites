@@ -6,6 +6,84 @@
       <description>Les dernières 40 notes on Aaron&#039;s notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>infinite poem</title>
+    <link>https://aarnphm.xyz/infinite-poem</link>
+    <guid>https://aarnphm.xyz/infinite-poem</guid>
+    <description>const rules = { start: &quot;$line1\n $line2\n$line3\n $line4\n$line5&quot;, line1: &quot;What shall a $dog_breed do?&quot;, line2: &quot;$verbs through the $nature_place,&quot;, ...</description>
+    <pubDate>Fri, 11 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Misra-Gries heavy-hitters algorithm</title>
+    <link>https://aarnphm.xyz/thoughts/Misra-Gries-heavy-hitters-algorithm</link>
+    <guid>https://aarnphm.xyz/thoughts/Misra-Gries-heavy-hitters-algorithm</guid>
+    <description>extends Boyer-Moore finding algorithm.</description>
+    <pubDate>Fri, 11 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>computational poem</title>
+    <link>https://aarnphm.xyz/thoughts/computational-poem</link>
+    <guid>https://aarnphm.xyz/thoughts/computational-poem</guid>
+    <description>Workshop by Alicia Guo See also poem.js text generation with grammars So what shapes languages? Grammars do. context-free grammars.</description>
+    <pubDate>Fri, 11 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>cheatsheet</title>
+    <link>https://aarnphm.xyz/cheatsheet</link>
+    <guid>https://aarnphm.xyz/cheatsheet</guid>
+    <description>A list of cheatsheet of whatever that fits with my workflow \begin{aligned} \text{Big O(micron)} &amp;: O or \mathcal{O} \\ \text{Big Omega} &amp;: \Omega \\ \text{Big Theta} &amp;: ...</description>
+    <pubDate>Thu, 10 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>KV compression</title>
+    <link>https://aarnphm.xyz/thoughts/KV-compression</link>
+    <guid>https://aarnphm.xyz/thoughts/KV-compression</guid>
+    <description>see also: github TLDR: Most algorithm determine importance through aggregating attentions over observed queries (Zhang et al., 2023) (Liu et al., 2023) More recent work aggregated ...</description>
+    <pubDate>Thu, 10 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Control System</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/</guid>
+    <description>External source: theory.</description>
+    <pubDate>Thu, 10 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>effective procedure</title>
+    <link>https://aarnphm.xyz/thoughts/effective-procedure</link>
+    <guid>https://aarnphm.xyz/thoughts/effective-procedure</guid>
+    <description>In logic, an effective procedure is a procedure for solving problem by any intuitively ‘effective’ means from a specific class. formation rules for propositional calculus (wff: well-formed formula) \begin{aligned} \text{FR1} &amp;.</description>
+    <pubDate>Tue, 08 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Compiler</title>
+    <link>https://aarnphm.xyz/thoughts/Compiler</link>
+    <guid>https://aarnphm.xyz/thoughts/Compiler</guid>
+    <description>just-in-time compiler graph TD A[Source Code] --&gt; B[Bytecode / IR] B --&gt; C[Interpreter] C --&gt; D{Hot Spot?} D --&gt;|Yes| E[JIT Compiler] D --&gt;|No| C E --&gt; F[Native ...</description>
+    <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>literature review</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/engineer-4a03/literature-review</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/engineer-4a03/literature-review</guid>
+    <description>See also essays on ChatGPT introduction. To understand how AI is fundamentally political, we need to go beyond neural nets and statistical pattern recognition to instead ask what is being optimized, and for whom, and who gets to decide.</description>
+    <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Least Squared Regression</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/a1/content</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/a1/content</guid>
+    <description>See also jupyter notebook and assignment question 1. problem 1. part 1 Divide the dataset into three parts: 1800 samples for training, 200 samples for validation, and 200 samples for testing.</description>
+    <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>likelihood</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/likelihood</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/likelihood</guid>
+    <description>maximum likelihood estimation \begin{aligned} \alpha &amp;= \argmax P(X | \alpha) \\ &amp;= \argmin - \sum_{i} \log (P(x^i | \alpha)) \end{aligned} ml estimate \argmax_{W} P(Z ...</description>
+    <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>principal component analysis</title>
+    <link>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/principal-component-analysis</link>
+    <guid>https://aarnphm.xyz/thoughts/university/twenty-four-twenty-five/sfwr-4ml3/principal-component-analysis</guid>
+    <description></description>
+    <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>cyanotype</title>
+    <link>https://aarnphm.xyz/thoughts/cyanotype</link>
+    <guid>https://aarnphm.xyz/thoughts/cyanotype</guid>
+    <description> slow-reacting, economical photographic printing formulation In context of writing, similar to what telescopic writing is.</description>
+    <pubDate>Thu, 03 Oct 2024 00:00:00 GMT</pubDate>
+  </item><item>
     <title>On ChatGPT and pedagogical consequences</title>
     <link>https://aarnphm.xyz/posts/a1</link>
     <guid>https://aarnphm.xyz/posts/a1</guid>
@@ -129,7 +207,7 @@
     <title>vLLM</title>
     <link>https://aarnphm.xyz/thoughts/vllm</link>
     <guid>https://aarnphm.xyz/thoughts/vllm</guid>
-    <description>See also Paged Attention speculative decoding See slides Speculative execution for LLMs is an excellent inference-time optimization.It hinges on the following unintuitive observation: ...</description>
+    <description>See also Paged Attention (Kwon et al., 2023) KV-Compress variable compression rates per attention head source: github KV-compression#idea Notes A variation of Ada-SnapKV idea: ...</description>
     <pubDate>Mon, 09 Sep 2024 00:00:00 GMT</pubDate>
   </item><item>
     <title>Real-time system a la carte</title>
@@ -167,84 +245,6 @@
     <guid>https://aarnphm.xyz/thoughts/Progressive-disclosure</guid>
     <description> make complexity easier to learn, but still enables power users to discover all workflows.</description>
     <pubDate>Mon, 02 Sep 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>interact cohort 2024</title>
-    <link>https://aarnphm.xyz/thoughts/joininteract</link>
-    <guid>https://aarnphm.xyz/thoughts/joininteract</guid>
-    <description> Someone gives you 50,000 dollars for a project that explicitly can’t be a business. What’s the project you work on and why? I want to host dinner centered around intimacy and cultural curation in different cities.</description>
-    <pubDate>Fri, 23 Aug 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>friendship</title>
-    <link>https://aarnphm.xyz/thoughts/friendship</link>
-    <guid>https://aarnphm.xyz/thoughts/friendship</guid>
-    <description>of pleasure. or utility? the issue with a majority of San Francisco&#039;s culture of authentic relating, circling, cuddle parties, &quot;deep convo&quot; events, is that it’s intimacy without relationship.</description>
-    <pubDate>Sat, 22 Jun 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>being.</title>
-    <link>https://aarnphm.xyz/thoughts/being</link>
-    <guid>https://aarnphm.xyz/thoughts/being</guid>
-    <description>What is being as a part of epistemology? why do we practice art? Practice anything, no matter how well or how bad, we practice art as a act of becoming, for our soul to grow. ...</description>
-    <pubDate>Wed, 12 Jun 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Algebraic geometry</title>
-    <link>https://aarnphm.xyz/thoughts/algebraic-geometry</link>
-    <guid>https://aarnphm.xyz/thoughts/algebraic-geometry</guid>
-    <description>See also git source and web view.</description>
-    <pubDate>Wed, 22 May 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Crib.</title>
-    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/Finals</link>
-    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/Finals</guid>
-    <description>\begin{align*} \neg (\exists x \mid R:P(x)) &amp;\equiv \forall x \mid R:\neg P(x) \\\ \neg (\forall x \mid R:P(x)) &amp;\equiv \exists x \mid R:\neg P(x) \end{align*} regular ...</description>
-    <pubDate>Mon, 15 Apr 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Monte-Carlo methods</title>
-    <link>https://aarnphm.xyz/thoughts/Monte-Carlo</link>
-    <guid>https://aarnphm.xyz/thoughts/Monte-Carlo</guid>
-    <description>tree search. a search algorithm based on random sampling of the search space. Selection: root R and select successive child nodes until leaf L is reached.</description>
-    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>The Prisoner&#039;s Dilemma</title>
-    <link>https://aarnphm.xyz/thoughts/The-Prisoner's-Dilemma</link>
-    <guid>https://aarnphm.xyz/thoughts/The-Prisoner's-Dilemma</guid>
-    <description>a game theory thought experiment involves two rational agents, each of whom can cooperate for mutual benefit or “defect” for individual reward.</description>
-    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>game theory</title>
-    <link>https://aarnphm.xyz/thoughts/game-theory</link>
-    <guid>https://aarnphm.xyz/thoughts/game-theory</guid>
-    <description>emerged John von Neumann published the paper On the Theory of Games of Strategy, when Neumann’s original proff used Brower’s fixed-point theorem on continuous mappings into compact ...</description>
-    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Economics for engineer, a guide.</title>
-    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Finals</link>
-    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Finals</guid>
-    <description>Economics for engineer, a guide.</description>
-    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Non-linear Optimization</title>
-    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Non-linear-optimization</link>
-    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/eng-3px3/Non-linear-optimization</guid>
-    <description>See also slides.</description>
-    <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Context-free grammar and push-down Turing machine</title>
-    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/a3/A3</link>
-    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-2fa3/a3/A3</guid>
-    <description>Problème 1. Give a context free grammar for the following language: L = \{a^nb^mc^k \mid k \neq n + m\} Solution The following CFG generates the language L: \begin{aligned} S &amp;\rightarrow S_1 \mid S_2 \mid S_3 \\ S_1 &amp;\rightarrow aS_1c \mid aS_1 \mid A \\ S_2 &amp;\rightarrow bS_2c \mid bS_2 \mid B \\ S_3 &amp;\rightarrow aS_3b \mid cS_3 \mid C \\ A &amp;\rightarrow aAc \mid aA \mid a \mid \varepsilon \\ B &amp;\rightarrow bBc \mid bB \mid b \mid \varepsilon \\ C &amp;\rightarrow aCb \mid cC \mid c \mid \varepsilon \end{aligned} Problème 2.</description>
-    <pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Observer and state-space model</title>
-    <link>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/a5/A5</link>
-    <guid>https://aarnphm.xyz/thoughts/university/twenty-three-twenty-four/sfwr-3dx4/a5/A5</guid>
-    <description>Problemè 1 Consider the following state-space model: \begin{aligned} \dot{x} &amp;= \begin{bmatrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ -5 &amp; -6 &amp; 0 \\ \end{bmatrix} x ...</description>
-    <pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>latent space</title>
-    <link>https://aarnphm.xyz/thoughts/latent-space</link>
-    <guid>https://aarnphm.xyz/thoughts/latent-space</guid>
-    <description></description>
-    <pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>

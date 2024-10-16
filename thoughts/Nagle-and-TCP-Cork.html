@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <title>Nagle's algorithm and TCP_CORK</title>
+    <title>Nagle's algorithm and TCP_CORK | Aaron's notes</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
-    <meta property="og:title" content="Nagle's algorithm and TCP_CORK" />
+    <meta property="og:title" content="Nagle's algorithm and TCP_CORK | Aaron's notes" />
     <meta property="og:type" content="website" />
     <meta name="twitter:site" content="@aarnphm_" />
     <meta name="twitter:creator" content="@aarnphm_" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Nagle's algorithm and TCP_CORK" />
+    <meta name="twitter:title" content="Nagle's algorithm and TCP_CORK | Aaron's notes" />
     <meta
       name="twitter:description"
       content="Nagle’s algorithm and Delay ACK small packets → not for TCP → Nagle algorithm: Maximize ratio of packets - data content → Delay ACK: silly window if available_data &amp; window_size ..."
@@ -110,9 +110,9 @@
             <h3 id="nagles-algorithm-and-delay-ack">
               Nagle’s algorithm and Delay ACK<a
                 role="anchor"
-                aria-hidden
+                aria-hidden="true"
                 tabindex="-1"
-                data-no-popover
+                data-no-popover="true"
                 href="#nagles-algorithm-and-delay-ack"
                 class="internal"
                 ><svg
@@ -149,7 +149,7 @@
                 tabindex="0"
                 data-language="prolog"
                 data-theme="rose-pine-dawn rose-pine"
-              ><code data-language="prolog" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">if</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;"> available_data</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> &amp; </span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">window_size</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> > </span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;">MSS</span></span>
+              ><code data-language="prolog" data-theme="rose-pine-dawn rose-pine" style="display:grid;"><span data-line><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">if</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;"> available_data</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> &amp; </span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">window_size</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> > </span><span style="--shiki-light:#907AA9;--shiki-light-font-style:italic;--shiki-dark:#C4A7E7;--shiki-dark-font-style:italic;">MSS</span></span>
 <span data-line><span style="--shiki-light:#286983;--shiki-dark:#31748F;">	send</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;"> payload</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;"> on</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;"> wire</span></span>
 <span data-line><span style="--shiki-light:#286983;--shiki-dark:#31748F;">else</span></span>
 <span data-line><span style="--shiki-light:#286983;--shiki-dark:#31748F;">	if</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;"> unconfirmed_data</span></span>
@@ -160,9 +160,9 @@
             <h3 id="cork-algorithm">
               Cork algorithm<a
                 role="anchor"
-                aria-hidden
+                aria-hidden="true"
                 tabindex="-1"
-                data-no-popover
+                data-no-popover="true"
                 href="#cork-algorithm"
                 class="internal"
                 ><svg

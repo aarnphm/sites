@@ -1,29 +1,29 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <title>vLLM</title>
+    <title>vLLM | Aaron's notes</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
-    <meta property="og:title" content="vLLM" />
+    <meta property="og:title" content="vLLM | Aaron's notes" />
     <meta property="og:type" content="website" />
     <meta name="twitter:site" content="@aarnphm_" />
     <meta name="twitter:creator" content="@aarnphm_" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="vLLM" />
+    <meta name="twitter:title" content="vLLM | Aaron's notes" />
     <meta
       name="twitter:description"
-      content="See also Paged Attention speculative decoding See slides Speculative execution for LLMs is an excellent inference-time optimization.It hinges on the following unintuitive observation: ..."
+      content="See also Paged Attention (Kwon et al., 2023) KV-Compress variable compression rates per attention head source: github KV-compression#idea Notes A variation of Ada-SnapKV idea: ..."
     />
     <meta
       property="og:description"
-      content="See also Paged Attention speculative decoding See slides Speculative execution for LLMs is an excellent inference-time optimization.It hinges on the following unintuitive observation: ..."
+      content="See also Paged Attention (Kwon et al., 2023) KV-Compress variable compression rates per attention head source: github KV-compression#idea Notes A variation of Ada-SnapKV idea: ..."
     />
     <meta property="og:image:type" content="image/webp" />
     <meta
       property="og:image:alt"
-      content="See also Paged Attention speculative decoding See slides Speculative execution for LLMs is an excellent inference-time optimization.It hinges on the following unintuitive observation: ..."
+      content="See also Paged Attention (Kwon et al., 2023) KV-Compress variable compression rates per attention head source: github KV-compression#idea Notes A variation of Ada-SnapKV idea: ..."
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -48,7 +48,7 @@
     <link rel="canonical" href="https:/aarnphm.xyz/thoughts/vllm" />
     <meta
       name="description"
-      content="See also Paged Attention speculative decoding See slides Speculative execution for LLMs is an excellent inference-time optimization.It hinges on the following unintuitive observation: ..."
+      content="See also Paged Attention (Kwon et al., 2023) KV-Compress variable compression rates per attention head source: github KV-compression#idea Notes A variation of Ada-SnapKV idea: ..."
     />
     <meta name="generator" content="Quartz" />
     <link href="../index.css" rel="stylesheet" type="text/css" spa-preserve />
@@ -92,12 +92,12 @@
                     ><span
                       class="page-modification"
                       title="Date de modification du contenu de la page"
-                      ><em>26 sept. 2024</em></span
+                      ><em>02 oct. 2024</em></span
                     ></a
                   >
                 </li>
                 <li>
-                  <span class="reading-time" title="Temps de lecture estimé">1 min de lecture</span>
+                  <span class="reading-time" title="Temps de lecture estimé">3 min de lecture</span>
                 </li>
               </ul>
               <ul class="tags">
@@ -115,13 +115,449 @@
                 data-slug="thoughts/Attention"
                 >Paged Attention</a
               >
+              <span class id="citation--kwon2023efficient--1"
+                >(<a href="#bib-kwon2023efficient" data-no-popover class="internal alias"
+                  >Kwon et al., 2023</a
+                >)</span
+              >
             </p>
+            <h2 id="kv-compress">
+              KV-Compress<a
+                role="anchor"
+                aria-hidden="true"
+                tabindex="-1"
+                data-no-popover="true"
+                href="#kv-compress"
+                class="internal"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path
+                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                  ></path></svg
+              ></a>
+            </h2>
+            <p><em>variable compression rates per attention head</em></p>
+            <p>
+              source:
+              <a href="https://github.com/IsaacRe/vllm-kvcompress" class="external"
+                >github<svg
+                  aria-hidden="true"
+                  class="external-icon"
+                  style="max-width: 0.8em; max-height: 0.8em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
+                  ></path></svg
+              ></a>
+            </p>
+            <p></p>
+            <blockquote
+              class="transclude"
+              data-url="thoughts/KV-compression"
+              data-block="#idea"
+              data-embed-alias="idea for kv cache"
+            >
+              <h2 id="idea">
+                idea.<a
+                  role="anchor"
+                  aria-hidden="true"
+                  tabindex="-1"
+                  data-no-popover="true"
+                  href="#idea"
+                  class="internal"
+                  ><svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                    <path
+                      d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                    ></path></svg
+                ></a>
+              </h2>
+              <p>
+                Look at past attention weights for each pair of key and value vectors (a measure of
+                the degree with which that KV’s representation has been queried during past
+                attention operations)
+              </p>
+              <p>Then select the KV with the least attention to evict</p>
+              <p>Think of LFU (least frequency used) cache management policy</p>
+              <p>
+                the KV cache for each sequence in a particular layer is allocated on the GPU as a
+                <em
+                  ># attention heads
+                  <span class="katex"
+                    ><span class="katex-html" aria-hidden="true"
+                      ><span class="base"
+                        ><span class="strut" style="height: 0.6833em"></span
+                        ><span class="mord mathnormal" style="margin-right: 0.07847em"
+                          >X</span
+                        ></span
+                      ></span
+                    ></span
+                  >
+                  sequence length</em
+                >
+                tensor.
+              </p>
+              <blockquote class="callout tip" data-callout="tip">
+                <div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Important</p></div>
+                </div>
+                <div class="callout-content">
+                  <p>
+                    total memory allocation scales with the <em>maximum</em> sequence length for all
+                    attention heads of the KV cache
+                  </p>
+                </div>
+              </blockquote>
+              <a href="../thoughts/KV-compression#idea" class="internal transclude-src"
+                >Lien vers l'original</a
+              >
+            </blockquote>
+            <p></p>
+            <blockquote class="callout notes" data-callout="notes">
+              <div class="callout-title">
+                <div class="callout-icon"></div>
+                <div class="callout-title-inner"><p>Notes</p></div>
+              </div>
+              <div class="callout-content">
+                <p>
+                  A variation of
+                  <a
+                    href="../thoughts/KV-compression#ada-kv"
+                    class="internal alias"
+                    data-slug="thoughts/KV-compression"
+                    >Ada-SnapKV</a
+                  >
+                </p>
+              </div>
+            </blockquote>
+            <p>idea:</p>
+            <ul>
+              <li>
+                <em>group-query-compression</em>: compress KV-cache of GQA without repeating it into
+                the dimension of
+                <span class="katex"
+                  ><span class="katex-html" aria-hidden="true"
+                    ><span class="base"
+                      ><span class="strut" style="height: 1em; vertical-align: -0.25em"></span
+                      ><span class="mop op-symbol small-op" style="position: relative; top: 0em"
+                        >∑</span
+                      ></span
+                    ></span
+                  ></span
+                >
+                query heads.
+              </li>
+              <li>
+                Modified PagedAttention that compute <em>against</em> KV-cache (contains variable
+                numbers of KVs per head)
+              </li>
+            </ul>
+            <p>
+              <img
+                src="../thoughts/images/kv-compress-vllm.png"
+                width="auto"
+                height="auto"
+                alt
+                loading="lazy"
+              />
+            </p>
+            <blockquote>
+              <p>For vLLM, each cache block stores KV for every attention head of every layer</p>
+              <p>
+                For KV-Compress, each block only holds KVs for a single head. Block tables are
+                expanded
+                <span class="katex"
+                  ><span class="katex-html" aria-hidden="true"
+                    ><span class="base"
+                      ><span
+                        class="strut"
+                        style="height: 0.7778em; vertical-align: -0.0833em"
+                      ></span
+                      ><span class="mord mathnormal" style="margin-right: 0.01968em">l</span
+                      ><span class="mspace" style="margin-right: 0.2222em"></span
+                      ><span class="mbin">×</span
+                      ><span class="mspace" style="margin-right: 0.2222em"></span></span
+                    ><span class="base"
+                      ><span class="strut" style="height: 0.6833em"></span
+                      ><span class="mord mathnormal" style="margin-right: 0.08125em">H</span></span
+                    ></span
+                  ></span
+                >
+                so that unique block for each specific KV head and layer can be retrieved
+              </p>
+            </blockquote>
+            <h3 id="query-group-compression-qgc">
+              Query-Group Compression (QGC)<a
+                role="anchor"
+                aria-hidden="true"
+                tabindex="-1"
+                data-no-popover="true"
+                href="#query-group-compression-qgc"
+                class="internal"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path
+                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                  ></path></svg
+              ></a>
+            </h3>
+            <p>KV compression algorithm doesn’t have GQA design in mind.</p>
+            <ul>
+              <li>
+                <a
+                  href="../thoughts/KV-compression#pyramid-kv"
+                  class="internal alias"
+                  data-slug="thoughts/KV-compression"
+                  >Pyramid-KV</a
+                >
+                cache and compress KV <em>after</em> repetition for alignment with query tensors
+              </li>
+              <li>Redundancy in cache before compression</li>
+            </ul>
+            <blockquote>
+              <p>modification of eviction-based methods per groups</p>
+            </blockquote>
+            <h3 id="block-layout-and-allocation">
+              Block layout and allocation<a
+                role="anchor"
+                aria-hidden="true"
+                tabindex="-1"
+                data-no-popover="true"
+                href="#block-layout-and-allocation"
+                class="internal"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path
+                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                  ></path></svg
+              ></a>
+            </h3>
+            <p>
+              idea: adapt PagedAttention to page out cache on a
+              <em>per-head, per-layer–as well as per sequence–basis</em>
+            </p>
+            <p>
+              <img
+                src="../thoughts/images/paged-attention-block-kv-compress.png"
+                width="auto"
+                height="auto"
+                alt
+                loading="lazy"
+              />
+            </p>
+            <blockquote
+              class="callout note is-collapsible is-collapsed"
+              data-callout="note"
+              data-callout-fold
+            >
+              <div class="callout-title">
+                <div class="callout-icon"></div>
+                <div class="callout-title-inner"><p>explanation</p></div>
+                <div class="fold-callout-icon"></div>
+              </div>
+              <div class="callout-content">
+                <p>A simplified example with two KV heads and a block size of two:</p>
+                <ul>
+                  <li>
+                    KV metrics are visualized for a given cache state, highlighting blocks of a
+                    particular sequence in the decoding batch that is scheduled to evict two blocks.
+                  </li>
+                  <li>Logical indices are displayed under the corresponding metrics slot.</li>
+                </ul>
+              </div>
+            </blockquote>
+            <h4 id="evict-from-paged-kv-cache">
+              Evict from Paged KV cache<a
+                role="anchor"
+                aria-hidden="true"
+                tabindex="-1"
+                data-no-popover="true"
+                href="#evict-from-paged-kv-cache"
+                class="internal"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path
+                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                  ></path></svg
+              ></a>
+            </h4>
+            <blockquote>
+              <p>need to evict KV blocks instead of evict single KV attention</p>
+            </blockquote>
+            <h2 id="automatic-prefix-caching">
+              automatic prefix caching<a
+                role="anchor"
+                aria-hidden="true"
+                tabindex="-1"
+                data-no-popover="true"
+                href="#automatic-prefix-caching"
+                class="internal"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path
+                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                  ></path></svg
+              ></a>
+            </h2>
+            <p>
+              <em
+                >excerpt from
+                <a
+                  href="https://github.com/vllm-project/vllm/blob/main/docs/source/automatic_prefix_caching/details.md"
+                  class="external"
+                  >github<svg
+                    aria-hidden="true"
+                    class="external-icon"
+                    style="max-width: 0.8em; max-height: 0.8em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
+                    ></path></svg></a
+              ></em>
+            </p>
+            <h2 id="block-manager-and-evictor">
+              block manager and evictor<a
+                role="anchor"
+                aria-hidden="true"
+                tabindex="-1"
+                data-no-popover="true"
+                href="#block-manager-and-evictor"
+                class="internal"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path
+                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                  ></path></svg
+              ></a>
+            </h2>
+            <p>
+              see also:
+              <a
+                href="https://raw.aarnphm.xyz/https://github.com/vllm-project/vllm/blob/main/vllm/core/block_manager_v2.py"
+                class="external"
+                >v2<svg
+                  aria-hidden="true"
+                  class="external-icon"
+                  style="max-width: 0.8em; max-height: 0.8em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
+                  ></path></svg
+              ></a>
+              and
+              <a
+                href="https://raw.aarnphm.xyz/https://github.com/vllm-project/vllm/blob/main/vllm/core/block_manager_v1.py"
+                class="external"
+                >v1<svg
+                  aria-hidden="true"
+                  class="external-icon"
+                  style="max-width: 0.8em; max-height: 0.8em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
+                  ></path></svg></a
+              >,
+              <a
+                href="https://docs.google.com/document/d/1XxYUFai07ta5rE7OdtCVhLJ5J0oAxEqrGgarFdjv0Zc/edit?tab=t.0"
+                class="external"
+                >benchmark<svg
+                  aria-hidden="true"
+                  class="external-icon"
+                  style="max-width: 0.8em; max-height: 0.8em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"
+                  ></path></svg
+              ></a>
+            </p>
+            <p>reasoning for v2:</p>
+            <ul>
+              <li>support sliding windows attention</li>
+              <li>
+                lookahead slot for
+                <a
+                  href="../thoughts/vllm#speculative-decoding"
+                  class="internal alias"
+                  data-slug="thoughts/vllm"
+                  >speculative decoding</a
+                >
+              </li>
+            </ul>
             <h2 id="speculative-decoding">
               speculative decoding<a
                 role="anchor"
-                aria-hidden
+                aria-hidden="true"
                 tabindex="-1"
-                data-no-popover
+                data-no-popover="true"
                 href="#speculative-decoding"
                 class="internal"
                 ><svg
@@ -204,9 +640,9 @@
             <h2 id="constrained-decoding">
               constrained decoding.<a
                 role="anchor"
-                aria-hidden
+                aria-hidden="true"
                 tabindex="-1"
-                data-no-popover
+                data-no-popover="true"
                 href="#constrained-decoding"
                 class="internal"
                 ><svg
@@ -239,6 +675,14 @@
                   ></path></svg
               ></a>
             </p>
+            <div id="refs" class="references csl-bib-body">
+              <div class="csl-entry" id="bib-kwon2023efficient">
+                Kwon, W., Li, Z., Zhuang, S., Sheng, Y., Zheng, L., Yu, C. H., Gonzalez, J. E.,
+                Zhang, H., &amp; Stoica, I. (2023). Efficient Memory Management for Large Language
+                Model Serving with PagedAttention.
+                <i>Proceedings of the ACM SIGOPS 29th Symposium on Operating Systems Principles</i>.
+              </div>
+            </div>
           </article>
           <hr />
           <div class="page-footer">
@@ -438,6 +882,29 @@
             <div id="toc-content" class>
               <ul class="overflow">
                 <li class="depth-0">
+                  <a href="#kv-compress" data-for="kv-compress">KV-Compress</a>
+                </li>
+                <li class="depth-1">
+                  <a href="#query-group-compression-qgc" data-for="query-group-compression-qgc"
+                    >Query-Group Compression (QGC)</a
+                  >
+                </li>
+                <li class="depth-1">
+                  <a href="#block-layout-and-allocation" data-for="block-layout-and-allocation"
+                    >Block layout and allocation</a
+                  >
+                </li>
+                <li class="depth-0">
+                  <a href="#automatic-prefix-caching" data-for="automatic-prefix-caching"
+                    >automatic prefix caching</a
+                  >
+                </li>
+                <li class="depth-0">
+                  <a href="#block-manager-and-evictor" data-for="block-manager-and-evictor"
+                    >block manager and evictor</a
+                  >
+                </li>
+                <li class="depth-0">
                   <a href="#speculative-decoding" data-for="speculative-decoding"
                     >speculative decoding</a
                   >
@@ -453,7 +920,9 @@
           <div class="backlinks">
             <h3>Liens retour</h3>
             <ul class="overflow">
+              <li><a href="../thoughts/KV-compression" class="internal">KV compression</a></li>
               <li><a href="../thoughts/Transformers" class="internal">Transformers</a></li>
+              <li><a href="../thoughts/vllm" class="internal">vLLM</a></li>
               <li><a href="../thoughts/work" class="internal">work.</a></li>
             </ul>
           </div>

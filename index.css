@@ -2466,9 +2466,6 @@ h2 {
 h3 {
   font-size: 1.272rem;
 }
-section[data-footnotes] {
-  background-color: unset !important;
-}
 #preview-container {
   flex-grow: 1;
 }
@@ -2798,20 +2795,29 @@ header,
 }
 #refs {
   border-left: unset;
-  border: 2px solid var(--secondary);
+  border: 2px solid var(--dark);
+  background-color: var(--light);
   position: relative;
 }
 #refs:before {
   content: "References";
   background-color: var(--light);
   color: var(--gray);
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--dark);
   padding: 4px 8px;
   font-size: 12px;
   font-weight: 700;
   position: absolute;
   top: -12px;
   left: 12px;
+}
+#refs:after {
+  content: "";
+  z-index: -10;
+  background-image: url(/static/dotted.svg);
+  background-repeat: repeat;
+  position: absolute;
+  inset: 0.5rem -0.5rem -0.5rem 0.5rem;
 }
 .content-meta {
   color: var(--gray);
@@ -2906,6 +2912,25 @@ blockquote.twitter-tweet:before {
   position: absolute;
   top: -12px;
   left: 12px;
+}
+p.quotes {
+  margin: inherit;
+  padding-top: 1rem;
+  padding-left: 3rem;
+}
+p.quotes:before,
+p.quotes:after {
+  vertical-align: -0.4em;
+  font-size: 2em;
+  line-height: 0.1em;
+}
+p.quotes:before {
+  content: "“";
+  margin-right: 0.25em;
+}
+p.quotes:after {
+  content: "”";
+  margin-left: 0.25em;
 }
 :root {
   --light: #fffaf3;

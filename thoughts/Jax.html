@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <title>Jax</title>
+    <title>Jax | Aaron's notes</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="og:site_name" content="Aaron's notes" />
     <meta property="og:locale" content="fr-FR" />
-    <meta property="og:title" content="Jax" />
+    <meta property="og:title" content="Jax | Aaron's notes" />
     <meta property="og:type" content="website" />
     <meta name="twitter:site" content="@aarnphm_" />
     <meta name="twitter:creator" content="@aarnphm_" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Jax" />
+    <meta name="twitter:title" content="Jax | Aaron's notes" />
     <meta
       name="twitter:description"
       content="Numpy + Autograd. Use XLA to compile and run NumPy code on accelerators. Asynchronous dispatch, for sync use block_until_ready() import jax.numpy as jnp from jax import random key = random.PRNGKey(0) x = random.normal(key, (10,)) jnp.dot(x, x.T).block_until_ready() notable function: jit() for compilation of multiple computations grad() for performing transformation (autodiff, Jacobian-vector product) vmap() for auto-vectorisation Arrays are immutable in Jax Treat functions as pure as to compiled with XLA import jax.numpy as jnp from jax import jit @jit def diff(a, b, w=0): return jnp.dot(a, b) + w."
@@ -173,7 +173,7 @@
 <span data-line> </span>
 <span data-line> </span>
 <span data-line><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">@</span><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">jit</span></span>
-<span data-line><span style="--shiki-light:#286983;--shiki-dark:#31748F;">def</span><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;"> diff</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;">a</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> b</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-dark:#C4A7E7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic;"> w</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">0</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">):</span></span>
+<span data-line><span style="--shiki-light:#286983;--shiki-dark:#31748F;">def</span><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;"> diff</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#907AA9;--shiki-light-font-style:italic;--shiki-dark:#C4A7E7;--shiki-dark-font-style:italic;">a</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-light-font-style:italic;--shiki-dark:#C4A7E7;--shiki-dark-font-style:italic;"> b</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#907AA9;--shiki-light-font-style:italic;--shiki-dark:#C4A7E7;--shiki-dark-font-style:italic;"> w</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;">=</span><span style="--shiki-light:#D7827E;--shiki-dark:#EBBCBA;">0</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">):</span></span>
 <span data-line><span style="--shiki-light:#286983;--shiki-dark:#31748F;">    return</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> jnp</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">.</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">dot</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">(</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;">a</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">,</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> b</span><span style="--shiki-light:#797593;--shiki-dark:#908CAA;">)</span><span style="--shiki-light:#286983;--shiki-dark:#31748F;"> +</span><span style="--shiki-light:#575279;--shiki-dark:#E0DEF4;"> w</span></span></code></pre>
             </figure>
           </article>
